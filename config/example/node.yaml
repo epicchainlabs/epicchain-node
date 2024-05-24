@@ -1,0 +1,203 @@
+logger:
+  level: debug  # logger level: one of "debug", "info" (default), "warn", "error", "dpanic", "panic", "fatal"
+
+pprof:
+  enabled: true
+  address: localhost:6060  # endpoint for Node profiling
+  shutdown_timeout: 15s  # timeout for profiling HTTP server graceful shutdown
+
+prometheus:
+  enabled: true
+  address: localhost:9090  # endpoint for Node metrics
+  shutdown_timeout: 15s  # timeout for metrics HTTP server graceful shutdown
+
+node:
+  key: ./wallet.key  # path to a binary private key
+  wallet:
+    path: "./wallet.json"  # path to a NEO wallet; ignored if key is presented
+    address: "NcpJzXcSDrh5CCizf4K9Ro6w4t59J5LKzz"  # address of a NEO account in the wallet; ignored if key is presented
+    password: "password"  # password for a NEO account in the wallet; ignored if key is presented
+  addresses:  # list of addresses announced by Storage node in the Network map
+    - s01.neofs.devenv:8080
+    - /dns4/s02.neofs.devenv/tcp/8081
+    - grpc://127.0.0.1:8082
+    - grpcs://localhost:8083
+  # List of colon-separated key-value attributes.
+  attribute_0: "Price:11"
+  attribute_1: UN-LOCODE:RU MSK
+  # Next attribute specifies optional NeoFS NNS domain in order to enter the storage node into a private node group
+  # (kind of subnet). The node must have public key from the corresponding access list. See docs for more detailed information.
+  attribute_2: VerifiedNodesDomain:nodes.some-org.neofs
+  relay: true  # start Storage node in relay mode without bootstrapping into the Network map
+  persistent_sessions:
+    path: /sessions  # path to persistent session tokens file of Storage node (default: in-memory sessions)
+  persistent_state:
+    path: /state  # path to persistent state file of Storage node
+
+grpc:
+  - endpoint: s01.neofs.devenv:8080  # endpoint for gRPC server
+    conn_limit: 1  # connection limits; exceeding connection will not be declined, just blocked before active number decreases or client timeouts
+    tls:
+      enabled: true  # use TLS for a gRPC connection (min version is TLS 1.2)
+      certificate: /path/to/cert  # path to TLS certificate
+      key: /path/to/key  # path to TLS key
+
+  - endpoint: s02.neofs.devenv:8080  # endpoint for gRPC server
+    conn_limit: -1  # connection limits; exceeding connection will not be declined, just blocked before active number decreases or client timeouts
+    tls:
+      enabled: false  # use TLS for a gRPC connection
+  - endpoint: s03.neofs.devenv:8080
+
+tree:
+  enabled: true
+  cache_size: 15
+  replication_worker_count: 32
+  replication_channel_capacity: 32
+  replication_timeout: 5s
+  sync_interval: 1h
+
+control:
+  authorized_keys:  # list of hex-encoded public keys that have rights to use the Control Service
+    - 035839e45d472a3b7769a2a1bd7d54c4ccd4943c3b40f547870e83a8fcbfb3ce11
+    - 028f42cfcb74499d7b15b35d9bff260a1c8d27de4f446a627406a382d8961486d6
+  grpc:
+    endpoint: localhost:8090  # endpoint that is listened by the Control Service
+
+contracts:  # side chain NEOFS contract script hashes; optional, override values retrieved from NNS contract
+  balance: 5263abba1abedbf79bb57f3e40b50b4425d2d6cd
+  container: 5d084790d7aa36cea7b53fe897380dab11d2cd3c
+  netmap: 0cce9e948dca43a6b592efe59ddb4ecb89bdd9ca
+  reputation: 441995f631c1da2b133462b71859494a5cd45e90
+  proxy: ad7c6b55b737b696e5c82c85445040964a03e97f
+
+morph:
+  dial_timeout: 30s  # timeout for side chain NEO RPC client connection
+  cache_ttl: 15s  # Sidechain cache TTL value (min interval between similar calls). Negative value disables caching.
+                  # Default value: block time. It is recommended to have this value less or equal to block time.
+                  # Cached entities: containers, container lists, eACL tables.
+  reconnections_number: 6  # number of reconnection attempts
+  reconnections_delay: 6s  # time delay b/w reconnection attempts
+  endpoints:  # side chain NEO RPC endpoints; are shuffled and used one by one until the first success
+    - wss://rpc1.morph.fs.neo.org:40341/ws
+    - wss://rpc2.morph.fs.neo.org:40341/ws
+
+apiclient:
+  dial_timeout: 15s  # timeout for NEOFS API client connection
+  stream_timeout: 20s # timeout for individual operations in a streaming RPC
+  allow_external: true # allow to fallback to addresses in `ExternalAddr` attribute
+  reconnect_timeout: 30s # time to wait before reconnecting to a failed node
+
+policer:
+  head_timeout: 15s  # timeout for the Policer HEAD remote operation
+  cache_size: 1000001 # recently-handled objects cache size
+  cache_time: 31s # recently-handled objects cache expiration time
+  replication_cooldown: 101ms # cooldown time b/w replication tasks submitting
+  object_batch_size: 11 # replication's objects batch size
+  max_workers: 21 # replication's worker pool's maximum size
+
+replicator:
+  put_timeout: 15s  # timeout for the Replicator PUT remote operation (defaults to 1m)
+  pool_size: 10     # maximum amount of concurrent replications
+
+object:
+  delete:
+    tombstone_lifetime: 10 # tombstone "local" lifetime in epochs
+  put:
+    pool_size_remote: 100  # number of async workers for remote PUT operations
+
+storage:
+  # note: shard configuration can be omitted for relay node (see `node.relay`)
+  shard_pool_size: 15 # size of per-shard worker pools used for PUT operations
+  shard_ro_error_threshold: 100 # amount of errors to occur before shard is made read-only (default: 0, ignore errors)
+
+  shard:
+    default: # section with the default shard parameters
+      resync_metabase: true  # sync metabase with blobstor on start, expensive, leave false until complete understanding
+
+      writecache:
+        enabled: true
+        small_object_size: 16k  # size threshold for "small" objects which are cached in key-value DB, not in FS, bytes
+        max_object_size: 134217728  # size threshold for "big" objects which bypass write-cache and go to the storage directly, bytes
+        workers_number: 30  # number of write-cache flusher threads
+
+      metabase:
+        perm: 0644  # permissions for metabase files(directories: +x for current user and group)
+        max_batch_size: 200
+        max_batch_delay: 20ms
+
+      pilorama:
+        max_batch_delay: 5ms # maximum delay for a batch of operations to be executed
+        max_batch_size: 100 # maximum amount of operations in a single batch
+
+      compress: false  # turn on/off zstd(level 3) compression of stored objects
+      small_object_size: 100 kb  # size threshold for "small" objects which are cached in key-value DB, not in FS, bytes
+
+      blobstor:
+        - perm: 0644  # permissions for blobstor files(directories: +x for current user and group)
+        - perm: 0644  # permissions for blobstor files(directories: +x for current user and group)
+          depth: 5  # max depth of object tree storage in FS
+
+      gc:
+        remover_batch_size: 200  # number of objects to be removed by the garbage collector
+        remover_sleep_interval: 5m  # frequency of the garbage collector invocation
+
+    0:
+      mode: read-only  # mode of the shard, must be one of the:
+        # read-write (default)
+        # read-only
+        # degraded
+        # degraded-read-only
+        # disabled (do not work with the shard, allows to not remove it from the config)
+      resync_metabase: false  # sync metabase with blobstor on start, expensive, leave false until complete understanding
+
+      writecache:
+        enabled: false
+        no_sync: true
+        path: tmp/0/cache  # write-cache root directory
+        capacity: 3221225472  # approximate write-cache total size, bytes
+
+      metabase:
+        path: tmp/0/meta  # metabase path
+        max_batch_size: 100
+        max_batch_delay: 10ms
+
+      compress: true  # turn on/off zstd(level 3) compression of stored objects
+      compression_exclude_content_types:
+        - audio/*
+        - video/*
+
+      blobstor:
+        - type: peapod
+          path: tmp/0/blob/peapod.db
+        - type: fstree
+          path: tmp/0/blob  # blobstor path
+
+      pilorama:
+        path: tmp/0/blob/pilorama.db # path to the pilorama database. If omitted, `pilorama.db` file is created blobstor.path
+        max_batch_delay: 10ms
+        max_batch_size: 200
+
+      gc:
+        remover_batch_size: 150  # number of objects to be removed by the garbage collector
+        remover_sleep_interval: 2m  # frequency of the garbage collector invocation
+
+    1:
+      writecache:
+        path: tmp/1/cache  # write-cache root directory
+        capacity: 4 G  # approximate write-cache total size, bytes
+
+      metabase:
+        path: tmp/1/meta  # metabase path
+
+      blobstor:
+        - type: peapod
+          path: tmp/1/blob/peapod.db # path to Peapod database
+          flush_interval: 30ms # time interval between batch writes to disk (defaults to 10ms)
+        - type: fstree
+          path: tmp/1/blob  # blobstor path
+          no_sync: true
+
+      pilorama:
+        path: tmp/1/blob/pilorama.db
+        no_sync: true # USE WITH CAUTION. Return to user before pages have been persisted.
+        perm: 0644 # permission to use for the database file and intermediate directories

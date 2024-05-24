@@ -1,0 +1,347 @@
+syntax = "proto3";
+
+package control;
+
+import "pkg/services/control/types.proto";
+
+option go_package = "github.com/nspcc-dev/neofs-node/pkg/services/control";
+
+// `ControlService` provides an interface for internal work with the storage node.
+service ControlService {
+    // Performs health check of the storage node.
+    rpc HealthCheck (HealthCheckRequest) returns (HealthCheckResponse);
+
+    // Sets status of the storage node in NeoFS network map.
+    rpc SetNetmapStatus (SetNetmapStatusRequest) returns (SetNetmapStatusResponse);
+
+    // Mark objects to be removed from node's local object storage.
+    rpc DropObjects (DropObjectsRequest) returns (DropObjectsResponse);
+
+    // Returns list that contains information about all shards of a node.
+    rpc ListShards (ListShardsRequest) returns (ListShardsResponse);
+
+    // Sets mode of the shard.
+    rpc SetShardMode (SetShardModeRequest) returns (SetShardModeResponse);
+
+    // Dump objects from the shard.
+    rpc DumpShard (DumpShardRequest) returns (DumpShardResponse);
+
+    // Restore objects from dump.
+    rpc RestoreShard (RestoreShardRequest) returns (RestoreShardResponse);
+
+    // Synchronizes all log operations for the specified tree.
+    rpc SynchronizeTree (SynchronizeTreeRequest) returns (SynchronizeTreeResponse);
+
+    // EvacuateShard moves all data from one shard to the others.
+    rpc EvacuateShard (EvacuateShardRequest) returns (EvacuateShardResponse);
+
+    // FlushCache moves all data from one shard to the others.
+    rpc FlushCache (FlushCacheRequest) returns (FlushCacheResponse);
+}
+
+// Health check request.
+message HealthCheckRequest {
+    // Health check request body.
+    message Body {
+    }
+
+    // Body of health check request message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// Health check request.
+message HealthCheckResponse {
+    // Health check response body
+    message Body {
+        // Status of the storage node in NeoFS network map.
+        NetmapStatus netmap_status = 1;
+
+        // Health status of storage node application.
+        HealthStatus health_status = 2;
+    }
+
+    // Body of health check response message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// Set netmap status request.
+message SetNetmapStatusRequest {
+    // Set netmap status request body.
+    message Body {
+        // New storage node status in NeoFS network map.
+        // If status is MAINTENANCE, the node checks whether maintenance is
+        // allowed in the network settings. In case of prohibition, the request
+        // is denied. Otherwise, node switches to local maintenance state. To
+        // force local maintenance, use `force_maintenance` flag.
+        NetmapStatus status = 1;
+
+        // MAINTENANCE status validation skip flag. If set, node starts local
+        // maintenance regardless of network settings. The flag MUST NOT be
+        // set for any other status.
+        bool force_maintenance = 2;
+    }
+
+    // Body of set netmap status request message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// Set netmap status response.
+message SetNetmapStatusResponse {
+    // Set netmap status response body
+    message Body {
+    }
+
+    // Body of set netmap status response message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// Request to drop the objects.
+message DropObjectsRequest {
+    // Request body structure.
+    message Body {
+        // List of object addresses to be removed.
+        // in NeoFS API binary format.
+        repeated bytes address_list = 1;
+    }
+
+    // Body of the request message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// Response to request to drop the objects.
+message DropObjectsResponse {
+    // Response body structure.
+    message Body {
+    }
+
+    // Body of the response message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// Request to list all shards of the node.
+message ListShardsRequest {
+    // Request body structure.
+    message Body {
+    }
+
+    // Body of the request message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// ListShards response.
+message ListShardsResponse {
+    // Response body structure.
+    message Body {
+        // List of the node's shards.
+        repeated ShardInfo shards = 1;
+    }
+
+    // Body of the response message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// Request to set mode of the shard.
+message SetShardModeRequest {
+    // Request body structure.
+    message Body {
+        // ID of the shard.
+        repeated bytes shard_ID = 1;
+
+        // Mode that requested to be set.
+        ShardMode mode = 2;
+
+        // Flag signifying whether error counter should be set to 0.
+        bool resetErrorCounter = 3;
+    }
+
+    // Body of set shard mode request message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// SetShardMode response.
+message SetShardModeResponse {
+    // Response body structure.
+    message Body {
+    }
+
+    // Body of set shard mode response message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// DumpShard request.
+message DumpShardRequest {
+    // Request body structure.
+    message Body {
+        // ID of the shard.
+        bytes shard_ID = 1;
+
+        // Path to the output.
+        string filepath = 2;
+
+        // Flag indicating whether object read errors should be ignored.
+        bool ignore_errors = 3;
+    }
+
+    // Body of dump shard request message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// DumpShard response.
+message DumpShardResponse {
+    // Response body structure.
+    message Body {
+    }
+
+    // Body of dump shard response message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+
+// RestoreShard request.
+message RestoreShardRequest {
+    // Request body structure.
+    message Body {
+        // ID of the shard.
+        bytes shard_ID = 1;
+
+        // Path to the output.
+        string filepath = 2;
+
+        // Flag indicating whether object read errors should be ignored.
+        bool ignore_errors = 3;
+    }
+
+    // Body of restore shard request message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// RestoreShard response.
+message RestoreShardResponse {
+    // Response body structure.
+    message Body {
+    }
+
+    // Body of restore shard response message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// SynchronizeTree request.
+message SynchronizeTreeRequest {
+    // Request body structure.
+    message Body {
+        bytes container_id = 1;
+        string tree_id = 2;
+        // Starting height for the synchronization. Can be omitted.
+        uint64 height = 3;
+    }
+
+    // Body of restore shard request message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+// SynchronizeTree response.
+message SynchronizeTreeResponse {
+    // Response body structure.
+    message Body {
+    }
+
+    // Body of restore shard response message.
+    Body body = 1;
+
+    // Body signature.
+    Signature signature = 2;
+}
+
+
+// EvacuateShard request.
+message EvacuateShardRequest {
+    // Request body structure.
+    message Body {
+        // ID of the shard.
+        repeated bytes shard_ID = 1;
+
+        // Flag indicating whether object read errors should be ignored.
+        bool ignore_errors = 2;
+    }
+
+    Body body = 1;
+    Signature signature = 2;
+}
+
+// EvacuateShard response.
+message EvacuateShardResponse {
+    // Response body structure.
+    message Body {
+        uint32 count = 1;
+    }
+
+    Body body = 1;
+    Signature signature = 2;
+}
+
+// FlushCache request.
+message FlushCacheRequest {
+    // Request body structure.
+    message Body {
+        // ID of the shard.
+        repeated bytes shard_ID = 1;
+    }
+
+    Body body = 1;
+    Signature signature = 2;
+}
+
+// FlushCache response.
+message FlushCacheResponse {
+    // Response body structure.
+    message Body {
+    }
+
+    Body body = 1;
+    Signature signature = 2;
+}

@@ -1,0 +1,219 @@
+{
+  "logger": {
+    "level": "debug"
+  },
+  "pprof": {
+    "enabled": true,
+    "address": "localhost:6060",
+    "shutdown_timeout": "15s"
+  },
+  "prometheus": {
+    "enabled": true,
+    "address": "localhost:9090",
+    "shutdown_timeout": "15s"
+  },
+  "node": {
+    "key": "./wallet.key",
+    "wallet": {
+      "path": "./wallet.json",
+      "address": "NcpJzXcSDrh5CCizf4K9Ro6w4t59J5LKzz",
+      "password": "password"
+    },
+    "addresses": [
+      "s01.neofs.devenv:8080",
+      "/dns4/s02.neofs.devenv/tcp/8081",
+      "grpc://127.0.0.1:8082",
+      "grpcs://localhost:8083"
+    ],
+    "attribute_0": "Price:11",
+    "attribute_1": "UN-LOCODE:RU MSK",
+    "attribute_2": "VerifiedNodesDomain:nodes.some-org.neofs",
+    "relay": true,
+    "persistent_sessions": {
+      "path": "/sessions"
+    },
+    "persistent_state": {
+      "path": "/state"
+    }
+  },
+  "grpc": {
+    "0": {
+      "endpoint": "s01.neofs.devenv:8080",
+      "conn_limit": 1,
+      "tls": {
+        "enabled": true,
+        "certificate": "/path/to/cert",
+        "key": "/path/to/key"
+      }
+    },
+    "1": {
+      "endpoint": "s02.neofs.devenv:8080",
+      "conn_limit": -1,
+      "tls": {
+        "enabled": false
+      }
+    },
+    "2": {
+      "endpoint": "s03.neofs.devenv:8080"
+    }
+  },
+  "tree": {
+    "enabled": true,
+    "cache_size": 15,
+    "replication_channel_capacity": 32,
+    "replication_worker_count": 32,
+    "replication_timeout": "5s",
+    "sync_interval": "1h"
+  },
+  "control": {
+    "authorized_keys": [
+      "035839e45d472a3b7769a2a1bd7d54c4ccd4943c3b40f547870e83a8fcbfb3ce11",
+      "028f42cfcb74499d7b15b35d9bff260a1c8d27de4f446a627406a382d8961486d6"
+    ],
+    "grpc": {
+      "endpoint": "localhost:8090"
+    }
+  },
+  "contracts": {
+    "balance": "5263abba1abedbf79bb57f3e40b50b4425d2d6cd",
+    "container": "5d084790d7aa36cea7b53fe897380dab11d2cd3c",
+    "netmap": "0cce9e948dca43a6b592efe59ddb4ecb89bdd9ca",
+    "reputation": "441995f631c1da2b133462b71859494a5cd45e90",
+    "proxy": "ad7c6b55b737b696e5c82c85445040964a03e97f"
+  },
+  "morph": {
+    "dial_timeout": "30s",
+    "cache_ttl": "15s",
+    "reconnections_number": "6",
+    "reconnections_delay": "6s",
+    "endpoints": [
+      "wss://rpc1.morph.fs.neo.org:40341/ws",
+      "wss://rpc2.morph.fs.neo.org:40341/ws"
+    ]
+  },
+  "apiclient": {
+    "dial_timeout": "15s",
+    "stream_timeout": "20s",
+    "reconnect_timeout": "30s",
+    "allow_external": true
+  },
+  "policer": {
+    "head_timeout": "15s",
+    "cache_size": "1000001",
+    "cache_time": "31s",
+    "replication_cooldown": "101ms",
+    "object_batch_size": "11",
+    "max_workers": "21"
+  },
+  "replicator": {
+    "pool_size": 10,
+    "put_timeout": "15s"
+  },
+  "object": {
+    "delete": {
+      "tombstone_lifetime": 10
+    },
+    "put": {
+      "pool_size_remote": 100
+    }
+  },
+  "storage": {
+    "shard_pool_size": 15,
+    "shard_ro_error_threshold": 100,
+    "shard": {
+      "0": {
+        "mode": "read-only",
+        "resync_metabase": false,
+        "writecache": {
+          "enabled": false,
+          "no_sync": true,
+          "path": "tmp/0/cache",
+          "small_object_size": 16384,
+          "max_object_size": 134217728,
+          "workers_number": 30,
+          "capacity": 3221225472
+        },
+        "metabase": {
+          "path": "tmp/0/meta",
+          "perm": "0644",
+          "max_batch_size": 100,
+          "max_batch_delay": "10ms"
+        },
+        "compress": true,
+        "compression_exclude_content_types": [
+          "audio/*", "video/*"
+        ],
+        "small_object_size": 102400,
+        "blobstor": [
+          {
+            "type": "peapod",
+            "path": "tmp/0/blob/peapod.db",
+            "perm": "0644"
+          },
+          {
+            "type": "fstree",
+            "path": "tmp/0/blob",
+            "perm": "0644",
+            "depth": 5
+          }
+        ],
+        "pilorama": {
+          "path": "tmp/0/blob/pilorama.db",
+          "max_batch_delay": "10ms",
+          "max_batch_size": 200
+        },
+        "gc": {
+          "remover_batch_size": 150,
+          "remover_sleep_interval": "2m"
+        }
+      },
+      "1": {
+        "mode": "read-write",
+        "resync_metabase": true,
+        "writecache": {
+          "enabled": true,
+          "path": "tmp/1/cache",
+          "memcache_capacity": 2147483648,
+          "small_object_size": 16384,
+          "max_object_size": 134217728,
+          "workers_number": 30,
+          "capacity": 4294967296
+        },
+        "metabase": {
+          "path": "tmp/1/meta",
+          "perm": "0644",
+          "max_batch_size": 200,
+          "max_batch_delay": "20ms"
+        },
+        "compress": false,
+        "small_object_size": 102400,
+        "blobstor": [
+          {
+            "type": "peapod",
+            "path": "tmp/1/blob/peapod.db",
+            "perm": "0644",
+            "flush_interval": "30ms"
+          },
+          {
+            "type": "fstree",
+            "path": "tmp/1/blob",
+            "no_sync": true,
+            "perm": "0644",
+            "depth": 5
+          }
+        ],
+        "pilorama": {
+          "path": "tmp/1/blob/pilorama.db",
+          "perm": "0644",
+          "no_sync": true,
+          "max_batch_delay": "5ms",
+          "max_batch_size": 100
+        },
+        "gc": {
+          "remover_batch_size": 200,
+          "remover_sleep_interval": "5m"
+        }
+      }
+    }
+  }
+}

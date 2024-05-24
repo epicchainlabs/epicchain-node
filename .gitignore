@@ -1,0 +1,33 @@
+# IDE
+.idea
+.vscode
+
+# Vendoring
+vendor
+
+# tempfiles
+.DS_Store
+*~
+.cache
+
+temp
+tmp
+
+# binary
+bin/
+release/
+
+# coverage
+coverage.txt
+coverage.html
+
+# testing
+cmd/test
+/plugins/
+testfile
+
+# misc
+.neofs-cli.yml
+
+# debhelpers
+**/.debhelper

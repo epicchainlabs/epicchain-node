@@ -1,0 +1,206 @@
+---
+
+logger:
+  level: info # Logger level: one of "debug", "info" (default), "warn", "error", "dpanic", "panic", "fatal"
+
+wallet:
+  path: /path/to/wallet.json                  # Path to NEP-6 NEO wallet file
+  address: NUHtW3eM6a4mmFCgyyr4rj4wygsTKB88XX # Account address in the wallet; ignore to use default address
+  password: secret                            # Account password in the wallet
+
+without_mainnet: false # Run application in single chain environment without mainchain
+
+morph:
+  dial_timeout: 5s # Timeout for RPC client connection to sidechain
+  reconnections_number: 5  # number of reconnection attempts
+  reconnections_delay: 5s  # time delay b/w reconnection attempts
+  endpoints: # List of websocket RPC endpoints in sidechain. May be omitted if 'consensus' is configured
+      - wss://sidechain1.fs.neo.org:30333/ws
+      - wss://sidechain2.fs.neo.org:30333/ws
+  validators: # List of hex-encoded 33-byte public keys of sidechain validators to vote for at application startup; can be omitted if equals `consensus.committee`
+    - 0283120f4c8c1fc1d792af5063d2def9da5fddc90bc1384de7fcfdda33c3860170
+  consensus: # Local consensus launch mode activated only when 'endpoints' is unset.
+    magic: 15405 # Network magic. Must be unsigned integer in range [1:4294967295]
+    committee: # Hex-encoded public keys of the initial committee
+      - 02b3622bf4017bdfe317c58aed5f4c753f206b7db896046fa7d774bbc4bf7f8dc2
+      - 02103a7f7dd016558597f7960d27c516a4394fd968b9e65155eb4b013e4040406e
+      - 03d90c07df63e690ce77912e10ab51acc944b66860237b608c4f8f8309e71ee699
+      - 02a7bc55fe8684e0119768d104ba30795bdcc86619e864add26156723ed185cd62
+    storage: # Blockchain storage
+      type: boltdb # One of following storage types:
+        # boltdb (local BoltDB)
+        # leveldb (local LevelDB)
+        # inmemory (volatile storage, mostly suitable for testing)
+      #
+      # If 'path' exists, it should correspond to the selected variant
+      path: ./db/morph.bolt # File system path to the storage. Ignored for 'inmemory' storage.
+    time_per_block: 1s # Optional time period (approximate) between two adjacent blocks. Defaults to 15s.
+      # Must not be negative
+    max_traceable_blocks: 2102400 # Optional length of the chain accessible to smart contracts. Defaults to 2102400.
+      # Must not be greater than 4294967295
+    seed_nodes: # Optional list of existing nodes to communicate with over Neo P2P protocol. By default, node runs as standalone
+      # Same format as 'p2p.listen'
+      - node2:20333
+      - node3:20333
+    hardforks: # Optional hard-forks
+      name: 1730000 # Maps name to chain height. Heights must not be greater than 4294967295
+    validators_history: # Optional number of consensus nodes to use after given height.
+      # Maps chain height to number of consensus nodes. Heights must be multiples of the 'committee' size.
+      # Values must be positive up to 'committee' size.
+      # If specified, value for 0 (genesis) height must be set.
+      0: 4
+      4: 1
+      12: 4
+    rpc: # Optional RPC settings
+      listen: # Optional list of network addresses to listen Neo RPC on. By default, protocol is not served
+        # TCP addresses in 'host:port' format
+        - localhost:30333
+        - localhost:30334
+      tls: # Additional addresses to listen to using TLS setup; must not overlap with `listen` section
+        enabled: false # Additional TLS serving switcher
+        listen: # Addresses to listen to; required to be at least 1-length if 'enabled' is 'true'
+          # TCP addresses in 'host:port' format
+          - localhost:30335
+          - localhost:30336
+        cert_file: serv.crt # TLS certificate file path; required if 'enabled' is 'true'
+        key_file: serv.key # TLS private key file path; required if 'enabled' is 'true'
+    p2p: # Optional P2P settings
+      dial_timeout: 5s # Optional maximum duration a single peer dial may take. Defaults to 5s. Must not be negative
+      proto_tick_interval: 2s # Optional time period between protocol ticks with each connected peer. Defaults to 2s.
+        # Must not be negative
+      listen: # Optional list of network addresses to listen Neo P2P on. By default, protocol is not served
+        # TCP addresses in 'host:port' format
+        - localhost:20333
+        - localhost:20334
+      peers: # Optional peer settings
+        min: 1 # Optional minimum number of peers a node needs for normal operation. Defaults to consensus minimum
+          # of 'committee' size (ceil of 2/3N-1). Must not be greater than 2147483647. Note that consensus service
+          # won't start until at least 'min' number of peers are connected
+        max: 5 # Optional limits of maximum number of peers dealing with the node. Defaults to 100. Must not be
+          # greater than 2147483647
+        attempts: 20 # How many peers node should try to dial after falling under 'min' count. Defaults to 'min'+10.
+          # Must not be greater than 2147483647
+      ping: # Optional settings of pinging mechanism
+        interval: 30s # Optional time period between pings. Defaults to 30s. Must not be negative
+        timeout: 90s # Optional time period to wait for pong. Defaults to 1m. Must not be negative
+    set_roles_in_genesis: true # Optional flag for designating P2PNotary and NeoFSAlphabet roles to all
+      # genesis block validators. The validators depend on 'committee' and, if set, 'validators_history'.
+      # Must be 'true' or 'false'.
+
+fschain_autodeploy: true # Optional flag to run auto-deployment procedure of the FS chain. By default,
+  # the chain is expected to be deployed/updated in the background (e.g. via NeoFS ADM tool).
+  # If set, must be 'true' or 'false'.
+
+nns: # Optional configuration of the NNS domains processed during the FS chain deployment
+  system_email: usr@domain.io # Optional e-mail to be assigned to the registered NNS domains.
+    # Defaults to 'nonexistent@nspcc.io'
+
+mainnet:
+  dial_timeout: 5s # Timeout for RPC client connection to mainchain; ignore if mainchain is disabled
+  reconnections_number: 5  # number of reconnection attempts
+  reconnections_delay: 5s  # time delay b/w reconnection attempts
+  endpoints: # List of websocket RPC endpoints in mainchain; ignore if mainchain is disabled
+    - wss://mainchain1.fs.neo.org:30333/ws
+    - wss://mainchain.fs.neo.org:30333/ws
+
+control:
+  authorized_keys:  # List of hex-encoded 33-byte public keys that have rights to use the control service
+    - 035839e45d472a3b7769a2a1bd7d54c4ccd4943c3b40f547870e83a8fcbfb3ce11
+    - 028f42cfcb74499d7b15b35d9bff260a1c8d27de4f446a627406a382d8961486d6
+  grpc:
+    endpoint: localhost:8090  # Endpoint that is listened by the control service; disabled by default
+
+governance:
+  disable: false # Disable synchronization of sidechain committee and mainchain role management contract; ignore if mainchain is disabled
+
+node:
+  persistent_state:
+    path: .neofs-ir-state # Path to application state file
+
+fee:
+  main_chain: 50000000                 # Fixed8 value of extra GAS fee for mainchain contract invocation; ignore if notary is enabled in mainchain
+
+timers:
+  stop_estimation:
+    mul: 1 # Multiplier in x/y relation of when to stop basic income estimation within the epoch
+    div: 4 # Divider in x/y relation of when to stop basic income estimation within the epoch
+  collect_basic_income:
+    mul: 1 # Multiplier in x/y relation of when to start basic income asset collection within the epoch
+    div: 2 # Divider in x/y relation of when to start basic income asset collecting within the epoch
+  distribute_basic_income:
+    mul: 3 # Multiplier in x/y relation of when to start basic income asset distribution within the epoch
+    div: 4 # Divider in x/y relation of when to start basic income asset distribution within the epoch
+
+emit:
+  storage:
+    amount: 800000000 # Fixed8 value of sidechain GAS emitted to all storage nodes once per GAS emission cycle; disabled by default
+  mint:
+    value: 20000000  # Fixed8 value of sidechain GAS transferred to account that received a deposit from mainchain
+    cache_size: 1000 # LRU cache size of all deposit receivers to avoid double GAS emission
+    threshold: 1     # Lifetime of records in LRU cache of all deposit receivers in NeoFS epochs
+  gas:
+    balance_threshold: 100000000000 # Fixed8 value of inner ring wallet balance threshold when GAS emission for deposit receivers is disabled; disabled by default
+
+workers:
+  alphabet: 10   # Number of workers to process events from alphabet contract in parallel
+  balance: 10    # Number of workers to process events from balance contract in parallel
+  container: 10  # Number of workers to process events from container contract in parallel
+  neofs: 10      # Number of workers to process events from neofs contracts in parallel
+  netmap: 10     # Number of workers to process events from netmap contract in parallel
+  reputation: 10 # Number of workers to process events from reputation contract in parallel
+
+audit:
+  timeout:
+    get: 5s       # Timeout for object.Get operation during data audit
+    head: 5s      # Timeout for object.Head operation during data audit
+    rangehash: 5s # Timeout for object.RangeHash operation during data audit
+    search: 10s   # Timeout for object.Search operation during data audit
+  task:
+    exec_pool_size: 10   # Number of workers to process audit routine in parallel
+    queue_capacity:  100 # Maximum amount of simultaneous audit jobs
+  pdp:
+    pairs_pool_size: 10    # Number of workers to process PDP part of data audit in parallel
+    max_sleep_interval: 5s # Maximum timeout between object.RangeHash requests to the storage node
+  por:
+    pool_size: 10 # Number of workers to process PoR part of data audit in parallel
+
+indexer:
+  cache_timeout: 15s # Duration between internal state update about current list of inner ring nodes
+
+netmap_cleaner:
+  enabled: true # Enable voting for removing stale storage nodes from network map
+  threshold: 3  # Number of NeoFS epoch without bootstrap request from storage node before it considered stale
+
+contracts:
+  neofs: ee3dee6d05dc79c24a5b8f6985e10d68b7cacc62      # Address of NeoFS contract in mainchain; ignore if mainchain is disabled
+  processing: 597f5894867113a41e192801709c02497f611de8 # Address of processing contract in mainchain; ignore if mainchain is disabled
+  audit: 219e37aed2180b87e7fe945dbf97d67125e8d73f      # Optional: override address of audit contract in sidechain
+  balance: d2aa48d14b17b11bc4c68205027884a96706dd16    # Optional: override address of balance contract in sidechain
+  container: ed4a7a66fe3f9bfe50f214b49be8f215a3c886b6  # Optional: override address of container contract in sidechain
+  neofsid: 9f5866decbc751a099e74c7c7bc89f609201755a    # Optional: override address of neofsid contract in sidechain
+  netmap: 83c600c81d47a1b1b7cf58eb49ae7ee7240dc742     # Optional: override address of netmap contract in sidechain
+  proxy: abc8794bb40a21f2db5f21ae62741eb46c8cad1c      # Optional: override address of proxy contract in sidechain
+  reputation: d793b842ff0c103fe89e385069e82a27602135ff # Optional: override address of reputation contract in sidechain
+  alphabet:
+    amount: 7                                         # Optional: override amount of alphabet contracts
+    az: c1d211fceeb4b1dc76b8e4054d11fdf887e418ea      # Optional: override address of az alphabet contract in sidechain
+    buky: e2ba789320899658b100f331bdebb74474757920    # Optional: override address of buky alphabet contract in sidechain
+    vedi: 9623c11fd49aa18220458fbaae0396749c669e19    # Optional: override address of vedi alphabet contract in sidechain
+    glagoli: 39617441b8e06c55e4fc3ce660be9101b6c1f866 # Optional: override address of glagoli alphabet contract in sidechain
+    dobro: e6122b65d45c8feeb04455d67814394c147ed4d1   # Optional: override address of dobro alphabet contract in sidechain
+    yest: cdbca5cb5d48a4472923844d0e3ee6328cf86d38    # Optional: override address of yest contract in sidechain
+    zhivete: f584699bc2ff457d339fb09f16217042c1a42101 # Optional: override address of zhivete contract in sidechain
+
+pprof:
+  enabled: true
+  address: localhost:6060  # Endpoint for application pprof profiling; disabled by default
+  shutdown_timeout: 30s    # Timeout for profiling HTTP server graceful shutdown
+
+prometheus:
+  enabled: true
+  address: localhost:9090  # Endpoint for application prometheus metrics; disabled by default
+  shutdown_timeout: 30s    # Timeout for metrics HTTP server graceful shutdown
+
+settlement:
+  basic_income_rate: 100 # Optional: override basic income rate value from network config; applied only in debug mode
+  audit_fee: 100         # Optional: override audit fee value from network config; applied only in debug mode
