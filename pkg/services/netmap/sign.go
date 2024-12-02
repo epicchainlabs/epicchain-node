@@ -5,7 +5,7 @@ import (
 	"crypto/ecdsa"
 
 	"github.com/epicchainlabs/neofs-api-go/v2/netmap"
-	"github.com/epicchainlabs/neofs-node/pkg/services/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/util"
 )
 
 type signService struct {

@@ -50,7 +50,7 @@ const Size = 41
 // LetterByIndex returns string representation of Glagolitic letter compatible
 // with NeoFS Alphabet contract by index. Index must be in range [0, Size).
 //
-// Track https://github.com/epicchainlabs/neofs-node/issues/2431
+// Track https://github.com/epicchainlabs/epicchain-node/issues/2431
 func LetterByIndex(ind int) string {
 	return script[ind]
 }

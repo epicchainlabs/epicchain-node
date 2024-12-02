@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
 	"go.uber.org/zap"
 )
 

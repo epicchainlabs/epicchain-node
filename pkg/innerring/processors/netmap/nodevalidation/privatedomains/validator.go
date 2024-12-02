@@ -8,7 +8,7 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
 	"github.com/epicchainlabs/epicchain-go/pkg/io"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/emit"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // ErrMissingDomainRecord is returned when some record is missing in the

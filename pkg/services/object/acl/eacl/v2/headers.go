@@ -8,11 +8,11 @@ import (
 	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
 	refsV2 "github.com/epicchainlabs/neofs-api-go/v2/refs"
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	eaclSDK "github.com/epicchainlabs/neofs-sdk-go/eacl"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	eaclSDK "github.com/epicchainlabs/epicchain-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 type Option func(*cfg)

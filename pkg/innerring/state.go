@@ -6,12 +6,12 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/governance"
-	auditClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/audit"
-	"github.com/epicchainlabs/neofs-node/pkg/services/audit"
-	control "github.com/epicchainlabs/neofs-node/pkg/services/control/ir"
-	"github.com/epicchainlabs/neofs-node/pkg/util/glagolitsa"
-	"github.com/epicchainlabs/neofs-node/pkg/util/state"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/governance"
+	auditClient "github.com/epicchainlabs/epicchain-node/pkg/morph/client/audit"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/audit"
+	control "github.com/epicchainlabs/epicchain-node/pkg/services/control/ir"
+	"github.com/epicchainlabs/epicchain-node/pkg/util/glagolitsa"
+	"github.com/epicchainlabs/epicchain-node/pkg/util/state"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 )

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"math/big"
 
-	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	objectcore "github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 	"go.uber.org/zap"
 )
 

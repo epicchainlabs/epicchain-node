@@ -1,8 +1,8 @@
 package blobstor
 
 import (
-	storagelog "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/log"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	storagelog "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/internal/log"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

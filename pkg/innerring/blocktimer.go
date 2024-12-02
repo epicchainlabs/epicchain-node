@@ -4,10 +4,10 @@ import (
 	"context"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/timer"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/settlement"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/timer"
 	"go.uber.org/zap"
 )
 

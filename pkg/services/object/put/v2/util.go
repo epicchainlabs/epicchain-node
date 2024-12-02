@@ -3,9 +3,9 @@ package putsvc
 import (
 	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
 	refsV2 "github.com/epicchainlabs/neofs-api-go/v2/refs"
-	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	putsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/put"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 )
 
 func (s *streamer) toInitPrm(part *objectV2.PutObjectPartInit, req *objectV2.PutRequest) (*putsvc.PutInitPrm, error) {

@@ -3,11 +3,11 @@ package writecache
 import (
 	"bytes"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 )
 

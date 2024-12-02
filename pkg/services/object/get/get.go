@@ -3,8 +3,8 @@ package getsvc
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/util"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 	"go.uber.org/zap"
 )
 

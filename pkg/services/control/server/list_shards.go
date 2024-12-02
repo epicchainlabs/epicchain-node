@@ -3,9 +3,9 @@ package control
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-node/pkg/services/control"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/control"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	objutil "github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	"github.com/epicchainlabs/neofs-sdk-go/checksum"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	"github.com/epicchainlabs/neofs-sdk-go/storagegroup"
+	objutil "github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	"github.com/epicchainlabs/epicchain-sdk-go/checksum"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/storagegroup"
 	"github.com/epicchainlabs/tzhash/tz"
 )
 

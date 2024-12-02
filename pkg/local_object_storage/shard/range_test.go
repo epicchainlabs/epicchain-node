@@ -7,14 +7,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/peapod"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/fstree"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/peapod"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/writecache"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
 	"github.com/stretchr/testify/require"
 )
 

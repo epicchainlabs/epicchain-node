@@ -3,8 +3,8 @@ package innerring
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/state"
-	netmapclient "github.com/epicchainlabs/neofs-node/pkg/morph/client/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/netmap/nodevalidation/state"
+	netmapclient "github.com/epicchainlabs/epicchain-node/pkg/morph/client/netmap"
 )
 
 /*

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/util"
 )
 
 // HandleUnaryRequest call passes request to handler, sets response meta header values and returns it.

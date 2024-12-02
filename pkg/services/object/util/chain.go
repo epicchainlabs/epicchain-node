@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 // ObjectSource is an interface of entity that can receive

@@ -3,10 +3,10 @@ package engine
 import (
 	"errors"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 func (e *StorageEngine) exists(addr oid.Address) (bool, error) {

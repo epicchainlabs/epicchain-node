@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/epicchainlabs/neofs-node/pkg/network"
-	"github.com/epicchainlabs/neofs-sdk-go/client"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-sdk-go/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // Validator is a utility that verifies node's

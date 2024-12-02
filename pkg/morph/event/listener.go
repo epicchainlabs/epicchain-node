@@ -9,7 +9,7 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
 	"github.com/epicchainlabs/epicchain-go/pkg/neorpc/result"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

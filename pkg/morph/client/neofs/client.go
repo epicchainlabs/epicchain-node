@@ -5,7 +5,7 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/encoding/fixedn"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 )
 
 // Client is a wrapper over StaticClient

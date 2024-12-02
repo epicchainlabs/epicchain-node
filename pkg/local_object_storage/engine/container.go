@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 	"go.uber.org/zap"
 	"golang.org/x/sync/errgroup"
 )

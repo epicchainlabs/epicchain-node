@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/epicchainlabs/neofs-node/pkg/util/rand"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/util/rand"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"github.com/epicchainlabs/tzhash/tz"
 	"go.uber.org/zap"
 )

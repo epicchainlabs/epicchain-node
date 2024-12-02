@@ -5,7 +5,7 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/opcode"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
 )
 
 func (p *Put) setRawContainer(v []byte) {

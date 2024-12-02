@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/epicchainlabs/neofs-api-go/v2/netmap"
-	"github.com/epicchainlabs/neofs-node/pkg/services/util"
-	"github.com/epicchainlabs/neofs-node/pkg/services/util/response"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/util/response"
 )
 
 type responseService struct {

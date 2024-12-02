@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/util/state"
+	"github.com/epicchainlabs/epicchain-node/pkg/util/state"
 	"github.com/stretchr/testify/require"
 )
 

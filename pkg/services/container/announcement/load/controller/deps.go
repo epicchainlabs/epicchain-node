@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/epicchainlabs/neofs-sdk-go/container"
+	"github.com/epicchainlabs/epicchain-sdk-go/container"
 )
 
 // UsedSpaceHandler describes the signature of the container.SizeEstimation

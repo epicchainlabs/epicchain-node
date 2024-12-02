@@ -1,7 +1,7 @@
 package version
 
 import (
-	"github.com/epicchainlabs/neofs-sdk-go/version"
+	"github.com/epicchainlabs/epicchain-sdk-go/version"
 )
 
 // IsValid checks if Version is not earlier than the genesis version of the NeoFS.

@@ -3,10 +3,10 @@ package blobstor_test
 import (
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/compression"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/compression"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 	"github.com/stretchr/testify/require"
 )
 

@@ -2,7 +2,7 @@ package balance
 
 import (
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 )
 
 // BurnPrm groups parameters of Burn operation.

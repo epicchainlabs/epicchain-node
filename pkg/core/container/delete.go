@@ -1,8 +1,8 @@
 package container
 
 import (
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/session"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/session"
 )
 
 // RemovalWitness groups the information required

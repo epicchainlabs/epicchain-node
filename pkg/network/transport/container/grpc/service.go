@@ -5,7 +5,7 @@ import (
 
 	"github.com/epicchainlabs/neofs-api-go/v2/container"
 	containerGRPC "github.com/epicchainlabs/neofs-api-go/v2/container/grpc"
-	containersvc "github.com/epicchainlabs/neofs-node/pkg/services/container"
+	containersvc "github.com/epicchainlabs/epicchain-node/pkg/services/container"
 )
 
 // Server wraps NeoFS API Container service and

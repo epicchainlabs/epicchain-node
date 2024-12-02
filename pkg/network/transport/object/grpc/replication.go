@@ -11,11 +11,11 @@ import (
 	refsv2 "github.com/epicchainlabs/neofs-api-go/v2/refs"
 	refs "github.com/epicchainlabs/neofs-api-go/v2/refs/grpc"
 	status "github.com/epicchainlabs/neofs-api-go/v2/status/grpc"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
-	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	neofscrypto "github.com/epicchainlabs/epicchain-sdk-go/crypto"
+	neofsecdsa "github.com/epicchainlabs/epicchain-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 )
 
 // Replicate serves neo.fs.v2.object.ObjectService/Replicate RPC.

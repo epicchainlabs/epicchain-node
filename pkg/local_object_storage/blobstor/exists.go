@@ -1,7 +1,7 @@
 package blobstor
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
 	"go.uber.org/zap"
 )
 

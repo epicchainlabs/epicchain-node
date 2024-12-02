@@ -1,7 +1,7 @@
 package audittask
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/services/audit"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/audit"
 )
 
 // PushTask adds a task to the queue for processing.

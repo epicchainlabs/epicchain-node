@@ -1,4 +1,4 @@
-module github.com/epicchainlabs/neofs-node
+module github.com/epicchainlabs/epicchain-node
 
 go 1.20
 
@@ -18,7 +18,7 @@ require (
 	github.com/epicchainlabs/epicchain-go v0.106.0
 	github.com/epicchainlabs/neofs-api-go/v2 v2.14.1-0.20240305074711-35bc78d84dc4
 	github.com/epicchainlabs/neofs-contract v0.19.2-0.20240506202632-e78d64ecdfc2
-	github.com/epicchainlabs/neofs-sdk-go v1.0.0-rc.11.0.20240412100141-cf16796f1ac3
+	github.com/epicchainlabs/epicchain-sdk-go v1.0.0-rc.11.0.20240412100141-cf16796f1ac3
 	github.com/epicchainlabs/tzhash v1.8.0
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/panjf2000/ants/v2 v2.9.0

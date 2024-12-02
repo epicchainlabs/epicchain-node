@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/neofs-api-go/v2/object"
-	"github.com/epicchainlabs/neofs-node/pkg/services/util"
-	"github.com/epicchainlabs/neofs-node/pkg/services/util/response"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/util/response"
 )
 
 type ResponseService struct {

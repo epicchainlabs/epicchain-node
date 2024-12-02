@@ -3,9 +3,9 @@ package engine
 import (
 	"errors"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/pilorama"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	cidSDK "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 	"go.uber.org/zap"
 )
 

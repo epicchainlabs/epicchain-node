@@ -1,11 +1,11 @@
 package deletesvc
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	putsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/put"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 	"go.uber.org/zap"
 )
 

@@ -1,12 +1,12 @@
-Source: neofs-node
+Source: epicchain-node
 Section: misc
 Priority: optional
 Maintainer: NeoSPCC <tech@nspcc.ru>
 Build-Depends: debhelper-compat (= 13), dh-sequence-bash-completion, devscripts
 Standards-Version: 4.5.1
 Homepage: https://fs.neo.org/
-Vcs-Git: https://github.com/epicchainlabs/neofs-node.git
-Vcs-Browser: https://github.com/epicchainlabs/neofs-node
+Vcs-Git: https://github.com/epicchainlabs/epicchain-node.git
+Vcs-Browser: https://github.com/epicchainlabs/epicchain-node
 
 Package: neofs-storage
 Architecture: any
@@ -18,7 +18,7 @@ Description: NeoFS Storage node
  network and get paid for providing storage resources to other users or store
  their data in NeoFS and pay a competitive price for it.
 
-Package: neofs-ir
+Package: epicchain-ir
 Architecture: any
 Depends: ${misc:Depends}, neofs-locode-db
 Description: NeoFS InnerRing node
@@ -28,7 +28,7 @@ Description: NeoFS InnerRing node
  network and get paid for providing storage resources to other users or store
  their data in NeoFS and pay a competitive price for it.
 
-Package: neofs-cli
+Package: epicchain-cli
 Architecture: any
 Depends: ${misc:Depends}
 Description: CLI tools for NeoFS

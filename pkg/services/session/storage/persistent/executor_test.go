@@ -11,7 +11,7 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	"github.com/epicchainlabs/neofs-api-go/v2/refs"
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
-	usertest "github.com/epicchainlabs/neofs-sdk-go/user/test"
+	usertest "github.com/epicchainlabs/epicchain-sdk-go/user/test"
 	"github.com/stretchr/testify/require"
 	"go.etcd.io/bbolt"
 )

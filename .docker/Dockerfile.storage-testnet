@@ -5,7 +5,7 @@ ARG REPO=repository
 WORKDIR /src
 COPY . /src
 
-RUN make bin/neofs-node
+RUN make bin/epicchain-node
 
 # Executable image
 FROM scratch
@@ -13,7 +13,7 @@ FROM scratch
 WORKDIR /
 
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-COPY --from=builder /src/bin/neofs-node /bin/neofs-node
+COPY --from=builder /src/bin/epicchain-node /bin/epicchain-node
 COPY --from=builder /src/config/testnet/config.yml /config.yml
 
-CMD ["neofs-node", "--config", "/config.yml"]
+CMD ["epicchain-node", "--config", "/config.yml"]

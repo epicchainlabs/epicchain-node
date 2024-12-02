@@ -5,9 +5,9 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
 	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 )
 
 // Put structure of container.Put notification from morph chain.

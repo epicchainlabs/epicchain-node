@@ -1,4 +1,4 @@
-name: neofs-node tests
+name: epicchain-node tests
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
         with:
           fail_ci_if_error: true # if something is wrong on uploading codecov results, then this job will fail
           files: ./coverage.txt
-          slug: nspcc-dev/neofs-node
+          slug: nspcc-dev/epicchain-node
           token: ${{ secrets.CODECOV_TOKEN }}
           verbose: true
 

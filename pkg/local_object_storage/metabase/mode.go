@@ -3,7 +3,7 @@ package meta
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
 )
 
 // SetMode sets the metabase mode of operation.

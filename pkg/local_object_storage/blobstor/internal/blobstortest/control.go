@@ -4,8 +4,8 @@ import (
 	"math/rand"
 	"testing"
 
-	objectCore "github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	objectCore "github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
 	"github.com/stretchr/testify/require"
 )
 

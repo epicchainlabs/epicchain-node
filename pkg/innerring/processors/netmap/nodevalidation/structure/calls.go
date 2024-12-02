@@ -3,8 +3,8 @@ package structure
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/network"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // Verify calls network.VerifyAddress.

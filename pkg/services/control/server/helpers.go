@@ -1,7 +1,7 @@
 package control
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/epicchainlabs/locode-db/pkg/locodedb"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/locode"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/netmap/nodevalidation/locode"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

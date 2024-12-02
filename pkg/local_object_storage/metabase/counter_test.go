@@ -3,11 +3,11 @@ package meta_test
 import (
 	"testing"
 
-	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
+	objectcore "github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
 	"github.com/stretchr/testify/require"
 )
 

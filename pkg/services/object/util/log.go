@@ -1,7 +1,7 @@
 package util
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-node/pkg/network"
 	"go.uber.org/zap"
 )
 

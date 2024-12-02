@@ -3,8 +3,8 @@ package routes
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation/common"
 	"go.uber.org/zap"
 )
 

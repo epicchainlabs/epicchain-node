@@ -3,8 +3,8 @@ package basic
 import (
 	"math/big"
 
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement/common"
-	cntClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/settlement/common"
+	cntClient "github.com/epicchainlabs/epicchain-node/pkg/morph/client/container"
 	"go.uber.org/zap"
 )
 

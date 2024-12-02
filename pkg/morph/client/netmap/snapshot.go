@@ -1,8 +1,8 @@
 package netmap
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // GetNetMap calls "snapshot" method and decodes netmap.NetMap from the response.

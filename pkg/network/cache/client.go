@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	clientcore "github.com/epicchainlabs/neofs-node/pkg/core/client"
-	"github.com/epicchainlabs/neofs-sdk-go/client"
+	clientcore "github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/client"
 	"go.uber.org/zap"
 )
 
@@ -13,7 +13,7 @@ import (
 const DefaultBufferSize = 4 * 1024 * 1024 // 4MB
 
 type (
-	// ClientCache is a structure around neofs-sdk-go/client to reuse
+	// ClientCache is a structure around epicchain-sdk-go/client to reuse
 	// already created clients.
 	ClientCache struct {
 		mu      sync.RWMutex

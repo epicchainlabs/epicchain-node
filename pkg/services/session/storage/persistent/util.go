@@ -6,7 +6,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/session/storage"
 	"go.etcd.io/bbolt"
 )
 

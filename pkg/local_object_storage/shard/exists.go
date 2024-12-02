@@ -1,9 +1,9 @@
 package shard
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 // ExistsPrm groups the parameters of Exists operation.

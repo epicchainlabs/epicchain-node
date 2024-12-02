@@ -7,7 +7,7 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/encoding/bigint"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 )
 
 const (

@@ -9,7 +9,7 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/unwrap"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
 	nnsrpc "github.com/epicchainlabs/neofs-contract/rpc/nns"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/privatedomains"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/netmap/nodevalidation/privatedomains"
 )
 
 // provides services of the NeoFS Name Service consumed by the Inner Ring node.

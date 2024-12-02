@@ -3,7 +3,7 @@ package timer_test
 import (
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/morph/timer"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/timer"
 	"github.com/stretchr/testify/require"
 )
 

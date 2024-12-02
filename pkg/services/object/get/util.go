@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"io"
 
-	coreclient "github.com/epicchainlabs/neofs-node/pkg/core/client"
-	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
-	internalclient "github.com/epicchainlabs/neofs-node/pkg/services/object/internal/client"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	coreclient "github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/internal"
+	internalclient "github.com/epicchainlabs/epicchain-node/pkg/services/object/internal/client"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 )
 
 type SimpleObjectWriter struct {

@@ -3,16 +3,16 @@ package acl
 import (
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/container"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
-	v2 "github.com/epicchainlabs/neofs-node/pkg/services/object/acl/v2"
-	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	eaclSDK "github.com/epicchainlabs/neofs-sdk-go/eacl"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
-	usertest "github.com/epicchainlabs/neofs-sdk-go/user/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
+	v2 "github.com/epicchainlabs/epicchain-node/pkg/services/object/acl/v2"
+	"github.com/epicchainlabs/epicchain-sdk-go/container/acl"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	eaclSDK "github.com/epicchainlabs/epicchain-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
+	usertest "github.com/epicchainlabs/epicchain-sdk-go/user/test"
 	"github.com/stretchr/testify/require"
 )
 

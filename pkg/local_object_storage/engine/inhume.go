@@ -4,13 +4,13 @@ import (
 	"context"
 	"errors"
 
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

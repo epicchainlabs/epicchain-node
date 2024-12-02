@@ -3,8 +3,8 @@ package state_test
 import (
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/state"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/netmap/nodevalidation/state"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

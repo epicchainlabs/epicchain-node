@@ -1,8 +1,8 @@
 package shard
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
 	"go.uber.org/zap"
 )
 

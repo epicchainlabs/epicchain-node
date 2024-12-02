@@ -4,12 +4,12 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/container"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/eacl"
-	"github.com/epicchainlabs/neofs-sdk-go/session"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-sdk-go/session"
 )
 
 // GetEACL reads the extended ACL table from NeoFS system

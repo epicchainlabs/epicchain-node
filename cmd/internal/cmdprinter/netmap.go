@@ -3,7 +3,7 @@ package cmdprinter
 import (
 	"encoding/hex"
 
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"github.com/spf13/cobra"
 )
 

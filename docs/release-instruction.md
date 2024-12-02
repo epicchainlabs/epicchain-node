@@ -108,7 +108,7 @@ or upload manualy if that's not the case.
 
 ### Close GitHub milestone
 
-Look up GitHub [milestones](https://github.com/epicchainlabs/neofs-node/milestones) and close the release one if exists.
+Look up GitHub [milestones](https://github.com/epicchainlabs/epicchain-node/milestones) and close the release one if exists.
 
 ### Update NeoFS Developer Environment
 

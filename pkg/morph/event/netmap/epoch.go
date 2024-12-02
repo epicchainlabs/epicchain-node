@@ -5,8 +5,8 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
 )
 
 // NewEpoch is a new epoch Neo:Morph event.

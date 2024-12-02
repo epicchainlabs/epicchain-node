@@ -3,7 +3,7 @@ package container
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 )
 
 // StartEstimationPrm groups parameters of StartEstimation operation.

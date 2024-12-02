@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	lru "github.com/hashicorp/golang-lru/v2"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

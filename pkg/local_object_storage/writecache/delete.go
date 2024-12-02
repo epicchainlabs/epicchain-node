@@ -1,9 +1,9 @@
 package writecache
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	storagelog "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/log"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	storagelog "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/internal/log"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 )
 

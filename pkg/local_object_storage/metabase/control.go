@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	"github.com/epicchainlabs/neofs-node/pkg/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
 	"go.etcd.io/bbolt"
 	"go.uber.org/zap"
 )

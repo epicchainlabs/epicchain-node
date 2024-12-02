@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/internal/blobstortest"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/internal/blobstortest"
 )
 
 func TestGeneric(t *testing.T) {

@@ -3,7 +3,7 @@ package getsvc
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/client"
 	"go.uber.org/zap"
 )
 

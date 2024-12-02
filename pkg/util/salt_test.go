@@ -5,7 +5,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
 	"github.com/stretchr/testify/require"
 )
 

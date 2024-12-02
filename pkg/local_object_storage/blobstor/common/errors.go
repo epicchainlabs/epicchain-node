@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
 )
 
 // ErrReadOnly MUST be returned for modifying operations when the storage was opened

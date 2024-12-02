@@ -5,8 +5,8 @@ import (
 	"crypto/ecdsa"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/object"
-	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object"
+	putsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/put"
 )
 
 // Service implements Put operation of Object service v2.

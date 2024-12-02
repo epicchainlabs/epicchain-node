@@ -3,7 +3,7 @@ package fstree
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
 )
 
 // Open implements common.Storage.

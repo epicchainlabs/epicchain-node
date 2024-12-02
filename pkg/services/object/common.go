@@ -4,7 +4,7 @@ import (
 	"context"
 
 	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
 )
 
 // NodeState is storage node state processed by Object service.

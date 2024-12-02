@@ -18,7 +18,7 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/opcode"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 )
 
 var (

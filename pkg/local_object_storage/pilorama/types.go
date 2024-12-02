@@ -3,7 +3,7 @@ package pilorama
 import (
 	"math"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
 )
 
 // Timestamp is an alias for integer timestamp type.

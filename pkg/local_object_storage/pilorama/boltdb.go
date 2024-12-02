@@ -12,10 +12,10 @@ import (
 	"time"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/io"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	"github.com/epicchainlabs/neofs-node/pkg/util"
-	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
+	cidSDK "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 	"go.etcd.io/bbolt"
 )
 

@@ -20,7 +20,7 @@ assignees: ''
 <!-- Add any other context or screenshots about the feature request here. -->
 
 ## Don't forget to add labels!
-- component label (`neofs-adm`, `neofs-storage`, ...)
+- component label (`epicchain-adm`, `neofs-storage`, ...)
 - issue type (`enhancement`, `refactor`, ...)
 - `goodfirstissue`, `helpwanted` if needed
 - does this issue belong to an epic?

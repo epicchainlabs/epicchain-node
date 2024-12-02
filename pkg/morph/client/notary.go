@@ -25,7 +25,7 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/opcode"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/vmstate"
 	"github.com/epicchainlabs/epicchain-go/pkg/wallet"
-	"github.com/epicchainlabs/neofs-node/pkg/util/rand"
+	"github.com/epicchainlabs/epicchain-node/pkg/util/rand"
 	"go.uber.org/zap"
 )
 

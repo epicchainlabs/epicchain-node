@@ -21,7 +21,7 @@ This release adds compatibility with the Neo N3 Cockatrice hardfork, so
 while other changes are minor it's still an important update.
 
 ### Added
-- "storage list" command to neofs-lens (#2852)
+- "storage list" command to epicchain-lens (#2852)
 
 ### Fixed
 - GETRANGE request may fail in certain cases (#2849)
@@ -49,17 +49,17 @@ A set of fixes and small utility improvements. We're providing darwin and
 arm64 binaries for you as well now.
 
 ### Added
-- Container estimations inspector to neofs-adm (#2826)
-- Metabase object lister to neofs-lens (#2834)
-- Shard ID from metabase reader to neofs-lens (#2834)
-- `neofs-cli bearer print` command for reading binary bearer tokens (#2829)
+- Container estimations inspector to epicchain-adm (#2826)
+- Metabase object lister to epicchain-lens (#2834)
+- Shard ID from metabase reader to epicchain-lens (#2834)
+- `epicchain-cli bearer print` command for reading binary bearer tokens (#2829)
 - linux-arm64, darwin-amd64 and darwin-arm64 binaries, linux-arm64 Docker images (#2835)
 
 ### Fixed
 - Attribute ACL checks for the first split object (#2820)
 - Container size estimation contract writing (#2819)
-- Custom contract deployment with custom zone via neofs-adm (#2827)
-- Errors in neofs-adm morph dump-names output (#2831)
+- Custom contract deployment with custom zone via epicchain-adm (#2827)
+- Errors in epicchain-adm morph dump-names output (#2831)
 - GC stops if any non-critical "content" errors happen (#2823)
 - Endless GC cycle if an object is stored on an unexpected shard (#2821)
 - Storage node searches for objects even if local state prohibits operation (#1709)
@@ -77,14 +77,14 @@ support for new functionality as well as fix long-standing issues.
 - SN eACL processing of NULL and numeric operators (#2742)
 - CLI now allows to create and print eACL with numeric filters (#2742)
 - gRPC connection limits per endpoint (#1240)
-- `neofs-lens object link` command for the new link object inspection (#2799)
+- `epicchain-lens object link` command for the new link object inspection (#2799)
 - Storage nodes serve new `ObjectService.Replicate` RPC (#2674)
 
 ### Fixed
 - Access to `PUT` objects no longer grants `DELETE` rights (#2261)
 - Storage nodes no longer reject GET w/ TTL=1 requests to read complex objects (#2447)
 - Response exceeding the deadline for TLS errors (#2561)
-- `neofs-adm morph generate-storage-wallet` was not able to read `--initial-gas` flag (#2766)
+- `epicchain-adm morph generate-storage-wallet` was not able to read `--initial-gas` flag (#2766)
 - Inter-node connections closed on any status response (#2767)
 - Child objects were available for deletion despite any lock relations (#2093)
 
@@ -128,15 +128,15 @@ Remove `timers.emit` from any inner ring configuration.
 ## [0.40.1] - 2024-02-22
 
 ### Fixed
-- Inability to deploy contract with non-standard zone via neofs-adm (#2740)
+- Inability to deploy contract with non-standard zone via epicchain-adm (#2740)
 - Container session token's `wildcard` field support (#2741)
 
 ### Updating from v0.40.0
 We no longer provide .tag.gz binaries in releases, they always were just
 duplicates, but if you're using them in some scripts please update to fetch
 raw binaries. All binaries have OS in their names as well now, following
-regular naming used throughout NSPCC, so instead of neofs-cli-amd64 you get
-neofs-cli-linux-amd64 now.
+regular naming used throughout NSPCC, so instead of epicchain-cli-amd64 you get
+epicchain-cli-linux-amd64 now.
 
 CLI command `acl extended create` changed and extended input format for filters.
 For example, `attr>=100` or `attr=` are now processed differently. See `-h` for details.
@@ -144,7 +144,7 @@ For example, `attr>=100` or `attr=` are now processed differently. See `-h` for 
 ## [0.40.0] - 2024-02-09 - Maldo
 
 ### Added
-- `neofs-adm morph generate-storage-wallet` now supports more than one wallet generation per call (#2425)
+- `epicchain-adm morph generate-storage-wallet` now supports more than one wallet generation per call (#2425)
 - Missing containers cleanup (#1663)
 
 ### Fixed
@@ -166,13 +166,13 @@ For example, `attr>=100` or `attr=` are now processed differently. See `-h` for 
 - Storage node now consumes much less memory when slicing small data of a fixed size (#2719)
 
 ### Removed
-- Deprecated `neofs-adm [...] inspect` commands (#2603)
+- Deprecated `epicchain-adm [...] inspect` commands (#2603)
 
 ### Updated
 - `neo-go` to `v0.105.1` (#2725)
 
 ### Updating from v0.39.2
-`neofs-adm [...] inspect` commands were deleted, use `get` instead.
+`epicchain-adm [...] inspect` commands were deleted, use `get` instead.
 
 ## [0.39.2] - 2023-12-21
 
@@ -202,18 +202,18 @@ latest and greatest of NeoFS.
 ### Added
 - Policer's setting to the SN's application configuration (#2600)
 - Support of verified domains for the storage nodes (#2280)
-- `neofs-lens storage status` CLI command (#2550)
-- Human-readable output of objects' creation timestamp to `neofs-cli container list-objects` (#2653)
+- `epicchain-lens storage status` CLI command (#2550)
+- Human-readable output of objects' creation timestamp to `epicchain-cli container list-objects` (#2653)
 - Ability to preset P2PNotary and NeoFSAlphabet roles to validators at the FS chain's genesis (#2643)
 
 ### Fixed
-- `neofs-cli netmap netinfo` documentation (#2555)
+- `epicchain-cli netmap netinfo` documentation (#2555)
 - `GETRANGEHASH` to a node without an object produced `GETRANGE` or `GET` requests (#2541, #2598)
 - Iteration over locally collected container estimation values (#2597)
 - Synchronous objects `PUT` to the local storage (#2607)
 - `copies_number` field was not used in `PUT` request handling (#2607)
 - Neo-go notary deposit data workaround (#2429)
-- Error of missing network endpoint in `neofs-cli object` commands when it is set in the file config (#2608)
+- Error of missing network endpoint in `epicchain-cli object` commands when it is set in the file config (#2608)
 
 ### Changed
 - FSTree storage now uses more efficient and safe temporary files under Linux (#2566, #2624, #2633)
@@ -228,18 +228,18 @@ latest and greatest of NeoFS.
 - The priority of running control service is maximized (#2585)
 
 ### Removed
-- Deprecated `no-precheck` flag of `neofs-cli container set-eacl` (#2496)
+- Deprecated `no-precheck` flag of `epicchain-cli container set-eacl` (#2496)
 - Recently-handled objects Policer's cache (#2600)
 - Deprecated blobovnicza substorage (#2614)
-- Contract group wallet support from `neofs-adm` (#2619)
-- `neofs-cli util locode generate`and `neofs-cli util locode info` commands (#2610)
+- Contract group wallet support from `epicchain-adm` (#2619)
+- `epicchain-cli util locode generate`and `epicchain-cli util locode info` commands (#2610)
 - Locode DB configuration options (#2610)
 - `v` prefix in version (#2640)
 
 ### Updated
 - Update minimal supported Go version up to v1.19 (#2485)
 - Update `neo-go` to `v0.104.0` (#2221, #2309, #2596, #2626, #2639, #2659)
-- `neofs-lens` `inspect` object commands to `get` with `inspect` deprecation (#2548)
+- `epicchain-lens` `inspect` object commands to `get` with `inspect` deprecation (#2548)
 - Update `tzhash` to `v1.7.1`
 - `github.com/panjf2000/ants/v2` to `v2.8.2`
 - `github.com/epicchainlabs/neofs-contract` to `v0.18.0` (#2580)
@@ -255,7 +255,7 @@ Blobovniczas are gone from the node with this release, see 0.38.0 upgrade
 notes for migration instruction (the tool is still provided, but will be gone
 after a couple of minor releases).
 
-neofs-adm no longer creates a contract group wallet and no longer needs it
+epicchain-adm no longer creates a contract group wallet and no longer needs it
 for the operation which may affect deployment scripts.
 
 Pre-0.39.0 storage nodes may not be able to register on the network running
@@ -274,7 +274,7 @@ A tiny fix for peapod-enabled nodes.
 
 ### Fixed
 - Inability to start node with peapods configured (#2576)
-- `neofs-adm morph set-config` command error messages (#2556)
+- `epicchain-adm morph set-config` command error messages (#2556)
 
 ## [0.38.0] - 2023-09-13 - Gogado
 
@@ -298,21 +298,21 @@ simple Peapod.
 - New storage component for small objects named Peapod (#2453)
 - New `blobovnicza-to-peapod` tool providing blobovnicza-to-peapod data migration (#2453)
 - SN's version and capacity is announced via the attributes automatically but can be overwritten explicitly (#2455, #602)
-- `peapod` command for `neofs-lens` (#2507)
+- `peapod` command for `epicchain-lens` (#2507)
 - New CLI exit code for awaiting timeout (#2380)
 - New CLI exit code for already removed objects (#2376)
-- Validation of excessive positional arguments to `neofs-cli` commands (#1941)
+- Validation of excessive positional arguments to `epicchain-cli` commands (#1941)
 - `--lifetime` flag to `bearer create` and `object put` CLI commands  (#1574)
 - `--expired-at` flag to `session create` and `storagegroup put` CLI commands (#1574)
 - Sessions to RPC server running in IR's local consensus mode (#2532)
-- `neofs-cli object nodes` command to get SNs for an object (#2512)
+- `epicchain-cli object nodes` command to get SNs for an object (#2512)
 - Fetching container estimations via iterators to prevent NeoVM stack overflow (#2173)
-- `neofs-adm morph netmap-candidates` CLI command (#1889)
+- `epicchain-adm morph netmap-candidates` CLI command (#1889)
 - SN network validation (is available by its announced addresses) on bootstrap by the IR (#2475)
-- Display of container alias fee info in `neofs-cli netmap netinfo` (#2553)
-- `neofs-lens storage inspect` CLI command (#1336)
-- `neofs-lens` payload-only flag (#2543)
-- `neofs-lens meta put` CLI command (#1816)
+- Display of container alias fee info in `epicchain-cli netmap netinfo` (#2553)
+- `epicchain-lens storage inspect` CLI command (#1336)
+- `epicchain-lens` payload-only flag (#2543)
+- `epicchain-lens meta put` CLI command (#1816)
 - Sidechain auto-deployment to the Inner Ring app (#2195)
 
 ### Fixed
@@ -324,29 +324,29 @@ simple Peapod.
 - Missing connection retries on IR node startup when the first configured mainnet RPC node is not in sync (#2474)
 - Storage node no longer ignores unhealthy shards on startup (#2464)
 - Processing of status errors returned by API client from NeoFS SDK RC-9 (#2465)
-- `neofs-lens write-cache list` command duplication (#2505)
-- `neofs-adm` works with contract wallet in `init` and `update-contracts` commands only (#2134)
+- `epicchain-lens write-cache list` command duplication (#2505)
+- `epicchain-adm` works with contract wallet in `init` and `update-contracts` commands only (#2134)
 - Missing removed but locked objects in `SEARCH`'s results (#2526)
 - LOCK objects and regular objects expiration conflicts (#2392)
 - SN responds with a different node information compared to a bootstrapping contract call's argument (#2568)
-- `neofs-cli object put` command processes multiple `--attributes` flags (#2427)
+- `epicchain-cli object put` command processes multiple `--attributes` flags (#2427)
 
 ### Removed
 - Deprecated `morph.rpc_endpoint` SN and `morph.endpoint.client` IR config sections (#2400)
 - `neofs_node_object_epoch` metric for IR and SN (#2347)
 - Subnets support (#2411)
 - Logging utility completely replaced with `zap.Logger` (#696)
-- System eACL modification ability in the `neofs-cli` and `IR` (netmap candidate validation) (#2531)
+- System eACL modification ability in the `epicchain-cli` and `IR` (netmap candidate validation) (#2531)
 
 ### Changed
 - CLI `--timeout` flag configures whole execution timeout from now (#2124)
 - CLI default timeout for commands with `--await` flag increased to 1m (#2124)
 - BlobStor tries to store object in any sub-storage with free space (#2450)
 - SN does not store container estimations in-mem forever (#2472)
-- CLI `neofs-cli container set-eacl` checks container's ownership (#2436)
+- CLI `epicchain-cli container set-eacl` checks container's ownership (#2436)
 
 ### Updated
-- `neofs-sdk-go` to `v1.0.0-rc.11`
+- `epicchain-sdk-go` to `v1.0.0-rc.11`
 
 ### Updating from v0.37.0
 CLI command timeouts (flag `--timeout`) now limit the total command execution
@@ -369,17 +369,17 @@ have been removed. Use `morph.endpoints` for both instead.
 Deprecated `neofs_node_object_epoch` metric for IR and SN (the same for both)
 has been removed. Use `neofs_node_state_epoch` for SN and `neofs_ir_state_epoch`
 for IR instead.
-Deprecated `--no-precheck` flag in `neofs-cli container set-eacl` use `--force` flag instead for skipping validation checks.
+Deprecated `--no-precheck` flag in `epicchain-cli container set-eacl` use `--force` flag instead for skipping validation checks.
 
 Subnets support has been removed:
 - IR's `workers.subnet` and `contracts.subnet` configs are not used anymore.
 - SN's `node.subnet` config section is not used anymore.
 - `neoofs-amd morph` does not have `subnet` subcommand anymore.
-- `neofs-cli container create` does not have `--subnet` flag anymore.
+- `epicchain-cli container create` does not have `--subnet` flag anymore.
 
 Docker images now contain a single executable file and SSL certificates only.
 
-`neofs-cli control healthcheck` exit code is `0` only for "READY" state.
+`epicchain-cli control healthcheck` exit code is `0` only for "READY" state.
 
 To migrate data from Blobovnicza trees to Peapods:
 ```shell
@@ -426,7 +426,7 @@ described above.
 - Update minimal supported Go version up to v1.18 (#2340)
 - tzhash library to 1.7.0 (#2348)
 - `github.com/hashicorp/golang-lru` to `v2.0.2`
-- `neofs-sdk-go` to `v1.0.0-rc.8`
+- `epicchain-sdk-go` to `v1.0.0-rc.8`
 - BoltDB (`go.etcd.io/bbolt`) to 1.3.7
 
 ### Updating from v0.36.1
@@ -441,10 +441,10 @@ In the local consensus mode (IR) it is allowed to provide additional TLS setup a
 `morph.rpc_endpoint` SN config value and `morph.endpoint.client` IR config value has been deprecated and will be
 removed with the next minor release. Use `morph.endpoints` for both instead (NOTE: it does not have priorities now).
 
-If you're using binary keys with neofs-cli (`-w`), convert them to proper
+If you're using binary keys with epicchain-cli (`-w`), convert them to proper
   NEP-6 wallets like this:
     $ xxd -p < path_to_binary.wallet # outputs hex-encoded key
-    $ neofs-cli util keyer <hex_key> # outputs WIF
+    $ epicchain-cli util keyer <hex_key> # outputs WIF
     $ neo-go wallet import -w <wallet_file> --wif <wif_key>
   or just generate/use new keys.
 
@@ -472,7 +472,7 @@ data storage scheme is compatible with 0.35.0.
 - Doc for extended headers (#2128)
 - Separate batching for replicated operations over the same container in pilorama (#1621)
 - `object.delete.tombstone_lifetime` config parameter to set tombstone lifetime in the DELETE service (#2246)
-- neofs-adm morph dump-hashes command now also prints NNS domain expiration time (#2295)
+- epicchain-adm morph dump-hashes command now also prints NNS domain expiration time (#2295)
 - Launch mode of the Inner Ring with local consensus (#2194)
 
 ### Changed
@@ -481,8 +481,8 @@ data storage scheme is compatible with 0.35.0.
 - Full list of container is no longer cached (#2176)
 - Pilorama now can merge multiple batches into one (#2231)
 - Storage engine now can start even when some shard components are unavailable (#2238)
-- `neofs-cli` buffer for object put increased from 4 KiB to 3 MiB (#2243)
-- `neofs-adm` now reuses network's setting during contract update if they're not overriden by configuration (#2191)
+- `epicchain-cli` buffer for object put increased from 4 KiB to 3 MiB (#2243)
+- `epicchain-adm` now reuses network's setting during contract update if they're not overriden by configuration (#2191)
 
 ### Fixed
 - Pretty printer of basic ACL in the NeoFS CLI (#2259)
@@ -498,13 +498,13 @@ data storage scheme is compatible with 0.35.0.
 - Correct status error for expired session token (#2207)
 - Restore subscriptions correctly on morph client switch (#2212)
 - Expired objects could be returned if not marked with GC yet (#2213)
-- `neofs-adm morph dump-hashes` now properly iterates over custom domain (#2224)
+- `epicchain-adm morph dump-hashes` now properly iterates over custom domain (#2224)
 - Possible deadlock in write-cache (#2239)
 - Fix `*_req_count` and `*_req_count_success` metric values (#2241)
 - Storage ID update by write-cache (#2244)
 - `neo-go` client deadlock on subscription (#2244, #2272)
 - Possible panic during write-cache initialization (#2234)
-- incorrect NNS resolve handling in neofs-adm (#2296)
+- incorrect NNS resolve handling in epicchain-adm (#2296)
 - Failed TestNet replication (#2288)
 
 ### Updated
@@ -522,14 +522,14 @@ tombstone lifetime more appropriate for a specific deployment.
 ## [0.35.0] - 2022-12-28 - Sindo (신도, 信島)
 
 ### Added
-- `morph list-containers` in `neofs-adm` (#1689)
-- `--binary` flag in `neofs-cli object put/get/delete` commands (#1338)
-- `session` flag support to `neofs-cli object hash` (#2029)
+- `morph list-containers` in `epicchain-adm` (#1689)
+- `--binary` flag in `epicchain-cli object put/get/delete` commands (#1338)
+- `session` flag support to `epicchain-cli object hash` (#2029)
 - Shard can now change mode when encountering background disk errors (#2035)
 - Background workers and object service now use separate client caches (#2048)
 - `replicator.pool_size` config field to tune replicator pool size (#2049)
 - Fix NNS hash parsing in morph client (#2063)
-- `neofs-cli neofs-cli acl basic/extended print` commands (#2012)
+- `epicchain-cli epicchain-cli acl basic/extended print` commands (#2012)
 - `neofs_node_object_*_req_count_success` prometheus metrics for tracking successfully executed requests (#1984)
 - Metric 'readonly' to get shards mode (#2022)
 - Tree service replication timeout (#2159)
@@ -538,10 +538,10 @@ tombstone lifetime more appropriate for a specific deployment.
 ### Changed
 - `object lock` command reads CID and OID the same way other commands do (#1971)
 - `LOCK` object are stored on every container node (#1502)
-- `neofs-cli container get-eacl` print ACL table in json format only with arg `--json' (#2012)
+- `epicchain-cli container get-eacl` print ACL table in json format only with arg `--json' (#2012)
 - Side chain notary deposits use max uint32 as till parameter (#1486)
 - Allow object removal without linking object (#2100)
-- `neofs-cli container delete` command pre-checks container ownership (#2106)
+- `epicchain-cli container delete` command pre-checks container ownership (#2106)
 - Policer cache size is now 1024 (#2158)
 - Tree service now synchronizes with container nodes in a random order (#2127)
 - Pilorama no longer tries to apply already applied operations (#2161)
@@ -552,13 +552,13 @@ tombstone lifetime more appropriate for a specific deployment.
 
 ### Fixed
 - Open FSTree in sync mode by default (#1992)
-- `neofs-cli container nodes`'s output (#1991)
+- `epicchain-cli container nodes`'s output (#1991)
 - Increase error counter for write-cache flush errors (#1818)
 - Correctly select the shard for applying tree service operations (#1996)
 - Do not panic and return correct errors for bad inputs in `GET_RANGE` (#2007, #2024)
 - Physical child object removal by GC (#1699)
 - Broadcasting helper objects (#1972)
-- `neofs-cli lock object`'s `lifetime` flag handling (#1972)
+- `epicchain-cli lock object`'s `lifetime` flag handling (#1972)
 - Do not move write-cache in read-only mode for flushing (#1906)
 - Child object collection on CLI side with a bearer token (#2000)
 - Fix concurrent map writes in `Object.Put` service (#2037)
@@ -574,11 +574,11 @@ tombstone lifetime more appropriate for a specific deployment.
 - Ignore error if a transaction already exists in a morph client (#2075)
 - ObjectID signature output in the CLI (#2104)
 - Pack arguments of `setPrice` invocation during contract update (#2078)
-- `neofs-cli object hash` panic (#2079)
+- `epicchain-cli object hash` panic (#2079)
 - Closing `neo-go` WS clients on shutdown and switch processes (#2080)
 - Making notary deposits with a zero GAS balance (#2080)
 - Notary requests on shutdown (#2075)
-- `neofs-cli container create ` check the sufficiency of the number of nodes in the selector for replicas (#2038)
+- `epicchain-cli container create ` check the sufficiency of the number of nodes in the selector for replicas (#2038)
 - Data duplication during request forwarding (#2047)
 - Tree service panic on `TreeMove` operation (#2140)
 - Panic in `GETRANGE` with zero length (#2095)
@@ -593,8 +593,8 @@ tombstone lifetime more appropriate for a specific deployment.
 - Returning expired/removed objects from write-cache (#2016)
 
 ### Removed
-- `-g` option from `neofs-cli control ...` and `neofs-cli container create` commands (#2089)
-- `--header` from `neofs-cli object get` (#2090)
+- `-g` option from `epicchain-cli control ...` and `epicchain-cli container create` commands (#2089)
+- `--header` from `epicchain-cli object get` (#2090)
 
 ### Updated
 - `neo-go` to `v0.100.0`
@@ -610,7 +610,7 @@ The default value is taken from `object.put.pool_size_remote` as in earlier vers
 
 Added `neofs_node_object_*_req_count_success` metrics for tracking successfully executed requests.
 
-`neofs-cli container delete` command now requires given account or session issuer
+`epicchain-cli container delete` command now requires given account or session issuer
 to match the container owner. Use `--force` (`-f`) flag to bypass this requirement.
 
 Tree service network replication can now be fine-tuned with `tree.replication_timeout` config field.
@@ -618,12 +618,12 @@ Tree service network replication can now be fine-tuned with `tree.replication_ti
 ## [0.34.0] - 2022-10-31 - Marado (마라도, 馬羅島)
 
 ### Added
-- `--timeout` flag in `neofs-cli control` commands (#1917)
+- `--timeout` flag in `epicchain-cli control` commands (#1917)
 - Document shard modes of operation (#1909)
 - `tree list` CLI command (#1332)
 - `TreeService.GetTrees` RPC (#1902)
 - All trees synchronization on bootstrap (#1902)
-- `--force` flag to `neofs-cli control set-status` command (#1916)
+- `--force` flag to `epicchain-cli control set-status` command (#1916)
 - Logging `SessionService.Create` RPC on the server for debug (#1930)
 - Debian packages can now be built with `make debpackage` (#409)
 
@@ -636,9 +636,9 @@ Tree service network replication can now be fine-tuned with `tree.replication_ti
 - Correctly reset shard errors in `ControlService.SetShardMode` RPC (#1931)
 - Setting node's network state to `MAINTENANCE` while network settings forbid it (#1916)
 - Do not panic during API client creation (#1936)
-- Correctly sign new epoch transaction in neofs-adm for a committee of more than 4 nodes (#1949)
+- Correctly sign new epoch transaction in epicchain-adm for a committee of more than 4 nodes (#1949)
 - Inability to provide session to NeoFS CLI in a NeoFS-binary format (#1933)
-- `neofs-adm` now works correctly with a committee of more than 4 nodes (#1949, #1959)
+- `epicchain-adm` now works correctly with a committee of more than 4 nodes (#1949, #1959)
 - Closing a shard now waits until GC background workers stop (#1964)
 - Make it possible to use `shard.ContainerSize` in read-only mode (#1975)
 - Storage node now starts if at least one gRPC endpoint is available (#1893)
@@ -655,7 +655,7 @@ Tree service network replication can now be fine-tuned with `tree.replication_ti
 ### Updating from v0.33.0
 Now storage node serves Control API `SetNemapStatus` request with `MAINTENANCE`
 status only if the mode is allowed in the network settings. To force starting the local
-maintenance on the node, provide `--force` flag to the `neofs-cli control set-status`
+maintenance on the node, provide `--force` flag to the `epicchain-cli control set-status`
 command.
 
 ## [0.33.0] - 2022-10-17 - Anmado (안마도, 鞍馬島)
@@ -667,17 +667,17 @@ command.
 - Support `MAINTENANCE` state of the storage nodes (#1680, #1681)
 - Changelog updates CI step (#1808)
 - Validate storage node configuration before node startup (#1805)
-- `neofs-node -check` command to check the configuration file (#1805)
+- `epicchain-node -check` command to check the configuration file (#1805)
 - `flush-cache` control service command to flush write-cache (#1806)
-- `wallet-address` flag in `neofs-adm morph refill-gas` command (#1820)
+- `wallet-address` flag in `epicchain-adm morph refill-gas` command (#1820)
 - Validate policy before container creation (#1704)
-- `--timeout` flag in `neofs-cli` subcommands (#1837)
+- `--timeout` flag in `epicchain-cli` subcommands (#1837)
 - `container nodes` command to output list of nodes for container, grouped by replica (#1704)
-- Configuration flag to ignore shard in `neofs-node` (#1840)
+- Configuration flag to ignore shard in `epicchain-node` (#1840)
 - Add new RPC `TreeService.Healthcheck`
 - Fallback to `GET` if `GET_RANGE` from one storage nodes to another is denied by basic ACL (#1884)
 - List of shards and logger level runtime reconfiguration (#1770)
-- `neofs-adm morph set-config` now supports well-known `MaintenanceModeAllowed` key (#1892)
+- `epicchain-adm morph set-config` now supports well-known `MaintenanceModeAllowed` key (#1892)
 - `add`, `get-by-path` and `add-by-path` tree service CLI commands (#1332)
 - Tree synchronisation on startup (#1329)
 - Morph client returns to the highest priority endpoint after the switch (#1615)
@@ -701,14 +701,14 @@ command.
 - Correlation of object session to request (#1420)
 - Do not increase error counter in `engine.Inhume` if shard is read-only (#1839)
 - `control drop-objects` can remove split objects (#1830)
-- Node's status in `neofs-cli netmap nodeinfo` command (#1833)
+- Node's status in `epicchain-cli netmap nodeinfo` command (#1833)
 - Child check in object assembly process of `ObjectService.Get` handler (#1878)
 - Shard ID in the object counter metrics (#1863)
 - Metabase migration from the first version (#1860)
 
 ### Removed
-- Remove WIF and NEP2 support in `neofs-cli`'s --wallet flag (#1128)
-- Remove --generate-key option in `neofs-cli container delete` (#1692)
+- Remove WIF and NEP2 support in `epicchain-cli`'s --wallet flag (#1128)
+- Remove --generate-key option in `epicchain-cli container delete` (#1692)
 - Serving `ControlService.NetmapSnapshot` RPC (#1793)
 - `control netmap-snapshot` command of NeoFS CLI (#1793)
 
@@ -723,20 +723,20 @@ Node can now specify additional addresses in `ExternalAddr` attribute. To allow 
 other nodes external address, use `apiclient.allow_external` config setting.
 Add `--force` option to skip placement validity check for container creation.
 
-Pass `maintenance` state to `neofs-cli control set-status` to enter maintenance mode.
+Pass `maintenance` state to `epicchain-cli control set-status` to enter maintenance mode.
 If network allows maintenance state (*), it will be reflected in the network map.
 Storage nodes under maintenance are not excluded from the network map, but don't
 serve object operations. (*) can be fetched from network configuration via
-`neofs-cli netmap netinfo` command.
+`epicchain-cli netmap netinfo` command.
 
-To allow maintenance mode during neofs-adm deployments, set
+To allow maintenance mode during epicchain-adm deployments, set
 `network.maintenance_mode_allowed` parameter in config.
 
 When issuing an object session token for root (virtual, "big") objects,
 additionally include all members of the split-chain. If session context
 includes root object only, it is not spread to physical ("small") objects.
 
-`neofs-node` configuration now supports `mode: disabled` flag for a shard.
+`epicchain-node` configuration now supports `mode: disabled` flag for a shard.
 This can be used to temporarily ignore shards without completely removing them
 from the config file.
 
@@ -745,29 +745,29 @@ from the config file.
 ### Added
 
 - Objects counter metric (#1712)
-- `meta` subcommand to `neofs-lens` (#1714)
+- `meta` subcommand to `epicchain-lens` (#1714)
 - Storage node metrics with global and per-shard object counters (#1658)
 - Removal of trees on container removal (#1630)
 - Logging new epoch events on storage node (#1763)
 - Timeout for streaming RPC (#1746)
-- `neofs-adm` is now able to dump hashes from a custom zone (#1748)
+- `epicchain-adm` is now able to dump hashes from a custom zone (#1748)
 - Empty filename support in the Tree Service (#1698)
-- Flag to `neofs-cli container list-objects` command for attribute printing (#1649)
+- Flag to `epicchain-cli container list-objects` command for attribute printing (#1649)
 
 ### Changed
 
-- `neofs-cli object put`'s object ID output has changed from "ID" to "OID" (#1296)
-- `neofs-cli container set-eacl` command now pre-checks container ACL's extensibility (#1652)
+- `epicchain-cli object put`'s object ID output has changed from "ID" to "OID" (#1296)
+- `epicchain-cli container set-eacl` command now pre-checks container ACL's extensibility (#1652)
 - Access control in Tree service (#1628)
 - Tree service doesn't restrict depth in `rpc GetSubTree` (#1753)
-- `neofs-adm` registers contract hashes in both hex and string address formats (#1749)
+- `epicchain-adm` registers contract hashes in both hex and string address formats (#1749)
 - Container list cache synchronization with the Sidechain (#1632)
 - Blobstor components are unified (#1584, #1686, #1523)
 
 ### Fixed
 
 - Panic on write-cache's `Delete` operation (#1664)
-- Payload duplication in `neofs-cli storagegroup put` (#1706)
+- Payload duplication in `epicchain-cli storagegroup put` (#1706)
 - Contract calls in notary disabled environments (#1743)
 - `Blobovnicza.Get` op now iterates over all size buckets (#1707)
 - Object expiration time (#1670)
@@ -775,10 +775,10 @@ from the config file.
 - Tree service timeout logs (#1759)
 - Object flushing on writecache side (#1745)
 - Active blobovniczas caching (#1691)
-- `neofs-adm` TX waiting (#1738)
-- `neofs-adm` registers contracts with a minimal GAS payment (#1683)
-- Permissions of the file created by `neofs-cli` (#1719)
-- `neofs-adm` creates TX with a high priority attribute (#1702)
+- `epicchain-adm` TX waiting (#1738)
+- `epicchain-adm` registers contracts with a minimal GAS payment (#1683)
+- Permissions of the file created by `epicchain-cli` (#1719)
+- `epicchain-adm` creates TX with a high priority attribute (#1702)
 - Storage node's restart after a hard reboot (#1647)
 
 ### Updated
@@ -792,14 +792,14 @@ from the config file.
 
 Storage Node now collects object count prometheus metrics: `neofs_node_object_counter`.
 
-Provide `--no-precheck` flag to `neofs-cli container set-eacl` for unconditional sending of a request
+Provide `--no-precheck` flag to `epicchain-cli container set-eacl` for unconditional sending of a request
 (previous default behavior).
 
 ## [0.31.0] - 2022-08-04 - Baengnyeongdo (백령도, 白翎島)
 
 ### Added
 
-- `neofs-adm` allows deploying arbitrary contracts (#1629)
+- `epicchain-adm` allows deploying arbitrary contracts (#1629)
 
 ### Changed
 
@@ -809,8 +809,8 @@ Provide `--no-precheck` flag to `neofs-cli container set-eacl` for unconditional
 
 - Losing request context in eACL response checks (#1595)
 - Do not return expired objects that have not been handled by the GC yet (#1634)
-- Setting CID field in `neofs-cli acl extended create` (#1650)
-- `neofs-ir` no longer hangs if it cannot bind to the control endpoint (#1643)
+- Setting CID field in `epicchain-cli acl extended create` (#1650)
+- `epicchain-ir` no longer hangs if it cannot bind to the control endpoint (#1643)
 - Do not require `lifetime` flag in `session create` CLI command (#1655)
 - Using deprecated gRPC options (#1644)
 - Increasing metabase error counter on disabled pilorama (#1642)
@@ -852,12 +852,12 @@ use `pprof` and `prometheus` instead.
 - `GetRange` operation now works correctly with objects stored in write-cache (#1638)
 - Losing request context in eACL response checks (#1595)
 - Wrong balance contract in innerring processor (#1636)
-- `neofs-adm` now sets groups in manifest for all contracts properly (#1631)
+- `epicchain-adm` now sets groups in manifest for all contracts properly (#1631)
 
 ### Updated
 
 - `neo-go` to `v0.99.1`
-- `neofs-sdk-go` to `v1.0.0-rc.6`
+- `epicchain-sdk-go` to `v1.0.0-rc.6`
 
 ## [0.30.0] - 2022-07-22 - Saengildo (생일도, 生日島)
 
@@ -866,17 +866,17 @@ use `pprof` and `prometheus` instead.
 - Profiler and metrics services now should be enabled with a separate flag
 - Experimental support for the tree-service, disabled by default (#1607)
 - Homomorphic hashes calculation can be disabled across the whole network (#1365)
-- Improve `neofs-adm` auto-completion (#1594)
+- Improve `epicchain-adm` auto-completion (#1594)
 
 ### Changed
 
 - Require SG members to be unique (#1490)
-- `neofs-cli` now doesn't remove container with LOCK objects without `--force` flag (#1500)
+- `epicchain-cli` now doesn't remove container with LOCK objects without `--force` flag (#1500)
 - LOCK objects are now required to have an expiration epoch (#1461)
 - `morph` sections in IR and storage node configuration now accept an address and a priority of an endpoint (#1609)
 - Morph client now retries connecting to the failed endpoint too (#1609)
 - Redirecting `GET` and `GETRANGE` requests now does not store full object copy in memory (#1605)
-- `neofs-adm` now registers candidates during initialization in a single transaction (#1608)
+- `epicchain-adm` now registers candidates during initialization in a single transaction (#1608)
 
 ### Fixed
 - Invalid smart contract address in balance contract listener (#1636)
@@ -906,9 +906,9 @@ In addition, these sections must now be explicitly enabled with `enabled: true` 
 Support WalletConnect signature scheme.
 
 ### Added
-- Retrieve passwords for storage wallets from the configuration in neofs-adm (#1539)
+- Retrieve passwords for storage wallets from the configuration in epicchain-adm (#1539)
 - Metabase format versioning (#1483)
-- `neofs-adm` generates wallets in a pretty JSON format
+- `epicchain-adm` generates wallets in a pretty JSON format
 - `Makefile` supports building from sources without a git repo
 
 ### Fixed
@@ -918,7 +918,7 @@ Support WalletConnect signature scheme.
 - Node OOM panics on `GetRange` request with extremely huge range length (#1590)
 
 ### Updated
-- `neofs-sdk-go` to latest pre-release version
+- `epicchain-sdk-go` to latest pre-release version
 - `tzhash` to `v1.6.1`
 
 ## [0.28.3] - 2022-06-08
@@ -932,10 +932,10 @@ Support WalletConnect signature scheme.
 
 ### Fixed
 - Confirmation of eACL tables by alphabet nodes when ACL extensibility is disabled (#1485)
-- Do not use WS neo-go client in `neofs-adm` (#1378)
+- Do not use WS neo-go client in `epicchain-adm` (#1378)
 - Log more detailed network errors by the Alphabet (#1487)
 - Fix container verification by the Alphabet (#1464)
-- Include alphabet contracts to the base group in `neofs-adm` (#1489)
+- Include alphabet contracts to the base group in `epicchain-adm` (#1489)
 
 ## [0.28.2] - 2022-06-03
 
@@ -947,7 +947,7 @@ Support WalletConnect signature scheme.
 
 ### Added
 - Config examples for Inner ring application (#1358)
-- Command for documentation generation for `neofs-cli`, `neofs-adm` and `neofs-lens` (#1396)
+- Command for documentation generation for `epicchain-cli`, `epicchain-adm` and `epicchain-lens` (#1396)
 
 ### Fixed
 - Do not ask for contract wallet password twice (#1346)
@@ -1001,7 +1001,7 @@ Clean up all metabases and re-sync them using `resync_metabase` config flag.
 - Check expiration epoch of provided session token (#1168)
 - Prevent corruption in `writecache.Head` (#1149)
 - Use separate caches in N3 RPC multi client (#1213)
-- `neofs-adm` fixes (#1288, #1294, #1295)
+- `epicchain-adm` fixes (#1288, #1294, #1295)
 - Don't stop notification listener twice (#1291)
 - Metabase panic (#1293)
 - Disallow to tick block timer twice on the same height (#1208)
@@ -1010,7 +1010,7 @@ Clean up all metabases and re-sync them using `resync_metabase` config flag.
 - Persistent storage for session tokens (#1189)
 - Cache for Inner Ring list fetcher (#1278)
 - Degraded mode of storage engine (#1143)
-- Command to change native Policy contract in `neofs-adm` (#1289)
+- Command to change native Policy contract in `epicchain-adm` (#1289)
 - Single websocket endpoint pool for RPC and notifications (#1053)
 
 ### Changed
@@ -1039,10 +1039,10 @@ Specify path to persistent session token db in Storage configuration with
 
 ### Fixed
 - Respect format flags for `SplitInfo` output (#1233)
-- Output errors in neofs-cli to stderr where possible (#1259)
+- Output errors in epicchain-cli to stderr where possible (#1259)
 
 ### Added
-- Print details for AccessDenied errors in neofs-cli (#1252)
+- Print details for AccessDenied errors in epicchain-cli (#1252)
 - Split client creation into 2 stages (#1244)
 - Update morph client to work with v0.15.0 (#1253)
 
@@ -1063,19 +1063,19 @@ experimental notifications over NATS with NeoFS API v2.12 support
 - Cache of notary transaction heights (#1151)
 - NATS notifications (#1183)
 - LOCK object type (#1175, #1176, #1181)
-- Progress bar for object upload/download in neofs-cli (#1185)
+- Progress bar for object upload/download in epicchain-cli (#1185)
 - Support of new status codes (#1247)
 
 ### Changed
-- Update neofs-api-go and neofs-sdk-go (#1101, #1131, #1195, #1209, #1231)
+- Update neofs-api-go and epicchain-sdk-go (#1101, #1131, #1195, #1209, #1231)
 - Use `path/filepath` package for OS path management (#1132)
 - Shard sets mode to `read-only` if it hits threshold limit (#1118)
-- Use request timeout in chain client of neofs-adm (#1115)
-- Generate wallets with 0644 permissions in neofs-adm (#1115)
+- Use request timeout in chain client of epicchain-adm (#1115)
+- Generate wallets with 0644 permissions in epicchain-adm (#1115)
 - Use cache of parsed addresses in GC (#1115)
-- Determine config type based on file extension in neofs-ir (#1115)
+- Determine config type based on file extension in epicchain-ir (#1115)
 - Reuse some error defined in contracts (#1115)
-- Improved neofs-cli usability (#1103)
+- Improved epicchain-cli usability (#1103)
 - Refactor v2 / SDK packages in eACL (#596)
 
 ### Removed
@@ -1083,7 +1083,7 @@ experimental notifications over NATS with NeoFS API v2.12 support
 - `GetRange` method in blobovnicza (#1115)
 - Deprecated structures from SDK v1.0.0 rc (#1181)
 
-### Updating from neofs-node v0.27.5
+### Updating from epicchain-node v0.27.5
 Set shard error threshold for read-only mode switch with
 `NEOFS_STORAGE_SHARD_RO_ERROR_THRESHOLD` (default: 0, deactivated).
 
@@ -1101,17 +1101,17 @@ See example config for more details.
 ## [0.27.6] - 2022-03-28
 
 ### Fixed
-- Allow empty passwords in neofs-cli config (#1136)
-- Set correct audit range hash type in neofs-ir (#1180)
+- Allow empty passwords in epicchain-cli config (#1136)
+- Set correct audit range hash type in epicchain-ir (#1180)
 - Read objects directly from blobstor in case of shard inconsistency (#1186)
-- Fix `-w` flag in subnet commands of neofs-adm (#1223)
+- Fix `-w` flag in subnet commands of epicchain-adm (#1223)
 - Do not use explicit mutex lock in chain caches (#1236)
 - Force gRPC server stop if it can't shut down gracefully in storage node (#1270)
 - Return non-zero exit code in `acl extended create` command failures and fix
   help message (#1259)
 
 ### Added
-- Interactive storage node configurator in neofs-adm (#1090)
+- Interactive storage node configurator in epicchain-adm (#1090)
 - Logs in metabase operations (#1188)
 
 ## [0.27.5] - 2022-01-31
@@ -1186,14 +1186,14 @@ asterisk as wildcard, e.g. `video/*`.
 - Support of basic ACL constants without final flag in CLI (#1066)
 
 ### Changed
-- `neofs-adm` updates contracts in single tx (#1035)
-- Proxy contract arguments for deployment in `neofs-adm` (#1056)
+- `epicchain-adm` updates contracts in single tx (#1035)
+- Proxy contract arguments for deployment in `epicchain-adm` (#1056)
 
 ## [0.27.2] - 2021-12-28
 
 ### Fixed
 - Goroutine leak due to infinite response message await ([neofs-api-go#366](https://github.com/epicchainlabs/neofs-api-go/pull/366))
-- Inconsistency in placement function ([neofs-sdk-go#108](https://github.com/epicchainlabs/neofs-sdk-go/pull/108))
+- Inconsistency in placement function ([epicchain-sdk-go#108](https://github.com/epicchainlabs/epicchain-sdk-go/pull/108))
 
 ### Added
 - `ListShards` RPC in control API, available in CLI (#1043)
@@ -1212,13 +1212,13 @@ asterisk as wildcard, e.g. `video/*`.
 
 ### Added
 - Shorthand `-g` for `--generate-key` in NeoFS CLI (#1034)
-- Autocomplete generator command for neofs-adm (#1013)
+- Autocomplete generator command for epicchain-adm (#1013)
 - Max connection per host config value for neo-go client (#780)
 - Sanity check of session token context in container service (#1045)
 
 ### Changed
 - CLI now checks NeoFS status code for exit code (#1039)
-- New `Update` method signature for NNS contract in neofs-adm (#1038)
+- New `Update` method signature for NNS contract in epicchain-adm (#1038)
 
 ## [0.27.0] - 2021-12-09 - Sinjido (신지도, 薪智島)
 
@@ -1229,7 +1229,7 @@ NeoFS API v2.11.0 support with response status codes and storage subnetworks.
 - Tombstone owner now is always set (#842)
 - Node in relay mode does not require shard config anymore (#969)
 - Alphabet nodes now ignore notary notifications with non-HALT main tx (#976)
-- neofs-adm now prints version of NNS contract (#1014)
+- epicchain-adm now prints version of NNS contract (#1014)
 - Possible NPE in blobovnicza (#1007)
 - More precise calculation of blobovnicza size (#915)
 
@@ -1243,7 +1243,7 @@ NeoFS API v2.11.0 support with response status codes and storage subnetworks.
 ### Changed
 - Alphabet contract number is not mandatory (#880)
 - Alphabet nodes resign `AddPeer` request if it updates Storage node info (#938)
-- All applications now use client from neofs-sdk-go library (#966)
+- All applications now use client from epicchain-sdk-go library (#966)
 - Some shard configuration records were renamed, see upgrading section (#859)
 - `Nonce` and `VUB` values of notary transactions generated from notification
   hash (#844)
@@ -1289,9 +1289,9 @@ with `NEOFS_IR_FEE_NAMED_CONTAINER_REGISTER`.
 ### Added
 - Quote symbol support in `.env` example tests (#935)
 - FSTree object counter (#821)
-- neofs-adm prints contract version in `dump-hashes` command (#940)
+- epicchain-adm prints contract version in `dump-hashes` command (#940)
 - Default values section in shard configuration (#877)
-- neofs-adm downloads contracts directly from GitHub (#733)
+- epicchain-adm downloads contracts directly from GitHub (#733)
 
 ### Changed
 - Use FSTree counter in write cache (#821)
@@ -1317,7 +1317,7 @@ NeoFS API v2.10 support
 - Compressed and uncompressed objects are always available for reading
   regardless of compression configuration (#868)
 - Use request session token in ACL check of object.Put (#881)
-- Parse URI in neofs-cli properly (#883)
+- Parse URI in epicchain-cli properly (#883)
 - Parse minutes in LOCODE DB properly (#902)
 - Remove expired tombstones (#884)
 - Close all opened blobovniczas properly (#896)
@@ -1327,10 +1327,10 @@ NeoFS API v2.10 support
 - More logs in governance and policer components (#867, #882)
 - Contract address getter in static blockchain clients (#627)
 - Alphabet configuration option to disable governance sync (#869)
-- neofs-lens app implementation (#791)
-- Detailed comments in neofs-node config example (#858)
-- Size suffixes support in neofs-node config (#857)
-- Docs for neofs-adm (#906)
+- epicchain-lens app implementation (#791)
+- Detailed comments in epicchain-node config example (#858)
+- Size suffixes support in epicchain-node config (#857)
+- Docs for epicchain-adm (#906)
 - Side chain block size duration and global NeoFS configuration in
   NetworkConfig response (#833)
 - Support native container names (#889)
@@ -1339,8 +1339,8 @@ NeoFS API v2.10 support
 - Updated grpc to v1.41.0 (#860)
 - Updated neo-go to v0.97.3 (#833)
 - Updated neofs-api-go to v1.30.0
-- Adopt neofs-adm for new contracts release (#835, #888)
-- Adopt neofs-node for new contracts release (#905)
+- Adopt epicchain-adm for new contracts release (#835, #888)
+- Adopt epicchain-node for new contracts release (#905)
 - SN and IR notary deposits are made dynamically depending on the Notary and
   GAS balances (#771)
 - VMagent port in testnet config is now 443 (#908)
@@ -1383,7 +1383,7 @@ instead.
   checks (#645)
 - Extended ACL `Target` check of role and public keys is mutual exclusive now
   (#816)
-- neofs-adm supports update and deploy of neofs-contract v0.11.0 (#834, #836)
+- epicchain-adm supports update and deploy of neofs-contract v0.11.0 (#834, #836)
 - Possible NPE in public key conversion (#848)
 - Object assembly routine do not forward existing request instead of creating
   new one (#839)
@@ -1454,15 +1454,15 @@ Storage node config with `NEOFS_NODE_PERSISTENT_STATE_PATH`.
 - Storage Node does not register itself in network in relay mode now (#761)
 
 ### Changed
-- `neofs-adm` fails when is called in a notary-disabled environment (#757)
-- `neofs-adm` uses `neo-go` client's native NNS resolving method instead of the custom one (#756)
+- `epicchain-adm` fails when is called in a notary-disabled environment (#757)
+- `epicchain-adm` uses `neo-go` client's native NNS resolving method instead of the custom one (#756)
 - Node selects pseudo-random list of objects from metabase for replication (#715)
 
 ### Added
-- Contract update support in `neofs-adm` utility (#748)
-- Container transferring support in `neofs-adm` utility (#755)
-- Storage Node's balance refilling support in `neofs-adm` utility (#758)
-- Support `COMMON_PREFIX` filter for object attributes in storage engine and `neofs-cli` (#760)
+- Contract update support in `epicchain-adm` utility (#748)
+- Container transferring support in `epicchain-adm` utility (#755)
+- Storage Node's balance refilling support in `epicchain-adm` utility (#758)
+- Support `COMMON_PREFIX` filter for object attributes in storage engine and `epicchain-cli` (#760)
 - Node's and IR's notary status debug message on startup (#758)
 - Go `1.17` unit tests in CI (#766)
 - Supporting all eACL filter fields from the specification (#768)
@@ -1483,7 +1483,7 @@ config parameter anymore.
 N3 Mainnet launch release with minor fixes.
 
 ### Added
-- Initial version of `neofs-adm` tool for fast side chain deployment and
+- Initial version of `epicchain-adm` tool for fast side chain deployment and
   management in private installations
 - Notary support auto negotiation (#709)
 - Option to disable side chain cache in Storage node (#704)
@@ -1514,7 +1514,7 @@ config. Notary support is now auto negotiated.
 Improved stability for notary disabled environment.
 
 ### Added
-- Alphabet wallets generation command in neofs-adm (#684)
+- Alphabet wallets generation command in epicchain-adm (#684)
 - Initial epoch timer tick synchronization at Inner Ring node startup (#679)
 
 ### Changed
@@ -1538,21 +1538,21 @@ are connected to N3 RC4 (Testnet) network.
 ## [0.22.3] - 2021-07-13
 
 ### Added
-- Support binary eACL format in container CLI command ([#650](https://github.com/epicchainlabs/neofs-node/issues/650)).
-- Dockerfile for neofs-adm utility ([#680](https://github.com/epicchainlabs/neofs-node/pull/680)).
+- Support binary eACL format in container CLI command ([#650](https://github.com/epicchainlabs/epicchain-node/issues/650)).
+- Dockerfile for epicchain-adm utility ([#680](https://github.com/epicchainlabs/epicchain-node/pull/680)).
 
 ### Changed
-- All docker files moved to `.docker` dir ([#682](https://github.com/epicchainlabs/neofs-node/pull/682)).
+- All docker files moved to `.docker` dir ([#682](https://github.com/epicchainlabs/epicchain-node/pull/682)).
 
 ### Fixed
-- Do not require MainNet attributes in "Without MainNet" mode ([#663](https://github.com/epicchainlabs/neofs-node/issues/663)).
-- Stable alphabet list merge in Inner Ring governance ([#670](https://github.com/epicchainlabs/neofs-node/issues/670)).
-- User can specify only wallet section without node key ([#690](https://github.com/epicchainlabs/neofs-node/pull/690)).
-- Log keys in hex format in reputation errors ([#693](https://github.com/epicchainlabs/neofs-node/pull/693)).
-- Connections leak and reduced amount of connection overall ([#692](https://github.com/epicchainlabs/neofs-node/issues/692)).
+- Do not require MainNet attributes in "Without MainNet" mode ([#663](https://github.com/epicchainlabs/epicchain-node/issues/663)).
+- Stable alphabet list merge in Inner Ring governance ([#670](https://github.com/epicchainlabs/epicchain-node/issues/670)).
+- User can specify only wallet section without node key ([#690](https://github.com/epicchainlabs/epicchain-node/pull/690)).
+- Log keys in hex format in reputation errors ([#693](https://github.com/epicchainlabs/epicchain-node/pull/693)).
+- Connections leak and reduced amount of connection overall ([#692](https://github.com/epicchainlabs/epicchain-node/issues/692)).
 
 ### Removed
-- Debug output of public key in Inner Ring log ([#689](https://github.com/epicchainlabs/neofs-node/pull/689)).
+- Debug output of public key in Inner Ring log ([#689](https://github.com/epicchainlabs/epicchain-node/pull/689)).
 
 ## [0.22.2] - 2021-07-07
 
@@ -1564,17 +1564,17 @@ Updated broken version of NeoFS API Go.
 ## [0.22.1] - 2021-07-07
 
 ### Added
-- `GetCandidates` method to morph client wrapper ([#647](https://github.com/epicchainlabs/neofs-node/pull/647)).
-- All-in-One Docker image that contains all NeoFS related binaries ([#662](https://github.com/epicchainlabs/neofs-node/pull/662)).
-- `--version` flag to Storage Node binary ([#664](https://github.com/epicchainlabs/neofs-node/issues/664)).
+- `GetCandidates` method to morph client wrapper ([#647](https://github.com/epicchainlabs/epicchain-node/pull/647)).
+- All-in-One Docker image that contains all NeoFS related binaries ([#662](https://github.com/epicchainlabs/epicchain-node/pull/662)).
+- `--version` flag to Storage Node binary ([#664](https://github.com/epicchainlabs/epicchain-node/issues/664)).
 
 ### Changed
-- Do not check NeoFS version in `LocalNodeInfo` requests and `Put` container operations; `v2.7.0` is genesis version of NeoFS ([#660](https://github.com/epicchainlabs/neofs-node/pull/660)).
-- All error calls of CLI return `1` exit code ([#657](https://github.com/epicchainlabs/neofs-node/issues/657)).
+- Do not check NeoFS version in `LocalNodeInfo` requests and `Put` container operations; `v2.7.0` is genesis version of NeoFS ([#660](https://github.com/epicchainlabs/epicchain-node/pull/660)).
+- All error calls of CLI return `1` exit code ([#657](https://github.com/epicchainlabs/epicchain-node/issues/657)).
 
 ### Fixed
-- Do not use multisignature for audit operations ([#658](https://github.com/epicchainlabs/neofs-node/pull/658)).
-- Skip audit for containers without Storage Groups ([#659](https://github.com/epicchainlabs/neofs-node/issues/659)).
+- Do not use multisignature for audit operations ([#658](https://github.com/epicchainlabs/epicchain-node/pull/658)).
+- Skip audit for containers without Storage Groups ([#659](https://github.com/epicchainlabs/epicchain-node/issues/659)).
 
 ### Updated
 - NeoFS API Go: [v1.28.2](https://github.com/epicchainlabs/neofs-api-go/releases/tag/v1.28.2).
@@ -1584,25 +1584,25 @@ Updated broken version of NeoFS API Go.
 Storage nodes with a group of network endpoints.
 
 ### Added
-- Support of Neo wallet credentials in CLI ([#610](https://github.com/epicchainlabs/neofs-node/issues/610)).
-- More reliable approval of trust value by IR ([#500](https://github.com/epicchainlabs/neofs-node/issues/500)).
-- Storage node's ability to announce and serve on multiple network addresses ([#607](https://github.com/epicchainlabs/neofs-node/issues/607)).
-- Validation of network addresses of netmap candidates in IR ([#557](https://github.com/epicchainlabs/neofs-node/issues/557)).
-- Control service with healthcheck RPC in IR and CLI support ([#414](https://github.com/epicchainlabs/neofs-node/issues/414)).
+- Support of Neo wallet credentials in CLI ([#610](https://github.com/epicchainlabs/epicchain-node/issues/610)).
+- More reliable approval of trust value by IR ([#500](https://github.com/epicchainlabs/epicchain-node/issues/500)).
+- Storage node's ability to announce and serve on multiple network addresses ([#607](https://github.com/epicchainlabs/epicchain-node/issues/607)).
+- Validation of network addresses of netmap candidates in IR ([#557](https://github.com/epicchainlabs/epicchain-node/issues/557)).
+- Control service with healthcheck RPC in IR and CLI support ([#414](https://github.com/epicchainlabs/epicchain-node/issues/414)).
 
 ### Fixed
-- Approval of objects with duplicate attribute keys or empty values ([#633](https://github.com/epicchainlabs/neofs-node/issues/633)).
-- Approval of containers with duplicate attribute keys or empty values ([#634](https://github.com/epicchainlabs/neofs-node/issues/634)).
-- Default path for CLI config ([#626](https://github.com/epicchainlabs/neofs-node/issues/626)).
+- Approval of objects with duplicate attribute keys or empty values ([#633](https://github.com/epicchainlabs/epicchain-node/issues/633)).
+- Approval of containers with duplicate attribute keys or empty values ([#634](https://github.com/epicchainlabs/epicchain-node/issues/634)).
+- Default path for CLI config ([#626](https://github.com/epicchainlabs/epicchain-node/issues/626)).
 
 ### Changed
-- `version` command replaced with `--version` flag in CLI ([#571](https://github.com/epicchainlabs/neofs-node/issues/571)).
-- Command usage text is not printed on errors in CLI ([#623](https://github.com/epicchainlabs/neofs-node/issues/623)).
-- `netmap snapshot` command replaced with `control netmap-snapshot` one in CLI ([#651](https://github.com/epicchainlabs/neofs-node/issues/651)).
-- IR does not include nodes with LOCODE derived attributes to the network map ([#412](https://github.com/epicchainlabs/neofs-node/issues/412)).
-- IR uses morph/client packages for contract invocations ([#496](https://github.com/epicchainlabs/neofs-node/issues/496)).
-- Writecache decreases local size when objects are flushed ([#568](https://github.com/epicchainlabs/neofs-node/issues/568)).
-- IR can override global configuration values only in debug build ([#363](https://github.com/epicchainlabs/neofs-node/issues/363)).
+- `version` command replaced with `--version` flag in CLI ([#571](https://github.com/epicchainlabs/epicchain-node/issues/571)).
+- Command usage text is not printed on errors in CLI ([#623](https://github.com/epicchainlabs/epicchain-node/issues/623)).
+- `netmap snapshot` command replaced with `control netmap-snapshot` one in CLI ([#651](https://github.com/epicchainlabs/epicchain-node/issues/651)).
+- IR does not include nodes with LOCODE derived attributes to the network map ([#412](https://github.com/epicchainlabs/epicchain-node/issues/412)).
+- IR uses morph/client packages for contract invocations ([#496](https://github.com/epicchainlabs/epicchain-node/issues/496)).
+- Writecache decreases local size when objects are flushed ([#568](https://github.com/epicchainlabs/epicchain-node/issues/568)).
+- IR can override global configuration values only in debug build ([#363](https://github.com/epicchainlabs/epicchain-node/issues/363)).
 
 ### Updated
 - Neo Go: [v0.95.3](https://github.com/epicchainlabs/epicchain-go/releases/tag/v0.95.3).
@@ -1666,7 +1666,7 @@ TLS support on gRPC servers.
 - Updated neofs-api-go to v1.27.0 release.
 
 ### Removed
-- Container policy parser moved to neofs-sdk-go repository.
+- Container policy parser moved to epicchain-sdk-go repository.
 - Invoke package from inner ring.
 
 ## [0.20.0] - 2021-05-21 - Dolsando (돌산도, 突山島)
@@ -1904,7 +1904,7 @@ Preview4 compatible NeoFS nodes with data audit.
 
 ### Added
 - Data audit routines in inner ring nodes.
-- Storage group operations in CLI (`neofs-cli storagegroup --help`).
+- Storage group operations in CLI (`epicchain-cli storagegroup --help`).
 
 ### Fixed
 - Loss of request X-headers during the forwarding in Object service.
@@ -1978,7 +1978,7 @@ Bugfixes and small performance improvements.
 - Variety of ACL bugs. (#180, #190, #209)
 - Policer tried to replicate virtual objects. (#182)
 - Search queries with object ID field. (#177)
-- Bug with extended ACL signature check in neofs-cli (#206)
+- Bug with extended ACL signature check in epicchain-cli (#206)
 
 ### Added
 
@@ -2028,71 +2028,71 @@ NeoFS-API v2.0 support and updated brand-new storage node application.
 
 First public review release.
 
-[Unreleased]: https://github.com/epicchainlabs/neofs-node/compare/v0.42.0...master
-[0.42.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.41.1...v0.42.0
-[0.41.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.41.0...v0.41.1
-[0.41.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.40.1...v0.41.0
-[0.40.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.40.0...v0.40.1
-[0.40.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.39.2...v0.40.0
-[0.39.2]: https://github.com/epicchainlabs/neofs-node/compare/v0.39.1...v0.39.2
-[0.39.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.39.0...v0.39.1
-[0.39.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.38.1...v0.39.0
-[0.38.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.38.0...v0.38.1
-[0.38.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.37.0...v0.38.0
-[0.37.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.36.1...v0.37.0
-[0.36.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.36.0...v0.36.1
-[0.36.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.35.0...v0.36.0
-[0.35.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.34.0...v0.35.0
-[0.34.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.33.0...v0.34.0
-[0.33.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.32.0...v0.33.0
-[0.32.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.31.0...v0.32.0
-[0.31.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.30.2...v0.31.0
-[0.30.2]: https://github.com/epicchainlabs/neofs-node/compare/v0.30.1...v0.30.2
-[0.30.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.30.0...v0.30.1
-[0.30.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.29.0...v0.30.0
-[0.29.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.28.3...v0.29.0
-[0.28.3]: https://github.com/epicchainlabs/neofs-node/compare/v0.28.2...v0.28.3
-[0.28.2]: https://github.com/epicchainlabs/neofs-node/compare/v0.28.1...v0.28.2
-[0.28.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.28.0...v0.28.1
-[0.28.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.28.0-rc.3...v0.28.0
-[0.28.0-rc.3]: https://github.com/epicchainlabs/neofs-node/compare/v0.28.0-rc.2...v0.28.0-rc.3
-[0.28.0-rc.2]: https://github.com/epicchainlabs/neofs-node/compare/v0.28.0-rc.1...v0.28.0-rc.2
-[0.28.0-rc.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.27.7...v0.28.0-rc.1
-[0.27.7]: https://github.com/epicchainlabs/neofs-node/compare/v0.27.6...v0.27.7
-[0.27.6]: https://github.com/epicchainlabs/neofs-node/compare/v0.27.5...v0.27.6
-[0.27.5]: https://github.com/epicchainlabs/neofs-node/compare/v0.27.4...v0.27.5
-[0.27.4]: https://github.com/epicchainlabs/neofs-node/compare/v0.27.3...v0.27.4
-[0.27.3]: https://github.com/epicchainlabs/neofs-node/compare/v0.27.2...v0.27.3
-[0.27.2]: https://github.com/epicchainlabs/neofs-node/compare/v0.27.1...v0.27.2
-[0.27.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.27.0...v0.27.1
-[0.27.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.26.1...v0.27.0
-[0.26.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.26.0...v0.26.1
-[0.26.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.25.1...v0.26.0
-[0.25.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.25.0...v0.25.1
-[0.25.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.24.1...v0.25.0
-[0.24.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.24.0...v0.24.1
-[0.24.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.23.1...v0.24.0
-[0.23.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.23.0...v0.23.1
-[0.23.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.22.3...v0.23.0
-[0.22.3]: https://github.com/epicchainlabs/neofs-node/compare/v0.22.2...v0.22.3
-[0.22.2]: https://github.com/epicchainlabs/neofs-node/compare/v0.22.1...v0.22.2
-[0.22.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.22.0...v0.22.1
-[0.22.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.21.1...v0.22.0
-[0.21.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.21.0...v0.21.1
-[0.21.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.20.0...v0.21.0
-[0.20.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.19.0...v0.20.0
-[0.19.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.18.0...v0.19.0
-[0.18.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.17.0...v0.18.0
-[0.17.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.16.0...v0.17.0
-[0.16.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.15.0...v0.16.0
-[0.15.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.14.3...v0.15.0
-[0.14.3]: https://github.com/epicchainlabs/neofs-node/compare/v0.14.2...v0.14.3
-[0.14.2]: https://github.com/epicchainlabs/neofs-node/compare/v0.14.1...v0.14.2
-[0.14.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.14.0...v0.14.1
-[0.14.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.13.2...v0.14.0
-[0.13.2]: https://github.com/epicchainlabs/neofs-node/compare/v0.13.1...v0.13.2
-[0.13.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.13.0...v0.13.1
-[0.13.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.12.1...v0.13.0
-[0.12.1]: https://github.com/epicchainlabs/neofs-node/compare/v0.12.0...v0.12.1
-[0.12.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.11.0...v0.12.0
-[0.11.0]: https://github.com/epicchainlabs/neofs-node/compare/v0.10.0...v0.11.0
+[Unreleased]: https://github.com/epicchainlabs/epicchain-node/compare/v0.42.0...master
+[0.42.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.41.1...v0.42.0
+[0.41.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.41.0...v0.41.1
+[0.41.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.40.1...v0.41.0
+[0.40.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.40.0...v0.40.1
+[0.40.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.39.2...v0.40.0
+[0.39.2]: https://github.com/epicchainlabs/epicchain-node/compare/v0.39.1...v0.39.2
+[0.39.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.39.0...v0.39.1
+[0.39.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.38.1...v0.39.0
+[0.38.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.38.0...v0.38.1
+[0.38.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.37.0...v0.38.0
+[0.37.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.36.1...v0.37.0
+[0.36.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.36.0...v0.36.1
+[0.36.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.35.0...v0.36.0
+[0.35.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.34.0...v0.35.0
+[0.34.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.33.0...v0.34.0
+[0.33.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.32.0...v0.33.0
+[0.32.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.31.0...v0.32.0
+[0.31.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.30.2...v0.31.0
+[0.30.2]: https://github.com/epicchainlabs/epicchain-node/compare/v0.30.1...v0.30.2
+[0.30.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.30.0...v0.30.1
+[0.30.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.29.0...v0.30.0
+[0.29.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.28.3...v0.29.0
+[0.28.3]: https://github.com/epicchainlabs/epicchain-node/compare/v0.28.2...v0.28.3
+[0.28.2]: https://github.com/epicchainlabs/epicchain-node/compare/v0.28.1...v0.28.2
+[0.28.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.28.0...v0.28.1
+[0.28.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.28.0-rc.3...v0.28.0
+[0.28.0-rc.3]: https://github.com/epicchainlabs/epicchain-node/compare/v0.28.0-rc.2...v0.28.0-rc.3
+[0.28.0-rc.2]: https://github.com/epicchainlabs/epicchain-node/compare/v0.28.0-rc.1...v0.28.0-rc.2
+[0.28.0-rc.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.27.7...v0.28.0-rc.1
+[0.27.7]: https://github.com/epicchainlabs/epicchain-node/compare/v0.27.6...v0.27.7
+[0.27.6]: https://github.com/epicchainlabs/epicchain-node/compare/v0.27.5...v0.27.6
+[0.27.5]: https://github.com/epicchainlabs/epicchain-node/compare/v0.27.4...v0.27.5
+[0.27.4]: https://github.com/epicchainlabs/epicchain-node/compare/v0.27.3...v0.27.4
+[0.27.3]: https://github.com/epicchainlabs/epicchain-node/compare/v0.27.2...v0.27.3
+[0.27.2]: https://github.com/epicchainlabs/epicchain-node/compare/v0.27.1...v0.27.2
+[0.27.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.27.0...v0.27.1
+[0.27.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.26.1...v0.27.0
+[0.26.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.26.0...v0.26.1
+[0.26.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.25.1...v0.26.0
+[0.25.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.25.0...v0.25.1
+[0.25.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.24.1...v0.25.0
+[0.24.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.24.0...v0.24.1
+[0.24.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.23.1...v0.24.0
+[0.23.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.23.0...v0.23.1
+[0.23.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.22.3...v0.23.0
+[0.22.3]: https://github.com/epicchainlabs/epicchain-node/compare/v0.22.2...v0.22.3
+[0.22.2]: https://github.com/epicchainlabs/epicchain-node/compare/v0.22.1...v0.22.2
+[0.22.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.22.0...v0.22.1
+[0.22.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.21.1...v0.22.0
+[0.21.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.21.0...v0.21.1
+[0.21.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.20.0...v0.21.0
+[0.20.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.19.0...v0.20.0
+[0.19.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.18.0...v0.19.0
+[0.18.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.17.0...v0.18.0
+[0.17.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.16.0...v0.17.0
+[0.16.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.15.0...v0.16.0
+[0.15.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.14.3...v0.15.0
+[0.14.3]: https://github.com/epicchainlabs/epicchain-node/compare/v0.14.2...v0.14.3
+[0.14.2]: https://github.com/epicchainlabs/epicchain-node/compare/v0.14.1...v0.14.2
+[0.14.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.14.0...v0.14.1
+[0.14.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.13.2...v0.14.0
+[0.13.2]: https://github.com/epicchainlabs/epicchain-node/compare/v0.13.1...v0.13.2
+[0.13.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.13.0...v0.13.1
+[0.13.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.12.1...v0.13.0
+[0.12.1]: https://github.com/epicchainlabs/epicchain-node/compare/v0.12.0...v0.12.1
+[0.12.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.11.0...v0.12.0
+[0.11.0]: https://github.com/epicchainlabs/epicchain-node/compare/v0.10.0...v0.11.0

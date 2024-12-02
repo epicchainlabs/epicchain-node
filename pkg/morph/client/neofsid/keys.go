@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 // AccountKeysPrm groups parameters of AccountKeys operation.

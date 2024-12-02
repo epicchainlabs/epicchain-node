@@ -6,9 +6,9 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/encoding/fixedn"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
-	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	neofscrypto "github.com/epicchainlabs/epicchain-sdk-go/crypto"
+	neofsecdsa "github.com/epicchainlabs/epicchain-sdk-go/crypto/ecdsa"
 )
 
 // Client is a wrapper over StaticClient

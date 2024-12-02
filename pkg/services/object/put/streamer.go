@@ -5,14 +5,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/client"
-	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/placement"
-	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/internal"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object_manager/placement"
+	neofsecdsa "github.com/epicchainlabs/epicchain-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 type Streamer struct {

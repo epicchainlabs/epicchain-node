@@ -3,7 +3,7 @@ package deletesvc
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
 	"go.uber.org/zap"
 )
 

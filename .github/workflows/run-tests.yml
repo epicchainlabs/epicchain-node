@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       neofs_node_ref:
-        description: 'neofs-node ref. Default: master/PR. Examples: v0.36.0, 8fdcc6d7e798e6511be8806b81894622e72d7fdc, branch_name'
+        description: 'epicchain-node ref. Default: master/PR. Examples: v0.36.0, 8fdcc6d7e798e6511be8806b81894622e72d7fdc, branch_name'
         required: false
         default: ''
       neofs_testcases_ref:
@@ -64,11 +64,11 @@ jobs:
           ref: master
           path: neofs-rest-gw
 
-      - name: Checkout neofs-node repository
+      - name: Checkout epicchain-node repository
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.inputs.neofs_node_ref }}
-          path: neofs-node
+          path: epicchain-node
 
 #################################################################
       - name: Set up Go
@@ -109,12 +109,12 @@ jobs:
         working-directory: neofs-testcases
 
 ################################################################
-      - name: Build neofs-node
+      - name: Build epicchain-node
         timeout-minutes: 5
         run: |
           make all
           echo "$(pwd)/bin" >> $GITHUB_PATH
-        working-directory: neofs-node
+        working-directory: epicchain-node
 
       - name: Build neofs-s3-gw
         timeout-minutes: 5
@@ -143,24 +143,24 @@ jobs:
       - name: Copy built binaries
         timeout-minutes: 30
         run: |
-          ls -la ../neofs-node/bin
+          ls -la ../epicchain-node/bin
           cp ../neofs-s3-gw/bin/neofs-s3-gw .
           cp ../neofs-s3-gw/bin/neofs-s3-authmate .
           cp ../neofs-rest-gw/bin/neofs-rest-gw .
-          cp ../neofs-node/bin/neofs-adm .
-          cp ../neofs-node/bin/neofs-cli .
-          cp ../neofs-node/bin/neofs-ir .
-          cp ../neofs-node/bin/neofs-lens .
-          cp ../neofs-node/bin/neofs-node .
+          cp ../epicchain-node/bin/epicchain-adm .
+          cp ../epicchain-node/bin/epicchain-cli .
+          cp ../epicchain-node/bin/epicchain-ir .
+          cp ../epicchain-node/bin/epicchain-lens .
+          cp ../epicchain-node/bin/epicchain-node .
         working-directory: neofs-testcases
 
       - name: Chmod binaries
         run: |
-          sudo chmod a+x neofs-cli
-          sudo chmod a+x neofs-adm
-          sudo chmod a+x neofs-ir
-          sudo chmod a+x neofs-lens
-          sudo chmod a+x neofs-node
+          sudo chmod a+x epicchain-cli
+          sudo chmod a+x epicchain-adm
+          sudo chmod a+x epicchain-ir
+          sudo chmod a+x epicchain-lens
+          sudo chmod a+x epicchain-node
           sudo chmod a+x neofs-rest-gw
           sudo chmod a+x neo-go
           sudo chmod a+x neofs-s3-authmate
@@ -195,24 +195,24 @@ jobs:
           neofs-s3-gw --version
           echo "=========================================="
 
-          echo "Check neofs-adm version"
-          neofs-adm --version
+          echo "Check epicchain-adm version"
+          epicchain-adm --version
           echo "=========================================="
 
-          echo "Check neofs-ir version"
-          neofs-ir --version
+          echo "Check epicchain-ir version"
+          epicchain-ir --version
           echo "=========================================="
 
-          echo "Check neofs-lens version"
-          neofs-lens --version
+          echo "Check epicchain-lens version"
+          epicchain-lens --version
           echo "=========================================="
 
-          echo "Check neofs-cli version"
-          neofs-cli --version
+          echo "Check epicchain-cli version"
+          epicchain-cli --version
           echo "=========================================="
 
           echo "Check bin dir"
-          ls -lah "${GITHUB_WORKSPACE}/neofs-node/bin"
+          ls -lah "${GITHUB_WORKSPACE}/epicchain-node/bin"
           echo "=========================================="
         working-directory: neofs-testcases
 

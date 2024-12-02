@@ -4,14 +4,14 @@ import (
 	"context"
 	"errors"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/container"
-	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
-	headsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/head"
-	"github.com/epicchainlabs/neofs-node/pkg/services/replicator"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	objectcore "github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
+	headsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/head"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/replicator"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 	"go.uber.org/zap"
 )
 

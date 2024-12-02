@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/client"
-	"github.com/epicchainlabs/neofs-node/pkg/network"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"go.uber.org/zap"
 )
 

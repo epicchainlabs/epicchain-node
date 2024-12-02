@@ -2,7 +2,7 @@ package v2
 
 import (
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
-	eaclSDK "github.com/epicchainlabs/neofs-sdk-go/eacl"
+	eaclSDK "github.com/epicchainlabs/epicchain-sdk-go/eacl"
 )
 
 type xHeaderSource interface {

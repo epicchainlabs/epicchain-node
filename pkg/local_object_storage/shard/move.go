@@ -1,8 +1,8 @@
 package shard
 
 import (
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

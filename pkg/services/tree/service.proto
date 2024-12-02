@@ -7,7 +7,7 @@ package tree;
 
 import "pkg/services/tree/types.proto";
 
-option go_package = "github.com/epicchainlabs/neofs-node/pkg/services/tree";
+option go_package = "github.com/epicchainlabs/epicchain-node/pkg/services/tree";
 
 service TreeService {
   /* Client API */

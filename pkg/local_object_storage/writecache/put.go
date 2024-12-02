@@ -3,8 +3,8 @@ package writecache
 import (
 	"errors"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	storagelog "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/log"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	storagelog "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/internal/log"
 	"go.etcd.io/bbolt"
 )
 

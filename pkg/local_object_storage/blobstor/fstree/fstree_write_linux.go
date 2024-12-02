@@ -8,7 +8,7 @@ import (
 	"io/fs"
 	"strconv"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
 	"golang.org/x/sys/unix"
 )
 
@@ -55,7 +55,7 @@ func (w *linuxWriter) writeFile(p string, data []byte) error {
 		if n == len(data) {
 			err = unix.Linkat(unix.AT_FDCWD, tmpPath, unix.AT_FDCWD, p, unix.AT_SYMLINK_FOLLOW)
 			if errors.Is(err, unix.EEXIST) {
-				// https://github.com/epicchainlabs/neofs-node/issues/2563
+				// https://github.com/epicchainlabs/epicchain-node/issues/2563
 				err = nil
 			}
 		} else {

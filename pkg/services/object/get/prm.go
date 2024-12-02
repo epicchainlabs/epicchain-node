@@ -6,11 +6,11 @@ import (
 	"errors"
 	"hash"
 
-	coreclient "github.com/epicchainlabs/neofs-node/pkg/core/client"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	coreclient "github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/internal"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 // Prm groups parameters of Get service call.

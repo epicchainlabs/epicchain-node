@@ -3,8 +3,8 @@ package version_test
 import (
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/version"
-	versionSDK "github.com/epicchainlabs/neofs-sdk-go/version"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/version"
+	versionSDK "github.com/epicchainlabs/epicchain-sdk-go/version"
 	"github.com/stretchr/testify/require"
 )
 

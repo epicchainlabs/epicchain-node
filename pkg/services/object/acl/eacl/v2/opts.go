@@ -1,9 +1,9 @@
 package v2
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 func WithObjectStorage(v ObjectStorage) Option {

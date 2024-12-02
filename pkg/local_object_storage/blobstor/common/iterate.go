@@ -1,6 +1,6 @@
 package common
 
-import oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+import oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 
 // IterationElement represents a unit of elements through which Iterate operation passes.
 type IterationElement struct {

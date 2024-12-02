@@ -5,8 +5,8 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
 	netmapcontract "github.com/epicchainlabs/neofs-contract/contracts/netmap"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // GetNetMapByEpoch calls "snapshotByEpoch" method with the given epoch and

@@ -10,12 +10,12 @@ import (
 	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
 	refsV2 "github.com/epicchainlabs/neofs-api-go/v2/refs"
 	sessionV2 "github.com/epicchainlabs/neofs-api-go/v2/session"
-	"github.com/epicchainlabs/neofs-sdk-go/bearer"
-	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	sessionSDK "github.com/epicchainlabs/neofs-sdk-go/session"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-sdk-go/bearer"
+	"github.com/epicchainlabs/epicchain-sdk-go/container/acl"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	sessionSDK "github.com/epicchainlabs/epicchain-sdk-go/session"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 var errMissingContainerID = errors.New("missing container ID")

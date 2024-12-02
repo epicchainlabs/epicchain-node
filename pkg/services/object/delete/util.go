@@ -1,8 +1,8 @@
 package deletesvc
 
 import (
-	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	putsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/put"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 type putSvcWrapper putsvc.Service

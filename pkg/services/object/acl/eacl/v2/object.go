@@ -4,10 +4,10 @@ import (
 	"strconv"
 
 	"github.com/epicchainlabs/neofs-api-go/v2/acl"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	eaclSDK "github.com/epicchainlabs/neofs-sdk-go/eacl"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	eaclSDK "github.com/epicchainlabs/epicchain-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 type sysObjHdr struct {

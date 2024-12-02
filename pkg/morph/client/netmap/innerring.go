@@ -6,7 +6,7 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 )
 
 // UpdateIRPrm groups parameters of UpdateInnerRing

@@ -3,9 +3,9 @@ package v2
 import (
 	"io"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 type localStorage struct {

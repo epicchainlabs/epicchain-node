@@ -1,7 +1,7 @@
 package netmap
 
 import (
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // Source is an interface that wraps

@@ -2,7 +2,7 @@ package reputation
 
 import (
 	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
-	"github.com/epicchainlabs/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/epicchain-sdk-go/reputation"
 )
 
 // Put structure of reputation.reputationPut notification from

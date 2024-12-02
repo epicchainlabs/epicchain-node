@@ -5,21 +5,21 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
-	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/fstree"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/pilorama"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/writecache"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	cidtest "github.com/epicchainlabs/epicchain-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
+	objecttest "github.com/epicchainlabs/epicchain-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 )
@@ -117,7 +117,7 @@ func TestRefillMetabaseCorrupted(t *testing.T) {
 	require.NoError(t, sh.Close())
 
 	addr := object.AddressOf(&obj)
-	// https://github.com/epicchainlabs/neofs-node/issues/2563
+	// https://github.com/epicchainlabs/epicchain-node/issues/2563
 	_, err = fsTree.Delete(common.DeletePrm{Address: addr})
 	require.NoError(t, err)
 	_, err = fsTree.Put(common.PutPrm{Address: addr, RawData: []byte("not an object")})

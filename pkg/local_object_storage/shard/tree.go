@@ -1,9 +1,9 @@
 package shard
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/pilorama"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	cidSDK "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 )
 
 var _ pilorama.Forest = (*Shard)(nil)

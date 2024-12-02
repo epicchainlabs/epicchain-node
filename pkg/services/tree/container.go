@@ -6,10 +6,10 @@ import (
 	"sync"
 
 	"github.com/hashicorp/golang-lru/v2/simplelru"
-	"github.com/epicchainlabs/neofs-node/pkg/core/container"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/placement"
-	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	netmapSDK "github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object_manager/placement"
+	cidSDK "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	netmapSDK "github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 type containerCache struct {

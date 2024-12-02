@@ -6,9 +6,9 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client/neofsid"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event/neofs"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client/neofsid"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event/neofs"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 	"go.uber.org/zap"
 )
 

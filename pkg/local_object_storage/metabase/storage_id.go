@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"errors"
 
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 )
 

@@ -1,7 +1,7 @@
 package engine
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
 )
 
 // Info groups the information about StorageEngine.

@@ -3,11 +3,11 @@ package writecache
 import (
 	"sync"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/fstree"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 	"go.uber.org/zap"
 )

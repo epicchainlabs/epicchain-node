@@ -3,7 +3,7 @@ package storagetest
 import (
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
 	"github.com/stretchr/testify/require"
 )
 

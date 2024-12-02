@@ -3,8 +3,8 @@ package policer
 import (
 	"fmt"
 
-	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
+	objectcore "github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
 )
 
 type jobQueue struct {

@@ -10,13 +10,13 @@ Storage nodes.
 
 ## Build
 
-To build binary locally, use `make bin/neofs-adm` command. 
+To build binary locally, use `make bin/epicchain-adm` command. 
 
-For clean build inside a docker container, use `make docker/bin/neofs-adm`. 
+For clean build inside a docker container, use `make docker/bin/epicchain-adm`. 
 
 Build docker image with `make image-adm`.
 
-At NeoFS private install deployment, neofs-adm requires compiled NeoFS 
+At NeoFS private install deployment, epicchain-adm requires compiled NeoFS 
 contracts. Find them in the latest release of 
 [neofs-contract repository](https://github.com/epicchainlabs/neofs-contract/releases).
 

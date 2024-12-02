@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
-	"github.com/epicchainlabs/neofs-node/pkg/services/control"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/control"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

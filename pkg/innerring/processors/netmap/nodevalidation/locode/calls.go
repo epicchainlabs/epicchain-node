@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/locode-db/pkg/locodedb"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // Verify validates UN-LOCODE attribute of n

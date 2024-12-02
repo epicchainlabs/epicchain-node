@@ -1,8 +1,8 @@
 package engine
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 // ObjectShardStatus contains the status of the object in the Shard and Shard ID.

@@ -2,7 +2,7 @@ package innerring
 
 import (
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/util/glagolitsa"
+	"github.com/epicchainlabs/epicchain-node/pkg/util/glagolitsa"
 )
 
 type alphabetContracts map[int]util.Uint160

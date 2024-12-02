@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"sync"
 
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 type (

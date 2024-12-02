@@ -1,8 +1,8 @@
 package router
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation/common"
 )
 
 // Builder groups methods to route values in the network.

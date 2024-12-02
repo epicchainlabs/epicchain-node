@@ -3,7 +3,7 @@ package reputation
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
 )
 
 func (p *Put) setEpoch(v uint64) {

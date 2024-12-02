@@ -6,9 +6,9 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/neofs-api-go/v2/accounting"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client/balance"
-	accountingSvc "github.com/epicchainlabs/neofs-node/pkg/services/accounting"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client/balance"
+	accountingSvc "github.com/epicchainlabs/epicchain-node/pkg/services/accounting"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 type morphExecutor struct {

@@ -1,9 +1,9 @@
 package pilorama
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	cidSDK "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 )
 
 // Forest represents CRDT tree.

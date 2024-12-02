@@ -1,6 +1,6 @@
 package netmap
 
-import "github.com/epicchainlabs/neofs-sdk-go/netmap"
+import "github.com/epicchainlabs/epicchain-sdk-go/netmap"
 
 // Node is a named type of netmap.NodeInfo which provides interface needed
 // in the current repository. Node is expected to be used everywhere instead

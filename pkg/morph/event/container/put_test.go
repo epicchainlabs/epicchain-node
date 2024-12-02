@@ -6,8 +6,8 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	cidtest "github.com/epicchainlabs/epicchain-sdk-go/container/id/test"
 	"github.com/stretchr/testify/require"
 )
 

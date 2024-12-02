@@ -5,7 +5,7 @@ import (
 
 	"github.com/epicchainlabs/neofs-api-go/v2/accounting"
 	accountingGRPC "github.com/epicchainlabs/neofs-api-go/v2/accounting/grpc"
-	accountingsvc "github.com/epicchainlabs/neofs-node/pkg/services/accounting"
+	accountingsvc "github.com/epicchainlabs/epicchain-node/pkg/services/accounting"
 )
 
 // Server wraps NeoFS API Accounting service and

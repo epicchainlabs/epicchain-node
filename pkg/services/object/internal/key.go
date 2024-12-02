@@ -4,7 +4,7 @@ import (
 	"bytes"
 
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
-	"github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/client"
 )
 
 // VerifyResponseKeyV2 checks if response is signed with expected key. Returns client.ErrWrongPublicKey if not.

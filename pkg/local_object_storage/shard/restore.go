@@ -7,8 +7,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 )
 
 // ErrInvalidMagic is returned when dump format is invalid.

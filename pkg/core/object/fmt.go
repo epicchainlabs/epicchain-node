@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	"github.com/epicchainlabs/neofs-sdk-go/storagegroup"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/storagegroup"
 )
 
 // FormatValidator represents an object format validator.
@@ -188,7 +188,7 @@ func (v *FormatValidator) Validate(obj *object.Object, unprepared bool) error {
 }
 
 func (v *FormatValidator) validateSignatureKey(obj *object.Object) error {
-	// FIXME(@cthulhu-rider): temp solution, see neofs-sdk-go#233
+	// FIXME(@cthulhu-rider): temp solution, see epicchain-sdk-go#233
 	sig := obj.Signature()
 	if sig == nil {
 		// TODO(@cthulhu-rider): #1387 use "const" error

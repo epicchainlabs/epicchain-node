@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
-	"github.com/epicchainlabs/neofs-sdk-go/client"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	"github.com/epicchainlabs/neofs-sdk-go/object/slicer"
-	"github.com/epicchainlabs/neofs-sdk-go/session"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/internal"
+	"github.com/epicchainlabs/epicchain-sdk-go/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/object/slicer"
+	"github.com/epicchainlabs/epicchain-sdk-go/session"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 type slicingTarget struct {

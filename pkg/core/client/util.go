@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/network"
-	"github.com/epicchainlabs/neofs-sdk-go/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-sdk-go/client"
 )
 
 func nodeInfoFromKeyAddr(dst *NodeInfo, k []byte, a, external network.AddressGroup) {

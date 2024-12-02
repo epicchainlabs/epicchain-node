@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
 	"go.uber.org/zap"
 )
 

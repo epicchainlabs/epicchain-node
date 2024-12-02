@@ -29,7 +29,7 @@ PKG_VERSION ?= $(shell echo $(VERSION) | sed "s/^v//" | \
 		prepare-release debpackage
 
 # To build a specific binary, use it's name prefix with bin/ as a target
-# For example `make bin/neofs-node` will build only storage node binary
+# For example `make bin/epicchain-node` will build only storage node binary
 # Just `make` will build all possible binaries
 all: $(DIRS) $(BINS)
 
@@ -152,7 +152,7 @@ clean:
 
 # Package for Debian
 debpackage:
-	dch --package neofs-node \
+	dch --package epicchain-node \
 			--controlmaint \
 			--newversion $(PKG_VERSION) \
 			--distribution $(OS_RELEASE) \

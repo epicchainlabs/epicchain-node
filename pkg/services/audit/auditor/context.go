@@ -6,13 +6,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/audit"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/placement"
-	"github.com/epicchainlabs/neofs-node/pkg/util"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/audit"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object_manager/placement"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

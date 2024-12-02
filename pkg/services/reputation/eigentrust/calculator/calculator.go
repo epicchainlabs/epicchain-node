@@ -3,9 +3,9 @@ package eigentrustcalc
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
-	"github.com/epicchainlabs/neofs-node/pkg/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
 )
 
 // Prm groups the required parameters of the Calculator's constructor.

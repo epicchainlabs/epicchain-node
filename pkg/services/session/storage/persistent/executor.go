@@ -7,8 +7,8 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
-	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/session/storage"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 	"go.etcd.io/bbolt"
 )
 

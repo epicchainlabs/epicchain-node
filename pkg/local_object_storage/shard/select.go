@@ -3,10 +3,10 @@ package shard
 import (
 	"fmt"
 
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 // SelectPrm groups the parameters of Select operation.

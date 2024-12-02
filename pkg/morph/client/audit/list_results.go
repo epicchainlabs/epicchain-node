@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 )
 
 // ListAllAuditResultID returns a list of all audit result IDs inside audit contract.

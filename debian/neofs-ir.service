@@ -4,9 +4,9 @@ Requires=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/neofs-ir --config /etc/neofs/ir/config.yml
-User=neofs-ir
-Group=neofs-ir
+ExecStart=/usr/bin/epicchain-ir --config /etc/neofs/ir/config.yml
+User=epicchain-ir
+Group=epicchain-ir
 WorkingDirectory=/var/lib/neofs/ir
 Restart=always
 RestartSec=5

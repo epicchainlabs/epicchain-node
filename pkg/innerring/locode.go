@@ -1,8 +1,8 @@
 package innerring
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap"
-	irlocode "github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/locode"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/netmap"
+	irlocode "github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/netmap/nodevalidation/locode"
 )
 
 func (s *Server) newLocodeValidator() (netmap.NodeValidator, error) {

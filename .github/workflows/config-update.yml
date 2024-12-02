@@ -21,7 +21,7 @@ jobs:
         with:
           files: |
             config/**
-            cmd/neofs-node/config/**
+            cmd/epicchain-node/config/**
 
       - name: Get changed doc files
         id: docs-diff

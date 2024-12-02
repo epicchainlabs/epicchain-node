@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	getsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/get"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	getsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/get"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 // Source represents wrapper over the object service that

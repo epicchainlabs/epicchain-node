@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 const keyValueSeparator = ":"

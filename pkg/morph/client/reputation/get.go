@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/reputation"
 )
 
 type (

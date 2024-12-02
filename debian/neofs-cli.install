@@ -1,3 +1,3 @@
-bin/neofs-adm   usr/bin
-bin/neofs-cli   usr/bin
-bin/neofs-lens  usr/bin
+bin/epicchain-adm   usr/bin
+bin/epicchain-cli   usr/bin
+bin/epicchain-lens  usr/bin

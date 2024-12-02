@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client/neofsid"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
-	"github.com/epicchainlabs/neofs-sdk-go/session"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client/neofsid"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	neofsecdsa "github.com/epicchainlabs/epicchain-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/epicchain-sdk-go/session"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 var (
@@ -70,7 +70,7 @@ func (cp *Processor) verifySignature(v signatureVerificationData) error {
 			return errors.New("invalid session token signature")
 		}
 
-		// FIXME(@cthulhu-rider): #1387 check token is signed by container owner, see neofs-sdk-go#233
+		// FIXME(@cthulhu-rider): #1387 check token is signed by container owner, see epicchain-sdk-go#233
 
 		if keyProvided && !tok.AssertAuthKey(&key) {
 			return errors.New("signed with a non-session key")
@@ -101,7 +101,7 @@ func (cp *Processor) verifySignature(v signatureVerificationData) error {
 	}
 
 	if keyProvided {
-		// TODO(@cthulhu-rider): #1387 use another approach after neofs-sdk-go#233
+		// TODO(@cthulhu-rider): #1387 use another approach after epicchain-sdk-go#233
 		idFromKey := user.ResolveFromECDSAPublicKey(ecdsa.PublicKey(key))
 
 		if v.ownerContainer.Equals(idFromKey) {

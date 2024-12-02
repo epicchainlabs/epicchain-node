@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/epicchainlabs/neofs-api-go/v2/object"
-	"github.com/epicchainlabs/neofs-node/pkg/services/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/util"
 )
 
 // GetObjectStream is an interface of NeoFS API v2 compatible object streamer.

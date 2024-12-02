@@ -6,13 +6,13 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/object"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
-	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	cidtest "github.com/epicchainlabs/epicchain-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
+	objecttest "github.com/epicchainlabs/epicchain-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 )
 

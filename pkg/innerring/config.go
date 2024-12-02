@@ -13,7 +13,7 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/core/storage/dbconfig"
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	"github.com/epicchainlabs/neofs-contract/deploy"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/internal/blockchain"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/internal/blockchain"
 	"github.com/spf13/cast"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"

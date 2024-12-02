@@ -8,14 +8,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/container"
-	"github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	objecttest "github.com/epicchainlabs/epicchain-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 )
 

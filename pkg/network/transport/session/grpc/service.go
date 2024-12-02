@@ -5,7 +5,7 @@ import (
 
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
 	sessionGRPC "github.com/epicchainlabs/neofs-api-go/v2/session/grpc"
-	sessionsvc "github.com/epicchainlabs/neofs-node/pkg/services/session"
+	sessionsvc "github.com/epicchainlabs/epicchain-node/pkg/services/session"
 )
 
 // Server wraps NeoFS API Session service and

@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/hrw/v2"
-	netmapcore "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	apiNetmap "github.com/epicchainlabs/neofs-sdk-go/netmap"
-	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
+	netmapcore "github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	apiNetmap "github.com/epicchainlabs/epicchain-sdk-go/netmap"
+	apireputation "github.com/epicchainlabs/epicchain-sdk-go/reputation"
 	"go.uber.org/zap"
 )
 

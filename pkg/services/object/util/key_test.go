@@ -9,12 +9,12 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	"github.com/epicchainlabs/neofs-api-go/v2/refs"
 	sessionV2 "github.com/epicchainlabs/neofs-api-go/v2/session"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	tokenStorage "github.com/epicchainlabs/neofs-node/pkg/services/session/storage/temporary"
-	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
-	"github.com/epicchainlabs/neofs-sdk-go/session"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
-	usertest "github.com/epicchainlabs/neofs-sdk-go/user/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	tokenStorage "github.com/epicchainlabs/epicchain-node/pkg/services/session/storage/temporary"
+	neofsecdsa "github.com/epicchainlabs/epicchain-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/epicchain-sdk-go/session"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
+	usertest "github.com/epicchainlabs/epicchain-sdk-go/user/test"
 	"github.com/stretchr/testify/require"
 )
 

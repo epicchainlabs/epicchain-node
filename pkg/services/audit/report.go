@@ -3,9 +3,9 @@ package audit
 import (
 	"sync"
 
-	"github.com/epicchainlabs/neofs-sdk-go/audit"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/audit"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 // Report tracks the progress of auditing container data.

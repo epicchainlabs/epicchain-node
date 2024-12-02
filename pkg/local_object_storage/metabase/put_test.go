@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/object"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/epicchainlabs/neofs-node/pkg/util/rand"
-	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
-	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/epicchain-node/pkg/util/rand"
+	cidtest "github.com/epicchainlabs/epicchain-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
+	objecttest "github.com/epicchainlabs/epicchain-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 )
 

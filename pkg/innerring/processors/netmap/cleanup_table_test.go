@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

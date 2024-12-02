@@ -5,10 +5,10 @@ import (
 	"errors"
 
 	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
-	objectSvc "github.com/epicchainlabs/neofs-node/pkg/services/object"
-	getsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/get"
-	objutil "github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	objectSvc "github.com/epicchainlabs/epicchain-node/pkg/services/object"
+	getsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/get"
+	objutil "github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 )
 
 // Service implements Get operation of Object service v2.

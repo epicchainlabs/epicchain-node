@@ -3,10 +3,10 @@ package shard
 import (
 	"fmt"
 
-	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	objectcore "github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 	"go.uber.org/zap"
 )
 

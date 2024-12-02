@@ -9,11 +9,11 @@ import (
 	rawclient "github.com/epicchainlabs/neofs-api-go/v2/rpc/client"
 	sessionV2 "github.com/epicchainlabs/neofs-api-go/v2/session"
 	"github.com/epicchainlabs/neofs-api-go/v2/signature"
-	"github.com/epicchainlabs/neofs-node/pkg/core/client"
-	"github.com/epicchainlabs/neofs-node/pkg/network"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
-	internalclient "github.com/epicchainlabs/neofs-node/pkg/services/object/internal/client"
-	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/internal"
+	internalclient "github.com/epicchainlabs/epicchain-node/pkg/services/object/internal/client"
+	putsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/put"
 )
 
 type streamer struct {

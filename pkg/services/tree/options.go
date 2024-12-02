@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
-	"github.com/epicchainlabs/neofs-node/pkg/core/container"
-	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/pilorama"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 	"go.uber.org/zap"
 )
 

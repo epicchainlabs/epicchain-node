@@ -7,12 +7,12 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	sessionV2 "github.com/epicchainlabs/neofs-api-go/v2/session"
-	"github.com/epicchainlabs/neofs-sdk-go/bearer"
-	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	sessionSDK "github.com/epicchainlabs/neofs-sdk-go/session"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-sdk-go/bearer"
+	"github.com/epicchainlabs/epicchain-sdk-go/container/acl"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	sessionSDK "github.com/epicchainlabs/epicchain-sdk-go/session"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 // RequestInfo groups parsed version-independent (from SDK library)

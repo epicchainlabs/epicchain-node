@@ -3,11 +3,11 @@ package storagegroup
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/client"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	"github.com/epicchainlabs/neofs-sdk-go/storagegroup"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/storagegroup"
 )
 
 // SearchSGPrm groups the parameters which are formed by Processor to search the storage group objects.

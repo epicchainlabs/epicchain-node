@@ -1,6 +1,6 @@
 package engine
 
-import "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
+import "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
 
 // RestoreShard restores objects from dump to the shard with provided identifier.
 //

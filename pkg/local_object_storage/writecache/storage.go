@@ -7,12 +7,12 @@ import (
 
 	lru "github.com/hashicorp/golang-lru/v2"
 	"github.com/hashicorp/golang-lru/v2/simplelru"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	storagelog "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/log"
-	"github.com/epicchainlabs/neofs-node/pkg/util"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/fstree"
+	storagelog "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/internal/log"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 	"go.uber.org/zap"
 )

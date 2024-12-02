@@ -3,7 +3,7 @@ package eigentrustctrl
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation/eigentrust"
 	"go.uber.org/zap"
 )
 

@@ -5,8 +5,8 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/encoding/fixedn"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 type NodeInfo = netmap.NodeInfo

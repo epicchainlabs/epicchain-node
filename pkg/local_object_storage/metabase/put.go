@@ -7,11 +7,11 @@ import (
 	gio "io"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/io"
-	objectCore "github.com/epicchainlabs/neofs-node/pkg/core/object"
-	storagelog "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/log"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	objectCore "github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	storagelog "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/internal/log"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 )
 

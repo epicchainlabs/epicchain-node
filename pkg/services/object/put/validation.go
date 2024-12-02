@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
-	"github.com/epicchainlabs/neofs-sdk-go/checksum"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/internal"
+	"github.com/epicchainlabs/epicchain-sdk-go/checksum"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"github.com/epicchainlabs/tzhash/tz"
 )
 

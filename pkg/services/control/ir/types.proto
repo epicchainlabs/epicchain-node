@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ircontrol;
 
-option go_package = "github.com/epicchainlabs/neofs-node/pkg/services/ir/control";
+option go_package = "github.com/epicchainlabs/epicchain-node/pkg/services/ir/control";
 
 // Signature of some message.
 message Signature {

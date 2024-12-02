@@ -1,7 +1,7 @@
 package storagegroup
 
 import (
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 )
 
 // SearchQuery returns search query to filter

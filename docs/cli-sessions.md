@@ -30,7 +30,7 @@ to the trusted server. At the moment, the approach is applicable only to
 creating objects.
 
 ```shell
-$ neofs-cli session create --rpc-endpoint <server_ip> --out ./blank_token
+$ epicchain-cli session create --rpc-endpoint <server_ip> --out ./blank_token
 ```
 After this example command remote node holds session private key while its
 public part is written into the session token encoded into the output file.
@@ -49,7 +49,7 @@ original client, and the CLI uses it only for reading. Ready token MUST have:
 
 To sign the session token, exec:
 ```shell
-$ neofs-cli --wallet <client_wallet> util sign session-token --from ./blank_token --to ./token
+$ epicchain-cli --wallet <client_wallet> util sign session-token --from ./blank_token --to ./token
 ```
 Once the token is signed, it MUST NOT be modified.
 

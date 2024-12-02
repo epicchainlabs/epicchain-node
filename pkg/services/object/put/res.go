@@ -1,7 +1,7 @@
 package putsvc
 
 import (
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 type PutResponse struct {

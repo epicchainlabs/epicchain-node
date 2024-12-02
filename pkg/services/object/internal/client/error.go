@@ -1,6 +1,6 @@
 package internal
 
-import clientcore "github.com/epicchainlabs/neofs-node/pkg/core/client"
+import clientcore "github.com/epicchainlabs/epicchain-node/pkg/core/client"
 
 type errorReporter interface {
 	ReportError(error)

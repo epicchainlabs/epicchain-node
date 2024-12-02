@@ -11,14 +11,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/compression"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	"github.com/epicchainlabs/neofs-node/pkg/util"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/compression"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/epicchain-node/pkg/util"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 )
 
@@ -412,7 +412,7 @@ func (x *Peapod) Put(prm common.PutPrm) (common.PutRes, error) {
 		prm.RawData = x.compress.Compress(prm.RawData)
 	}
 
-	// Track https://github.com/epicchainlabs/neofs-node/issues/2480
+	// Track https://github.com/epicchainlabs/epicchain-node/issues/2480
 	err := x.batch(context.TODO(), func(bktRoot *bbolt.Bucket) error {
 		return bktRoot.Put(keyForObject(prm.Address), prm.RawData)
 	})
@@ -428,7 +428,7 @@ func (x *Peapod) Put(prm common.PutPrm) (common.PutRes, error) {
 //
 // Put returns common.ErrReadOnly if Peadpod is read-only.
 func (x *Peapod) Delete(prm common.DeletePrm) (common.DeleteRes, error) {
-	// Track https://github.com/epicchainlabs/neofs-node/issues/2480
+	// Track https://github.com/epicchainlabs/epicchain-node/issues/2480
 	err := x.batch(context.TODO(), func(bktRoot *bbolt.Bucket) error {
 		key := keyForObject(prm.Address)
 		if bktRoot.Get(key) == nil {

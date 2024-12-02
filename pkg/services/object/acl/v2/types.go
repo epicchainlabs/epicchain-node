@@ -1,7 +1,7 @@
 package v2
 
 import (
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 // ACLChecker is an interface that must provide

@@ -3,11 +3,11 @@ package v2
 import (
 	"bytes"
 
-	core "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	"github.com/epicchainlabs/neofs-sdk-go/container"
-	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	core "github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/container"
+	"github.com/epicchainlabs/epicchain-sdk-go/container/acl"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"go.uber.org/zap"
 )
 

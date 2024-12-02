@@ -8,7 +8,7 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
 	netmapcontract "github.com/epicchainlabs/neofs-contract/contracts/netmap"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,9 +3,9 @@ package container
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 // List returns a list of container identifiers belonging

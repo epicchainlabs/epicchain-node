@@ -27,7 +27,7 @@ cmd/test
 testfile
 
 # misc
-.neofs-cli.yml
+.epicchain-cli.yml
 
 # debhelpers
 **/.debhelper

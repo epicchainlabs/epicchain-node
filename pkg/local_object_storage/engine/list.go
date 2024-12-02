@@ -3,8 +3,8 @@ package engine
 import (
 	"sort"
 
-	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
+	objectcore "github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
 )
 
 // ErrEndOfListing is returned from an object listing with cursor

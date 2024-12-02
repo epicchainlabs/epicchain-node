@@ -3,8 +3,8 @@ package control
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/control"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/control"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

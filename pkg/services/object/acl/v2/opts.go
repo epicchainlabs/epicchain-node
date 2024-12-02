@@ -1,9 +1,9 @@
 package v2
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/core/container"
-	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	objectSvc "github.com/epicchainlabs/neofs-node/pkg/services/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	objectSvc "github.com/epicchainlabs/epicchain-node/pkg/services/object"
 	"go.uber.org/zap"
 )
 

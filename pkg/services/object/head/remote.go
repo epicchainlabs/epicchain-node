@@ -5,13 +5,13 @@ import (
 	"errors"
 	"fmt"
 
-	clientcore "github.com/epicchainlabs/neofs-node/pkg/core/client"
-	netmapCore "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	internalclient "github.com/epicchainlabs/neofs-node/pkg/services/object/internal/client"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	clientcore "github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	netmapCore "github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	internalclient "github.com/epicchainlabs/epicchain-node/pkg/services/object/internal/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 type ClientConstructor interface {

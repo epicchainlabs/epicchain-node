@@ -3,7 +3,7 @@ package control_test
 import (
 	"testing"
 
-	control "github.com/epicchainlabs/neofs-node/pkg/services/control/ir"
+	control "github.com/epicchainlabs/epicchain-node/pkg/services/control/ir"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 )

@@ -5,8 +5,8 @@ import (
 	"encoding/hex"
 	"sync"
 
-	loadcontroller "github.com/epicchainlabs/neofs-node/pkg/services/container/announcement/load/controller"
-	"github.com/epicchainlabs/neofs-sdk-go/container"
+	loadcontroller "github.com/epicchainlabs/epicchain-node/pkg/services/container/announcement/load/controller"
+	"github.com/epicchainlabs/epicchain-sdk-go/container"
 	"go.uber.org/zap"
 )
 

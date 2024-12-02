@@ -1,11 +1,11 @@
 package shard
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/pilorama"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/writecache"
 )
 
 // Info groups the information about Shard.

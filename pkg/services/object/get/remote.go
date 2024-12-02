@@ -3,9 +3,9 @@ package getsvc
 import (
 	"errors"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/client"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/client"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
 	"go.uber.org/zap"
 )
 

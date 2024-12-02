@@ -68,10 +68,10 @@ NEOFS_NODE_ATTRIBUTE_2=UN-LOCODE:RU LED
 
 You can validate UN/LOCODE attribute in 
 [NeoFS LOCODE database](https://github.com/epicchainlabs/neofs-locode-db/releases/tag/v0.1.0)
-with neofs-cli.
+with epicchain-cli.
 
 ```
-$ neofs-cli util locode info --db ./locode_db --locode 'RU LED'
+$ epicchain-cli util locode info --db ./locode_db --locode 'RU LED'
 Country: Russia
 Location: Saint Petersburg (ex Leningrad)
 Continent: Europe
@@ -80,11 +80,11 @@ Coordinates: 59.53, 30.15
 ```
 
 It is recommended to pass the node's key as a file. To do so, convert your wallet 
-WIF to 32-byte hex (via `neofs-cli` for example) and save it to a file.
+WIF to 32-byte hex (via `epicchain-cli` for example) and save it to a file.
 
 ```
 // Print WIF in a 32-byte hex format
-$ neofs-cli util keyer Kwp4Q933QujZLUCcn39tzY94itNQJS4EjTp28oAMzuxMwabm3p1s
+$ epicchain-cli util keyer Kwp4Q933QujZLUCcn39tzY94itNQJS4EjTp28oAMzuxMwabm3p1s
 PrivateKey      11ab917cd99170cb8d0d48e78fca317564e6b3aaff7f7058952d6175cdca0f56
 PublicKey       02be8b2e837cab232168f5c3303f1b985818b7583682fb49026b8d2f43df7c1059
 WIF             Kwp4Q933QujZLUCcn39tzY94itNQJS4EjTp28oAMzuxMwabm3p1s

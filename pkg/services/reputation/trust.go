@@ -3,7 +3,7 @@ package reputation
 import (
 	"strconv"
 
-	"github.com/epicchainlabs/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/epicchain-sdk-go/reputation"
 )
 
 // TrustValue represents the numeric value of the node's trust.

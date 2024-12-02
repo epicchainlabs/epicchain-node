@@ -5,15 +5,15 @@ import (
 	"io"
 
 	rawclient "github.com/epicchainlabs/neofs-api-go/v2/rpc/client"
-	"github.com/epicchainlabs/neofs-node/pkg/network"
-	"github.com/epicchainlabs/neofs-sdk-go/client"
-	"github.com/epicchainlabs/neofs-sdk-go/container"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	reputationSDK "github.com/epicchainlabs/neofs-sdk-go/reputation"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-sdk-go/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/container"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	neofscrypto "github.com/epicchainlabs/epicchain-sdk-go/crypto"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	reputationSDK "github.com/epicchainlabs/epicchain-sdk-go/reputation"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 // Client is an interface of NeoFS storage

@@ -5,8 +5,8 @@ import (
 	"math/big"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 // BalanceOf receives the amount of funds in the client's account

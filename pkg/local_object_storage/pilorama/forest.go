@@ -4,8 +4,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	cidSDK "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 )
 
 // memoryForest represents multiple replicating trees sharing a single storage.

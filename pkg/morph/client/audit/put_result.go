@@ -3,8 +3,8 @@ package audit
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	auditAPI "github.com/epicchainlabs/neofs-sdk-go/audit"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	auditAPI "github.com/epicchainlabs/epicchain-sdk-go/audit"
 )
 
 // ResultID is an identity of audit result inside audit contract.

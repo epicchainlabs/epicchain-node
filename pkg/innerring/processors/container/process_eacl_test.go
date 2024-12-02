@@ -3,7 +3,7 @@ package container
 import (
 	"testing"
 
-	"github.com/epicchainlabs/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-sdk-go/eacl"
 	"github.com/stretchr/testify/require"
 )
 

@@ -4,7 +4,7 @@ Requires=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/neofs-node --config /etc/neofs/storage/config.yml
+ExecStart=/usr/bin/epicchain-node --config /etc/neofs/storage/config.yml
 User=neofs-storage
 Group=neofs-storage
 WorkingDirectory=/srv/neofs

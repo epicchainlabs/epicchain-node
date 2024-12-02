@@ -3,9 +3,9 @@ package shard_test
 import (
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
-	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
+	objecttest "github.com/epicchainlabs/epicchain-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 )
 

@@ -12,25 +12,25 @@ override_dh_auto_install:
 	echo $(DEB_BUILD_OPTIONS)
 	dh_auto_install
 
-	bin/neofs-adm gendoc -t man man/
-	bin/neofs-cli gendoc -t man man/
+	bin/epicchain-adm gendoc -t man man/
+	bin/epicchain-cli gendoc -t man man/
 
-	bin/neofs-adm completion bash > debian/neofs-adm.bash-completion
-	bin/neofs-cli completion bash > debian/neofs-cli.bash-completion
-	install -m 0755 -d debian/neofs-cli/usr/share/fish/completions/
-	install -m 0755 -d debian/neofs-cli/usr/share/zsh/vendor-completions/
-	bin/neofs-adm completion fish > debian/neofs-cli/usr/share/fish/completions/neofs-adm.fish
-	bin/neofs-adm completion zsh > debian/neofs-cli/usr/share/zsh/vendor-completions/_neofs-adm
-	bin/neofs-cli completion fish > debian/neofs-cli/usr/share/fish/completions/neofs-cli.fish
-	bin/neofs-cli completion zsh > debian/neofs-cli/usr/share/zsh/vendor-completions/_neofs-cli
+	bin/epicchain-adm completion bash > debian/epicchain-adm.bash-completion
+	bin/epicchain-cli completion bash > debian/epicchain-cli.bash-completion
+	install -m 0755 -d debian/epicchain-cli/usr/share/fish/completions/
+	install -m 0755 -d debian/epicchain-cli/usr/share/zsh/vendor-completions/
+	bin/epicchain-adm completion fish > debian/epicchain-cli/usr/share/fish/completions/epicchain-adm.fish
+	bin/epicchain-adm completion zsh > debian/epicchain-cli/usr/share/zsh/vendor-completions/_epicchain-adm
+	bin/epicchain-cli completion fish > debian/epicchain-cli/usr/share/fish/completions/epicchain-cli.fish
+	bin/epicchain-cli completion zsh > debian/epicchain-cli/usr/share/zsh/vendor-completions/_epicchain-cli
 
-	install -T -m 0640 config/example/ir.yaml debian/neofs-ir/etc/neofs/ir/config.yml
-	install -T -m 0640 config/example/ir-control.yaml debian/neofs-ir/etc/neofs/ir/control.yml
+	install -T -m 0640 config/example/ir.yaml debian/epicchain-ir/etc/neofs/ir/config.yml
+	install -T -m 0640 config/example/ir-control.yaml debian/epicchain-ir/etc/neofs/ir/control.yml
 	install -T -m 0640 config/example/node.yaml debian/neofs-storage/etc/neofs/storage/config.yml
 	install -T -m 0640 config/example/node-control.yaml debian/neofs-storage/etc/neofs/storage/control.yml
 
 override_dh_installsystemd:
-	dh_installsystemd --no-enable --no-start --name=neofs-ir
+	dh_installsystemd --no-enable --no-start --name=epicchain-ir
 	dh_installsystemd --no-enable --no-start --name=neofs-storage
 
 override_dh_installchangelogs:

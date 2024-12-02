@@ -3,8 +3,8 @@ package replicator
 import (
 	"time"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
-	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
+	putsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/put"
 	"go.uber.org/zap"
 )
 

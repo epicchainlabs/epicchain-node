@@ -1,8 +1,8 @@
 package balance
 
 import (
-	neofscontract "github.com/epicchainlabs/neofs-node/pkg/morph/client/neofs"
-	balanceEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/balance"
+	neofscontract "github.com/epicchainlabs/epicchain-node/pkg/morph/client/neofs"
+	balanceEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/balance"
 	"go.uber.org/zap"
 )
 

@@ -5,10 +5,10 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/core/mempoolevent"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client/neofsid"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	containerEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client/neofsid"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	containerEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/container"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

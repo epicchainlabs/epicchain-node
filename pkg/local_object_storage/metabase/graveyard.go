@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 	"golang.org/x/exp/maps"
 )

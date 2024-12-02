@@ -6,10 +6,10 @@ We have a set of compiled binaries which also enclose a subset of functionality
 (there are overlaps for internal components, but those are OK), so they
 naturally form this set of labels:
 
-- neofs-adm
-- neofs-cli
-- neofs-ir
-- neofs-lens
+- epicchain-adm
+- epicchain-cli
+- epicchain-ir
+- epicchain-lens
 - neofs-storage
 
 ## Platform

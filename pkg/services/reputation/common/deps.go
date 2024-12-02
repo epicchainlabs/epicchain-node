@@ -4,8 +4,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
-	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation"
+	apireputation "github.com/epicchainlabs/epicchain-sdk-go/reputation"
 )
 
 // Context wraps stdlib context

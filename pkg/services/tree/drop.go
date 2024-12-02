@@ -3,7 +3,7 @@ package tree
 import (
 	"context"
 
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
 )
 
 // DropTree drops a tree from the database. If treeID is empty, all the trees are dropped.

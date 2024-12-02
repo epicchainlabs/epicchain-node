@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	netmapcore "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	loadroute "github.com/epicchainlabs/neofs-node/pkg/services/container/announcement/load/route"
-	"github.com/epicchainlabs/neofs-sdk-go/container"
+	netmapcore "github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	loadroute "github.com/epicchainlabs/epicchain-node/pkg/services/container/announcement/load/route"
+	"github.com/epicchainlabs/epicchain-sdk-go/container"
 )
 
 // NextStage composes container nodes for the container and epoch from a,

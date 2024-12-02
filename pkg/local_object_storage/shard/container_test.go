@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	cidtest "github.com/epicchainlabs/epicchain-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
 	"github.com/stretchr/testify/require"
 )
 

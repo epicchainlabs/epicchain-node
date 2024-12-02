@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/control"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/control"
 )
 
 func TestHealthCheckResponse_Body_StableMarshal(t *testing.T) {

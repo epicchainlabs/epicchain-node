@@ -3,7 +3,7 @@ package neofsapiclient
 import (
 	"context"
 
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 type contextPrm struct {

@@ -11,7 +11,7 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient"
 	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/notary"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 )
 
 // [deploy.Blockchain] methods provided from both [client.Client] and

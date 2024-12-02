@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement/basic"
-	nodeutil "github.com/epicchainlabs/neofs-node/pkg/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/settlement/basic"
+	nodeutil "github.com/epicchainlabs/epicchain-node/pkg/util"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

@@ -5,9 +5,9 @@ import (
 	"context"
 	"io"
 
-	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
-	"github.com/epicchainlabs/neofs-sdk-go/client"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	putsvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/put"
+	"github.com/epicchainlabs/epicchain-sdk-go/client"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"go.uber.org/zap"
 )
 

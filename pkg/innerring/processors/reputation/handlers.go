@@ -3,8 +3,8 @@ package reputation
 import (
 	"encoding/hex"
 
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	reputationEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	reputationEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/reputation"
 	"go.uber.org/zap"
 )
 

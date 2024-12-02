@@ -1,9 +1,9 @@
 package netmap
 
 import (
-	timerEvent "github.com/epicchainlabs/neofs-node/pkg/innerring/timers"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	netmapEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/netmap"
+	timerEvent "github.com/epicchainlabs/epicchain-node/pkg/innerring/timers"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	netmapEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/netmap"
 	"go.uber.org/zap"
 )
 

@@ -19,7 +19,7 @@ set -e
 case "$1" in
     configure)
         USERNAME=ir
-        id -u neofs-ir >/dev/null 2>&1 || useradd -s /usr/sbin/nologin -d /var/lib/neofs/ir --system -M -U -c "NeoFS InnerRing node" neofs-ir
+        id -u epicchain-ir >/dev/null 2>&1 || useradd -s /usr/sbin/nologin -d /var/lib/neofs/ir --system -M -U -c "NeoFS InnerRing node" epicchain-ir
         if ! dpkg-statoverride --list /etc/neofs/$USERNAME >/dev/null; then
             chown -f root:neofs-$USERNAME /etc/neofs/$USERNAME
             chmod -f 0750 /etc/neofs/$USERNAME

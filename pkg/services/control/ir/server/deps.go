@@ -1,6 +1,6 @@
 package control
 
-import control "github.com/epicchainlabs/neofs-node/pkg/services/control/ir"
+import control "github.com/epicchainlabs/epicchain-node/pkg/services/control/ir"
 
 // HealthChecker is component interface for calculating
 // the current health status of a node.

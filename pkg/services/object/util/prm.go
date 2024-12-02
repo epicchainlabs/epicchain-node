@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
-	"github.com/epicchainlabs/neofs-sdk-go/bearer"
-	sessionsdk "github.com/epicchainlabs/neofs-sdk-go/session"
+	"github.com/epicchainlabs/epicchain-sdk-go/bearer"
+	sessionsdk "github.com/epicchainlabs/epicchain-sdk-go/session"
 )
 
 // maxLocalTTL is maximum TTL for an operation to be considered local.

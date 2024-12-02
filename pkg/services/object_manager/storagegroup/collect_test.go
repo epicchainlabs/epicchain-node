@@ -4,11 +4,11 @@ import (
 	"crypto/sha256"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-sdk-go/checksum"
-	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
+	"github.com/epicchainlabs/epicchain-sdk-go/checksum"
+	cidtest "github.com/epicchainlabs/epicchain-sdk-go/container/id/test"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,7 +1,7 @@
 package settlement
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement/basic"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/settlement/basic"
 )
 
 // AuditProcessor is an interface of data audit fee processor.

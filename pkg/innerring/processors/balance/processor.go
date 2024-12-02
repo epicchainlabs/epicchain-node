@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	neofscontract "github.com/epicchainlabs/neofs-node/pkg/morph/client/neofs"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	balanceEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/balance"
+	neofscontract "github.com/epicchainlabs/epicchain-node/pkg/morph/client/neofs"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	balanceEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/balance"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

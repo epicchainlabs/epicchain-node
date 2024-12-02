@@ -7,15 +7,15 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
-	"github.com/epicchainlabs/neofs-node/pkg/core/container"
-	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
-	eaclV2 "github.com/epicchainlabs/neofs-node/pkg/services/object/acl/eacl/v2"
-	v2 "github.com/epicchainlabs/neofs-node/pkg/services/object/acl/v2"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
-	eaclSDK "github.com/epicchainlabs/neofs-sdk-go/eacl"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/engine"
+	eaclV2 "github.com/epicchainlabs/epicchain-node/pkg/services/object/acl/eacl/v2"
+	v2 "github.com/epicchainlabs/epicchain-node/pkg/services/object/acl/v2"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	"github.com/epicchainlabs/epicchain-sdk-go/container/acl"
+	eaclSDK "github.com/epicchainlabs/epicchain-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 // CheckerPrm groups parameters for Checker

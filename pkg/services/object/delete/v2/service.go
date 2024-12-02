@@ -4,7 +4,7 @@ import (
 	"context"
 
 	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
-	deletesvc "github.com/epicchainlabs/neofs-node/pkg/services/object/delete"
+	deletesvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/delete"
 )
 
 // Service implements Delete operation of Object service v2.

@@ -6,8 +6,8 @@ import (
 	"errors"
 	"fmt"
 
-	reputationEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/reputation"
-	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
+	reputationEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/reputation"
+	apireputation "github.com/epicchainlabs/epicchain-sdk-go/reputation"
 	"go.uber.org/zap"
 )
 

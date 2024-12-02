@@ -3,7 +3,7 @@ package response
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/util"
 )
 
 // ClientMessageStreamer represents client-side message streamer

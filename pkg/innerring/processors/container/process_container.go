@@ -4,12 +4,12 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
-	cntClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	containerEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/container"
-	containerSDK "github.com/epicchainlabs/neofs-sdk-go/container"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/session"
+	cntClient "github.com/epicchainlabs/epicchain-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	containerEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/container"
+	containerSDK "github.com/epicchainlabs/epicchain-sdk-go/container"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/session"
 	"go.uber.org/zap"
 )
 

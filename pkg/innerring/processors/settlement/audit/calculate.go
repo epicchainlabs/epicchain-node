@@ -8,11 +8,11 @@ import (
 	"math/big"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement/common"
-	"github.com/epicchainlabs/neofs-sdk-go/audit"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/settlement/common"
+	"github.com/epicchainlabs/epicchain-sdk-go/audit"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 	"go.uber.org/zap"
 )
 
@@ -181,7 +181,7 @@ func (c *Calculator) collectPassNodes(ctx *singleResultCtx) bool {
 	ctx.passNodes = make(map[string]common.NodeInfo)
 
 	for _, cnrNode := range ctx.cnrNodes {
-		// TODO(@cthulhu-rider): neofs-sdk-go#241 use dedicated method
+		// TODO(@cthulhu-rider): epicchain-sdk-go#241 use dedicated method
 		ctx.auditResult.IteratePassedStorageNodes(func(passNode []byte) bool {
 			if !bytes.Equal(cnrNode.PublicKey(), passNode) {
 				return true

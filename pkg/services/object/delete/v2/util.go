@@ -6,9 +6,9 @@ import (
 
 	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
 	"github.com/epicchainlabs/neofs-api-go/v2/refs"
-	deletesvc "github.com/epicchainlabs/neofs-node/pkg/services/object/delete"
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	deletesvc "github.com/epicchainlabs/epicchain-node/pkg/services/object/delete"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 type tombstoneBodyWriter struct {

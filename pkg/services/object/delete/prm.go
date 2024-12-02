@@ -1,8 +1,8 @@
 package deletesvc
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/object/util"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 )
 
 // TombstoneAddressWriter is an interface of tombstone address setter.

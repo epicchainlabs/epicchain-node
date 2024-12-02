@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust"
-	eigentrustcalc "github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/calculator"
-	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation/eigentrust"
+	eigentrustcalc "github.com/epicchainlabs/epicchain-node/pkg/services/reputation/eigentrust/calculator"
+	apireputation "github.com/epicchainlabs/epicchain-sdk-go/reputation"
 )
 
 // Put saves intermediate trust of the consumer to daughter peer.

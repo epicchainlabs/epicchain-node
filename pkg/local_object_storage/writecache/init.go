@@ -3,11 +3,11 @@ package writecache
 import (
 	"errors"
 
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
-	storagelog "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/log"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/blobstor/common"
+	storagelog "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/internal/log"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 	"go.uber.org/zap"
 )

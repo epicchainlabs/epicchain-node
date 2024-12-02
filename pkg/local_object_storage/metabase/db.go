@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/mr-tron/base58"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
 	"go.etcd.io/bbolt"
 	"go.uber.org/zap"
 )

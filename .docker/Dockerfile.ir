@@ -5,7 +5,7 @@ ARG REPO=repository
 WORKDIR /src
 COPY . /src
 
-RUN make bin/neofs-ir
+RUN make bin/epicchain-ir
 
 # Executable image
 FROM scratch
@@ -13,6 +13,6 @@ FROM scratch
 WORKDIR /
 
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-COPY --from=builder /src/bin/neofs-ir /bin/neofs-ir
+COPY --from=builder /src/bin/epicchain-ir /bin/epicchain-ir
 
-CMD ["neofs-ir"]
+CMD ["epicchain-ir"]

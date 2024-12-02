@@ -3,10 +3,10 @@ package audit
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/storagegroup"
-	"github.com/epicchainlabs/neofs-sdk-go/container"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/storagegroup"
+	"github.com/epicchainlabs/epicchain-sdk-go/container"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // Task groups groups the container audit parameters.

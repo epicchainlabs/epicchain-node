@@ -7,9 +7,9 @@ import (
 
 	"github.com/epicchainlabs/neofs-api-go/v2/netmap"
 	"github.com/epicchainlabs/neofs-api-go/v2/refs"
-	"github.com/epicchainlabs/neofs-node/pkg/core/version"
-	netmapSDK "github.com/epicchainlabs/neofs-sdk-go/netmap"
-	versionsdk "github.com/epicchainlabs/neofs-sdk-go/version"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/version"
+	netmapSDK "github.com/epicchainlabs/epicchain-sdk-go/netmap"
+	versionsdk "github.com/epicchainlabs/epicchain-sdk-go/version"
 )
 
 type executorSvc struct {

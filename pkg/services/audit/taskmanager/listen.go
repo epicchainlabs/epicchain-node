@@ -3,8 +3,8 @@ package audittask
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/audit"
-	"github.com/epicchainlabs/neofs-node/pkg/services/audit/auditor"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/audit"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/audit/auditor"
 	"go.uber.org/zap"
 )
 

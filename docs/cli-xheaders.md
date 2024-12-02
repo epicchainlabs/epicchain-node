@@ -21,7 +21,7 @@ how many past epochs the node can look up through. Depth is applied to a current
 of `__NEOFS__NETMAP_EPOCH` attribute. The `value` is string encoded `uint64` in decimal presentation. 
 If set to '0' or not set, only the current epoch is used.
 
-## `neofs-cli` commands with `--xhdr`
+## `epicchain-cli` commands with `--xhdr`
 
 List of commands with support of extended headers:
 * `container list-objects`
@@ -30,5 +30,5 @@ List of commands with support of extended headers:
 
 Example:
 ```shell
-$ neofs-cli object put -r s01.neofs.devenv:8080 -w wallet.json --cid CID --file FILE --xhdr "__NEOFS__NETMAP_EPOCH=777"
+$ epicchain-cli object put -r s01.neofs.devenv:8080 -w wallet.json --cid CID --file FILE --xhdr "__NEOFS__NETMAP_EPOCH=777"
 ```

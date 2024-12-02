@@ -7,8 +7,8 @@ import (
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	neofscontract "github.com/epicchainlabs/neofs-node/pkg/morph/client/neofs"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	neofscontract "github.com/epicchainlabs/epicchain-node/pkg/morph/client/neofs"
 	"go.uber.org/zap"
 )
 

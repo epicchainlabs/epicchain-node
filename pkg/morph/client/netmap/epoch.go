@@ -3,7 +3,7 @@ package netmap
 import (
 	"fmt"
 
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
 )
 
 // Epoch receives number of current NeoFS epoch

@@ -8,15 +8,15 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
-	core "github.com/epicchainlabs/neofs-node/pkg/core/container"
-	"github.com/epicchainlabs/neofs-sdk-go/bearer"
-	statusSDK "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
-	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
-	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
-	"github.com/epicchainlabs/neofs-sdk-go/eacl"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	core "github.com/epicchainlabs/epicchain-node/pkg/core/container"
+	"github.com/epicchainlabs/epicchain-sdk-go/bearer"
+	statusSDK "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	"github.com/epicchainlabs/epicchain-sdk-go/container/acl"
+	cidSDK "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	neofscrypto "github.com/epicchainlabs/epicchain-sdk-go/crypto"
+	neofsecdsa "github.com/epicchainlabs/epicchain-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/epicchain-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 	"go.uber.org/zap"
 )
 
@@ -212,7 +212,7 @@ var errNoAllowRules = errors.New("not found allowing rules for the request")
 // requests do not contain any "object" information that could be filtered and,
 // therefore, filtering leads to unexpected results.
 // The code was copied with the minor updates from the SDK repo:
-// https://github.com/epicchainlabs/neofs-sdk-go/blob/43a57d42dd50dc60465bfd3482f7f12bcfcf3411/eacl/validator.go#L28.
+// https://github.com/epicchainlabs/epicchain-sdk-go/blob/43a57d42dd50dc60465bfd3482f7f12bcfcf3411/eacl/validator.go#L28.
 func checkEACL(tb eacl.Table, signer []byte, role eacl.Role, op eacl.Operation) error {
 	for _, record := range tb.Records() {
 		// check type of operation

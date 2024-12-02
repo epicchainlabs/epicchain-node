@@ -1,11 +1,11 @@
 package netmap
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/audit"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/governance"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement"
-	cntClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
-	netmapEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/audit"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/governance"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/settlement"
+	cntClient "github.com/epicchainlabs/epicchain-node/pkg/morph/client/container"
+	netmapEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/netmap"
 	"go.uber.org/zap"
 )
 

@@ -1,8 +1,8 @@
 package alphabet
 
 import (
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	netmapEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	netmapEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/netmap"
 	"go.uber.org/zap"
 )
 

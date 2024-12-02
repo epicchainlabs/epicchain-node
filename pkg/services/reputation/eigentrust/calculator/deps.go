@@ -3,9 +3,9 @@ package eigentrustcalc
 import (
 	"context"
 
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
-	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust"
-	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation"
+	"github.com/epicchainlabs/epicchain-node/pkg/services/reputation/eigentrust"
+	apireputation "github.com/epicchainlabs/epicchain-sdk-go/reputation"
 )
 
 type Context interface {

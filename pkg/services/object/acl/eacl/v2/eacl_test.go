@@ -9,12 +9,12 @@ import (
 	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
 	"github.com/epicchainlabs/neofs-api-go/v2/refs"
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
-	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
-	eaclSDK "github.com/epicchainlabs/neofs-sdk-go/eacl"
-	"github.com/epicchainlabs/neofs-sdk-go/object"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
-	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
+	neofscrypto "github.com/epicchainlabs/epicchain-sdk-go/crypto"
+	eaclSDK "github.com/epicchainlabs/epicchain-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-sdk-go/object"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
+	objecttest "github.com/epicchainlabs/epicchain-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 )
 

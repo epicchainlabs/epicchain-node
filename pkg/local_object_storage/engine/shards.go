@@ -6,10 +6,10 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/epicchainlabs/hrw/v2"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/util/logicerr"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

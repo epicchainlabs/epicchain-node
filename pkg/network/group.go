@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 )
 
 // AddressGroup represents list of network addresses of the node.

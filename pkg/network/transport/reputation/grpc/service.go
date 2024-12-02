@@ -5,7 +5,7 @@ import (
 
 	"github.com/epicchainlabs/neofs-api-go/v2/reputation"
 	reputationgrpc "github.com/epicchainlabs/neofs-api-go/v2/reputation/grpc"
-	reputationrpc "github.com/epicchainlabs/neofs-node/pkg/services/reputation/rpc"
+	reputationrpc "github.com/epicchainlabs/epicchain-node/pkg/services/reputation/rpc"
 )
 
 // Server wraps NeoFS API v2 Reputation service server

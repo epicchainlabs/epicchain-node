@@ -3,7 +3,7 @@ package common
 import (
 	"math/big"
 
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 )
 
 type TransferTable struct {

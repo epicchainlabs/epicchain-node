@@ -1,8 +1,8 @@
 package auditor
 
 import (
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
-	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
+	oid "github.com/epicchainlabs/epicchain-sdk-go/object/id"
 	"github.com/epicchainlabs/tzhash/tz"
 	"go.uber.org/zap"
 )

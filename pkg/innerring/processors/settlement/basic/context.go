@@ -5,10 +5,10 @@ import (
 	"sync"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement/common"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
-	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/settlement/common"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client/container"
+	cid "github.com/epicchainlabs/epicchain-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 	"go.uber.org/zap"
 )
 

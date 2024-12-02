@@ -5,12 +5,12 @@ import (
 	"fmt"
 
 	"github.com/epicchainlabs/epicchain-go/pkg/core/mempoolevent"
-	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/state"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
-	nmClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/netmap"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
-	netmapEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/netmap"
-	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/innerring/processors/netmap/nodevalidation/state"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client/container"
+	nmClient "github.com/epicchainlabs/epicchain-node/pkg/morph/client/netmap"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/event"
+	netmapEvent "github.com/epicchainlabs/epicchain-node/pkg/morph/event/netmap"
+	"github.com/epicchainlabs/epicchain-sdk-go/netmap"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

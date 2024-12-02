@@ -8,8 +8,8 @@ import (
 	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
 	"github.com/epicchainlabs/epicchain-go/pkg/util"
 	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
-	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
-	util2 "github.com/epicchainlabs/neofs-node/pkg/util"
+	"github.com/epicchainlabs/epicchain-node/pkg/morph/client"
+	util2 "github.com/epicchainlabs/epicchain-node/pkg/util"
 	"go.uber.org/zap"
 )
 

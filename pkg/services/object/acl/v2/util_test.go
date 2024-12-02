@@ -8,13 +8,13 @@ import (
 
 	"github.com/epicchainlabs/neofs-api-go/v2/acl"
 	"github.com/epicchainlabs/neofs-api-go/v2/session"
-	bearertest "github.com/epicchainlabs/neofs-sdk-go/bearer/test"
-	aclsdk "github.com/epicchainlabs/neofs-sdk-go/container/acl"
-	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
-	sessionSDK "github.com/epicchainlabs/neofs-sdk-go/session"
-	sessiontest "github.com/epicchainlabs/neofs-sdk-go/session/test"
-	"github.com/epicchainlabs/neofs-sdk-go/user"
+	bearertest "github.com/epicchainlabs/epicchain-sdk-go/bearer/test"
+	aclsdk "github.com/epicchainlabs/epicchain-sdk-go/container/acl"
+	cidtest "github.com/epicchainlabs/epicchain-sdk-go/container/id/test"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
+	sessionSDK "github.com/epicchainlabs/epicchain-sdk-go/session"
+	sessiontest "github.com/epicchainlabs/epicchain-sdk-go/session/test"
+	"github.com/epicchainlabs/epicchain-sdk-go/user"
 	"github.com/stretchr/testify/require"
 )
 

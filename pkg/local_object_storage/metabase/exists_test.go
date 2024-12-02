@@ -4,12 +4,12 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/epicchainlabs/neofs-node/pkg/core/object"
-	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
-	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
-	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
-	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
+	"github.com/epicchainlabs/epicchain-node/pkg/core/object"
+	meta "github.com/epicchainlabs/epicchain-node/pkg/local_object_storage/metabase"
+	apistatus "github.com/epicchainlabs/epicchain-sdk-go/client/status"
+	cidtest "github.com/epicchainlabs/epicchain-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/epicchain-sdk-go/object"
+	oidtest "github.com/epicchainlabs/epicchain-sdk-go/object/id/test"
 	"github.com/stretchr/testify/require"
 )
 
