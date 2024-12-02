@@ -3,10 +3,10 @@ package morph
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/invoker"
-	"github.com/nspcc-dev/neofs-contract/rpc/nns"
-	"github.com/nspcc-dev/neofs-node/cmd/internal/cmdprinter"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client/netmap"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/invoker"
+	"github.com/epicchainlabs/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/neofs-node/cmd/internal/cmdprinter"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client/netmap"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

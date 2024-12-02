@@ -7,13 +7,13 @@ import (
 	"os"
 
 	"github.com/cheggaaa/pb"
-	internalclient "github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/client"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/key"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	internalclient "github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/key"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"github.com/spf13/cobra"
 )
 

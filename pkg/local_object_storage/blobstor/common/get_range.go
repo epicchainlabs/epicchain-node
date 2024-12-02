@@ -1,8 +1,8 @@
 package common
 
 import (
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 type GetRangePrm struct {

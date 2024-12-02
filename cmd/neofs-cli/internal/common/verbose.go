@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-sdk-go/checksum"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-sdk-go/checksum"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

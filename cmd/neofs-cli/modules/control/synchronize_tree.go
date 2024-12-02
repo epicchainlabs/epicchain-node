@@ -4,13 +4,13 @@ import (
 	"crypto/sha256"
 	"errors"
 
-	rawclient "github.com/nspcc-dev/neofs-api-go/v2/rpc/client"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/key"
-	"github.com/nspcc-dev/neofs-node/pkg/services/control"
-	controlSvc "github.com/nspcc-dev/neofs-node/pkg/services/control/server"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	rawclient "github.com/epicchainlabs/neofs-api-go/v2/rpc/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/key"
+	"github.com/epicchainlabs/neofs-node/pkg/services/control"
+	controlSvc "github.com/epicchainlabs/neofs-node/pkg/services/control/server"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 	"github.com/spf13/cobra"
 )
 

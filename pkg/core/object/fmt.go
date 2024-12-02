@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	"github.com/nspcc-dev/neofs-sdk-go/storagegroup"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-sdk-go/storagegroup"
 )
 
 // FormatValidator represents an object format validator.

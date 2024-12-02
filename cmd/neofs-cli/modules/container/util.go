@@ -5,10 +5,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
 	"github.com/spf13/cobra"
 )
 

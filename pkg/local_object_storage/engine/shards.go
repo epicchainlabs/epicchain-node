@@ -5,11 +5,11 @@ import (
 	"sync/atomic"
 
 	"github.com/google/uuid"
-	"github.com/nspcc-dev/hrw/v2"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/util/logicerr"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/hrw/v2"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

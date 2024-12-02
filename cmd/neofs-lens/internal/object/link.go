@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	common "github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
+	common "github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
 	"github.com/spf13/cobra"
 )
 

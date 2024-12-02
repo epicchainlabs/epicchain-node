@@ -3,8 +3,8 @@ package common
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/compression"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/compression"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 // Storage represents key-value object storage.

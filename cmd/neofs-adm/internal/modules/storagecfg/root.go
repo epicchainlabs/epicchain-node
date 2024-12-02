@@ -16,19 +16,19 @@ import (
 	"time"
 
 	"github.com/chzyer/readline"
-	"github.com/nspcc-dev/neo-go/cli/flags"
-	"github.com/nspcc-dev/neo-go/cli/input"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/fixedn"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/actor"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/gas"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/nep17"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/trigger"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/wallet"
-	netutil "github.com/nspcc-dev/neofs-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-go/cli/flags"
+	"github.com/epicchainlabs/epicchain-go/cli/input"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/fixedn"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/actor"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/gas"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/nep17"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/trigger"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/wallet"
+	netutil "github.com/epicchainlabs/neofs-node/pkg/network"
 
 	"github.com/spf13/cobra"
 )
@@ -152,7 +152,7 @@ func storageConfig(cmd *cobra.Command, args []string) {
 		validator := netutil.Address{}
 		err := validator.FromString(c.AnnouncedAddress)
 		if err != nil {
-			cmd.Println("Incorrect address format. See https://github.com/nspcc-dev/neofs-node/blob/master/pkg/network/address.go for details.")
+			cmd.Println("Incorrect address format. See https://github.com/epicchainlabs/neofs-node/blob/master/pkg/network/address.go for details.")
 			continue
 		}
 		uriAddr, err := url.Parse(validator.URIAddr())

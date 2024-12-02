@@ -5,20 +5,20 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/nspcc-dev/neo-go/cli/input"
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/actor"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/gas"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/notary"
-	"github.com/nspcc-dev/neo-go/pkg/wallet"
+	"github.com/epicchainlabs/epicchain-go/cli/input"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/transaction"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/actor"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/gas"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/notary"
+	"github.com/epicchainlabs/epicchain-go/pkg/wallet"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
 
 // defaultNotaryDepositLifetime is an amount of blocks notary deposit stays valid.
-// https://github.com/nspcc-dev/neo-go/blob/master/pkg/core/native/notary.go#L48
+// https://github.com/epicchainlabs/epicchain-go/blob/master/pkg/core/native/notary.go#L48
 const defaultNotaryDepositLifetime = 5760
 
 func depositNotary(cmd *cobra.Command, _ []string) error {

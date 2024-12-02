@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	profilerconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/profiler"
-	configtest "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/test"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	profilerconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/profiler"
+	configtest "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/test"
 	"github.com/stretchr/testify/require"
 )
 

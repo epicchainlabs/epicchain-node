@@ -3,7 +3,7 @@ package util
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
 	"github.com/stretchr/testify/require"
 )
 

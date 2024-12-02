@@ -3,11 +3,11 @@ package innerring
 import (
 	"context"
 
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/innerring/processors/settlement"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client/container"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/timer"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/timer"
 	"go.uber.org/zap"
 )
 

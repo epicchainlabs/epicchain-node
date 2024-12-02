@@ -3,9 +3,9 @@ package blobstor
 import (
 	"errors"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/util/logicerr"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
 )
 
 // GetRange reads object payload data from b.

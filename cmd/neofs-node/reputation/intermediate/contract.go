@@ -4,11 +4,11 @@ import (
 	"crypto/ecdsa"
 	"fmt"
 
-	repClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/reputation"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust"
-	eigentrustcalc "github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust/calculator"
-	neofsecdsa "github.com/nspcc-dev/neofs-sdk-go/crypto/ecdsa"
-	apireputation "github.com/nspcc-dev/neofs-sdk-go/reputation"
+	repClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust"
+	eigentrustcalc "github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/calculator"
+	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
+	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
 	"go.uber.org/zap"
 )
 

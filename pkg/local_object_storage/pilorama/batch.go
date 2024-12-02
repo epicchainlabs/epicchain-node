@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	cidSDK "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
 	"go.etcd.io/bbolt"
 )
 

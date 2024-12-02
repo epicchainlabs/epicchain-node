@@ -4,8 +4,8 @@ import (
 	"crypto/sha256"
 
 	"github.com/mr-tron/base58"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	containerEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/container"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	containerEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/container"
 	"go.uber.org/zap"
 )
 

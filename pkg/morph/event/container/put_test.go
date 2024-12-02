@@ -4,10 +4,10 @@ import (
 	"crypto/sha256"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,8 +3,8 @@ package engine
 import (
 	"testing"
 
-	oidtest "github.com/nspcc-dev/neofs-sdk-go/object/id/test"
-	objecttest "github.com/nspcc-dev/neofs-sdk-go/object/test"
+	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
+	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 )
 

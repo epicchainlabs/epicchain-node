@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/internal"
-	configtest "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/test"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/internal"
+	configtest "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/test"
 	"github.com/stretchr/testify/require"
 )
 

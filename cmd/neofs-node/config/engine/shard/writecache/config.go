@@ -1,8 +1,8 @@
 package writecacheconfig
 
 import (
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	boltdbconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/engine/shard/boltdb"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	boltdbconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/engine/shard/boltdb"
 )
 
 // Config is a wrapper over the config section

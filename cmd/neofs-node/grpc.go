@@ -8,8 +8,8 @@ import (
 	"net"
 	"time"
 
-	grpcconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/grpc"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
+	grpcconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/grpc"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
 	"go.uber.org/zap"
 	"golang.org/x/net/netutil"
 	"google.golang.org/grpc"

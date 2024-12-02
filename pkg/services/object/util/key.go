@@ -5,10 +5,10 @@ import (
 	"fmt"
 
 	"github.com/google/uuid"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/services/session/storage"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 // SessionSource is an interface tha provides

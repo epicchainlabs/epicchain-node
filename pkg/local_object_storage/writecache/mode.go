@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
 )
 
 // ErrReadOnly is returned when Put/Write is performed in a read-only mode.

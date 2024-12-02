@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/internal/storagetest"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/storagetest"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 )

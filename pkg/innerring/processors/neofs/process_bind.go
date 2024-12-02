@@ -4,11 +4,11 @@ import (
 	"crypto/elliptic"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client/neofsid"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event/neofs"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client/neofsid"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event/neofs"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 	"go.uber.org/zap"
 )
 

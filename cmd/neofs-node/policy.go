@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	netmapsdk "github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	netmapsdk "github.com/epicchainlabs/neofs-sdk-go/netmap"
 )
 
 // containerNodes wraps NeoFS network state to apply container storage policies.

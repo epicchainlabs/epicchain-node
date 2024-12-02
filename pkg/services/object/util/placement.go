@@ -3,13 +3,13 @@ package util
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/network"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object_manager/placement"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	netmapSDK "github.com/nspcc-dev/neofs-sdk-go/netmap"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/placement"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	netmapSDK "github.com/epicchainlabs/neofs-sdk-go/netmap"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 type localPlacement struct {

@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/encoding/bigint"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/bigint"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
 	"github.com/stretchr/testify/require"
 )
 

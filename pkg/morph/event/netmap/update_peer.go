@@ -3,9 +3,9 @@ package netmap
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/network/payload"
-	"github.com/nspcc-dev/neofs-contract/contracts/netmap"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
+	"github.com/epicchainlabs/neofs-contract/contracts/netmap"
 )
 
 type UpdatePeer struct {

@@ -3,7 +3,7 @@ package metrics_test
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/metrics"
+	"github.com/epicchainlabs/neofs-node/pkg/metrics"
 	"github.com/stretchr/testify/require"
 )
 

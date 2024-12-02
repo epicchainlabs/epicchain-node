@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/accounting"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client/balance"
-	accountingSvc "github.com/nspcc-dev/neofs-node/pkg/services/accounting"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-api-go/v2/accounting"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client/balance"
+	accountingSvc "github.com/epicchainlabs/neofs-node/pkg/services/accounting"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 type morphExecutor struct {

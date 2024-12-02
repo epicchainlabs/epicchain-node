@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-adm/internal/modules"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-adm/internal/modules"
 )
 
 func main() {

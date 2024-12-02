@@ -1,6 +1,6 @@
 package netmap
 
-import "github.com/nspcc-dev/neo-go/pkg/util"
+import "github.com/epicchainlabs/epicchain-go/pkg/util"
 
 // netmapCleanupTick is a event to remove offline nodes.
 type netmapCleanupTick struct {

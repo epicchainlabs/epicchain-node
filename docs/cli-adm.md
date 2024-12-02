@@ -18,7 +18,7 @@ Build docker image with `make image-adm`.
 
 At NeoFS private install deployment, neofs-adm requires compiled NeoFS 
 contracts. Find them in the latest release of 
-[neofs-contract repository](https://github.com/nspcc-dev/neofs-contract/releases).
+[neofs-contract repository](https://github.com/epicchainlabs/neofs-contract/releases).
 
 
 ## Commands

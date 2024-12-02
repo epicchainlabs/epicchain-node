@@ -4,8 +4,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
 	"github.com/stretchr/testify/require"
 )
 

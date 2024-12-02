@@ -3,9 +3,9 @@ package grpcreputation
 import (
 	"context"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/reputation"
-	reputationgrpc "github.com/nspcc-dev/neofs-api-go/v2/reputation/grpc"
-	reputationrpc "github.com/nspcc-dev/neofs-node/pkg/services/reputation/rpc"
+	"github.com/epicchainlabs/neofs-api-go/v2/reputation"
+	reputationgrpc "github.com/epicchainlabs/neofs-api-go/v2/reputation/grpc"
+	reputationrpc "github.com/epicchainlabs/neofs-node/pkg/services/reputation/rpc"
 )
 
 // Server wraps NeoFS API v2 Reputation service server

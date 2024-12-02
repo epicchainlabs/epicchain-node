@@ -5,7 +5,7 @@
 
 ---
 
-[![Report](https://goreportcard.com/badge/github.com/nspcc-dev/epicchain-node)](https://goreportcard.com/report/github.com/nspcc-dev/epicchain-node)
+[![Report](https://goreportcard.com/badge/github.com/epicchainlabs/epicchain-node)](https://goreportcard.com/report/github.com/epicchainlabs/epicchain-node)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nspcc-dev/epicchain-node?sort=semver)
 ![License](https://img.shields.io/github/license/nspcc-dev/epicchain-node.svg?style=popout)
 
@@ -17,13 +17,13 @@ Users can reliably store object data in the epicchain network and have full cont
 
 Deep [epicchain Blockchain](https://epicchain.org) integration allows epicchain to be used by dApps directly from [epicchainVM](https://docs.epicchain.org/docs/en-us/basic/technology/epicchainvm.html) on the [Smart Contract](https://docs.epicchain.org/docs/en-us/intro/glossary.html) code level. This enables dApps to manipulate large amounts of data affordably.
 
-epicchain offers a native [gRPC API](https://github.com/nspcc-dev/epicchain-api) and protocol gateways for popular protocols such as [AWS S3](https://github.com/nspcc-dev/epicchain-s3-gw), [HTTP](https://github.com/nspcc-dev/epicchain-http-gw), [FUSE](https://wikipedia.org/wiki/Filesystem_in_Userspace), and [sFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol), allowing developers to integrate applications without extensive code rewriting.
+epicchain offers a native [gRPC API](https://github.com/epicchainlabs/epicchain-api) and protocol gateways for popular protocols such as [AWS S3](https://github.com/epicchainlabs/epicchain-s3-gw), [HTTP](https://github.com/epicchainlabs/epicchain-http-gw), [FUSE](https://wikipedia.org/wiki/Filesystem_in_Userspace), and [sFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol), allowing developers to integrate applications without extensive code rewriting.
 
 # Supported Platforms
 
 Currently, we support GNU/Linux on amd64 CPUs with AVX/AVX2 instructions. More platforms will be supported after release `1.0`.
 
-The latest version of epicchain-node is compatible with epicchain-contract [v0.19.1](https://github.com/nspcc-dev/epicchain-contract/releases/tag/v0.19.1).
+The latest version of epicchain-node is compatible with epicchain-contract [v0.19.1](https://github.com/epicchainlabs/epicchain-contract/releases/tag/v0.19.1).
 
 # Building
 
@@ -49,7 +49,7 @@ make docker/bin/epicchain-<name>     # build a specific binary
 
 ## Docker Images
 
-To create Docker images suitable for use in [epicchain-dev-env](https://github.com/nspcc-dev/epicchain-dev-env/), use:
+To create Docker images suitable for use in [epicchain-dev-env](https://github.com/epicchainlabs/epicchain-dev-env/), use:
 ```sh
 make images
 ```
@@ -90,7 +90,7 @@ See [node.yaml](node.yaml) for configuration notes.
 
 # Private Network
 
-For epicchain development, consider using [epicchain-dev-env](https://github.com/nspcc-dev/epicchain-dev-env/). For developing applications using epicchain, the lighter [epicchain-aio](https://github.com/nspcc-dev/epicchain-aio) container is recommended. For manual deployment, refer to [docs/deploy.md](docs/deploy.md).
+For epicchain development, consider using [epicchain-dev-env](https://github.com/epicchainlabs/epicchain-dev-env/). For developing applications using epicchain, the lighter [epicchain-aio](https://github.com/epicchainlabs/epicchain-aio) container is recommended. For manual deployment, refer to [docs/deploy.md](docs/deploy.md).
 
 # Contributing
 

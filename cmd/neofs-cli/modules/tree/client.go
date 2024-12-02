@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/pkg/network"
-	"github.com/nspcc-dev/neofs-node/pkg/services/tree"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
+	"github.com/epicchainlabs/neofs-node/pkg/services/tree"
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

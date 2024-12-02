@@ -1,8 +1,8 @@
 package peapod
 
 import (
-	common "github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal"
-	blobstorcommon "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
+	common "github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal"
+	blobstorcommon "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
 	"github.com/spf13/cobra"
 )
 

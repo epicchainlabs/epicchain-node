@@ -4,14 +4,14 @@ import (
 	"crypto/ecdsa"
 	"os"
 
-	rawclient "github.com/nspcc-dev/neofs-api-go/v2/rpc/client"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/key"
-	"github.com/nspcc-dev/neofs-node/pkg/services/control"
-	ircontrol "github.com/nspcc-dev/neofs-node/pkg/services/control/ir"
-	ircontrolsrv "github.com/nspcc-dev/neofs-node/pkg/services/control/ir/server"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
+	rawclient "github.com/epicchainlabs/neofs-api-go/v2/rpc/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/key"
+	"github.com/epicchainlabs/neofs-node/pkg/services/control"
+	ircontrol "github.com/epicchainlabs/neofs-node/pkg/services/control/ir"
+	ircontrolsrv "github.com/epicchainlabs/neofs-node/pkg/services/control/ir/server"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
 	"github.com/spf13/cobra"
 )
 

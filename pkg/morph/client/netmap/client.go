@@ -3,10 +3,10 @@ package netmap
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/encoding/fixedn"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/fixedn"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 )
 
 type NodeInfo = netmap.NodeInfo

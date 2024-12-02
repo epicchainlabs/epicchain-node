@@ -2,7 +2,7 @@ package meta
 
 import (
 	"github.com/mr-tron/base58"
-	common "github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal"
+	common "github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal"
 	"github.com/spf13/cobra"
 )
 

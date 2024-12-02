@@ -1,11 +1,11 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: neofs-node
 Upstream-Contact: tech@nspcc.ru
-Source: https://github.com/nspcc-dev/neofs-node
+Source: https://github.com/epicchainlabs/neofs-node
 
 Files: *
 Copyright: 2018-2022 NeoSPCC (@nspcc-dev), contributors of neofs-node project 
-           (https://github.com/nspcc-dev/neofs-node/blob/master/CREDITS.md)
+           (https://github.com/epicchainlabs/neofs-node/blob/master/CREDITS.md)
 
 License: GPL-3
  This program is free software: you can redistribute it and/or modify it

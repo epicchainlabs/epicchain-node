@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	apiclientconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/apiclient"
-	configtest "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/test"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	apiclientconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/apiclient"
+	configtest "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/test"
 	"github.com/stretchr/testify/require"
 )
 

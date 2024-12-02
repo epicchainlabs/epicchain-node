@@ -4,11 +4,11 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/writecache"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
 	"github.com/stretchr/testify/require"
 )
 

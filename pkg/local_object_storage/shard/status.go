@@ -1,10 +1,10 @@
 package shard
 
 import (
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/writecache"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 // ObjectStatus represents the status of an object in a storage system. It contains

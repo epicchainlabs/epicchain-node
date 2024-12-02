@@ -4,9 +4,9 @@ import (
 	"errors"
 	"os"
 
-	common "github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
+	common "github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
 	"github.com/spf13/cobra"
 )
 

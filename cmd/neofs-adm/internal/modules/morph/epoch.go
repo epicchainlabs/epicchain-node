@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/unwrap"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/callflag"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
-	"github.com/nspcc-dev/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/epicchain-go/pkg/io"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/unwrap"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/callflag"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/emit"
+	"github.com/epicchainlabs/neofs-contract/rpc/nns"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

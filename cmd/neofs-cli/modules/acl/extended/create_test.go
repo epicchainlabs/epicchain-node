@@ -3,8 +3,8 @@ package extended
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/util"
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/util"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
 	"github.com/stretchr/testify/require"
 )
 

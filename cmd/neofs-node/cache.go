@@ -5,14 +5,14 @@ import (
 	"time"
 
 	lru "github.com/hashicorp/golang-lru/v2"
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	cntClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/container"
-	putsvc "github.com/nspcc-dev/neofs-node/pkg/services/object/put"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	netmapSDK "github.com/nspcc-dev/neofs-sdk-go/netmap"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	cntClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	netmapSDK "github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 type netValueReader[K comparable, V any] func(K) (V, error)

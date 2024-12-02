@@ -1,6 +1,6 @@
 package governance
 
-import "github.com/nspcc-dev/neo-go/pkg/util"
+import "github.com/epicchainlabs/epicchain-go/pkg/util"
 
 // Sync is an event to start governance synchronization.
 type Sync struct {

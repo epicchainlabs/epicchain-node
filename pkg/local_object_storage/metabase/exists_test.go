@@ -4,12 +4,12 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oidtest "github.com/nspcc-dev/neofs-sdk-go/object/id/test"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
 	"github.com/stretchr/testify/require"
 )
 

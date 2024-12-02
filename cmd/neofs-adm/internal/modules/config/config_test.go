@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/util/glagolitsa"
+	"github.com/epicchainlabs/neofs-node/pkg/util/glagolitsa"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 )

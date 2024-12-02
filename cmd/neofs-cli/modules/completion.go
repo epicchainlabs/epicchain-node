@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/nspcc-dev/neofs-node/pkg/util/autocomplete"
+	"github.com/epicchainlabs/neofs-node/pkg/util/autocomplete"
 )
 
 func init() {

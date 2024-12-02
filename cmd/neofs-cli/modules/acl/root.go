@@ -1,8 +1,8 @@
 package acl
 
 import (
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/acl/basic"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/acl/extended"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/acl/basic"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/acl/extended"
 	"github.com/spf13/cobra"
 )
 

@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/hrw/v2"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard"
-	"github.com/nspcc-dev/neofs-node/pkg/util"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/hrw/v2"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/neofs-node/pkg/util"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

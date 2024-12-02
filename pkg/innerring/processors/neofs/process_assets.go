@@ -1,9 +1,9 @@
 package neofs
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client/balance"
-	neofsEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/neofs"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client/balance"
+	neofsEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/neofs"
 	"go.uber.org/zap"
 )
 

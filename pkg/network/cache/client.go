@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	clientcore "github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
+	clientcore "github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
 	"go.uber.org/zap"
 )
 

@@ -1,9 +1,9 @@
 package basic
 
 import (
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/util"
-	"github.com/nspcc-dev/neofs-sdk-go/container/acl"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/util"
+	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
 	"github.com/spf13/cobra"
 )
 

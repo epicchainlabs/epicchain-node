@@ -4,9 +4,9 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	shardconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/engine/shard"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	shardconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/engine/shard"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
 )
 
 const (

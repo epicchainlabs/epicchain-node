@@ -6,18 +6,18 @@ import (
 	"errors"
 	"fmt"
 
-	internalclient "github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/client"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/key"
-	objectCli "github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/object"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object_manager/storagegroup"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	storagegroupSDK "github.com/nspcc-dev/neofs-sdk-go/storagegroup"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	internalclient "github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/key"
+	objectCli "github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/object"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/storagegroup"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	storagegroupSDK "github.com/epicchainlabs/neofs-sdk-go/storagegroup"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 	"github.com/spf13/cobra"
 )
 
@@ -50,7 +50,7 @@ func initSGPutCmd() {
 }
 
 func putSG(cmd *cobra.Command, _ []string) {
-	// Track https://github.com/nspcc-dev/neofs-node/issues/2595.
+	// Track https://github.com/epicchainlabs/neofs-node/issues/2595.
 	exp, _ := cmd.Flags().GetUint64(commonflags.ExpireAt)
 	lifetime, _ := cmd.Flags().GetUint64(commonflags.Lifetime)
 	ctx, cancel := commonflags.GetCommandContext(cmd)

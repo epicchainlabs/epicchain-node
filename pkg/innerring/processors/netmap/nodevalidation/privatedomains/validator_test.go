@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

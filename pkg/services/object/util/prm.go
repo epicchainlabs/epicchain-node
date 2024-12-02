@@ -3,9 +3,9 @@ package util
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
-	"github.com/nspcc-dev/neofs-sdk-go/bearer"
-	sessionsdk "github.com/nspcc-dev/neofs-sdk-go/session"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-sdk-go/bearer"
+	sessionsdk "github.com/epicchainlabs/neofs-sdk-go/session"
 )
 
 // maxLocalTTL is maximum TTL for an operation to be considered local.

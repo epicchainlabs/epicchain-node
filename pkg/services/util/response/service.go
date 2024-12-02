@@ -1,11 +1,11 @@
 package response
 
 import (
-	"github.com/nspcc-dev/neofs-api-go/v2/refs"
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/services/util"
-	"github.com/nspcc-dev/neofs-sdk-go/version"
+	"github.com/epicchainlabs/neofs-api-go/v2/refs"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/services/util"
+	"github.com/epicchainlabs/neofs-sdk-go/version"
 )
 
 // Service represents universal v2 service

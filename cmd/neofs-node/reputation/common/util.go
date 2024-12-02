@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
 )
 
 // EpochContext is a std context extended with epoch data.

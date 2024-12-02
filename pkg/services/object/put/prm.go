@@ -1,11 +1,11 @@
 package putsvc
 
 import (
-	"github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object/util"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object_manager/placement"
-	containerSDK "github.com/nspcc-dev/neofs-sdk-go/container"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/placement"
+	containerSDK "github.com/epicchainlabs/neofs-sdk-go/container"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
 )
 
 type PutInitPrm struct {

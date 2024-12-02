@@ -1,10 +1,10 @@
 package searchsvc
 
 import (
-	objectV2 "github.com/nspcc-dev/neofs-api-go/v2/object"
-	objectSvc "github.com/nspcc-dev/neofs-node/pkg/services/object"
-	searchsvc "github.com/nspcc-dev/neofs-node/pkg/services/object/search"
-	objutil "github.com/nspcc-dev/neofs-node/pkg/services/object/util"
+	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
+	objectSvc "github.com/epicchainlabs/neofs-node/pkg/services/object"
+	searchsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/search"
+	objutil "github.com/epicchainlabs/neofs-node/pkg/services/object/util"
 )
 
 // Service implements Search operation of Object service v2.

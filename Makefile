@@ -70,7 +70,7 @@ protoc:
 	@GOPRIVATE=github.com/nspcc-dev go mod vendor
 	# Install specific version for protobuf lib
 	@go list -f '{{.Path}}/...@{{.Version}}' -m  github.com/golang/protobuf | xargs go install -v
-	@GOBIN=$(abspath $(BIN)) go install -mod=mod -v github.com/nspcc-dev/neofs-api-go/v2/util/protogen
+	@GOBIN=$(abspath $(BIN)) go install -mod=mod -v github.com/epicchainlabs/neofs-api-go/v2/util/protogen
 	# Protoc generate
 	@for f in `find . -type f -name '*.proto' -not -path './vendor/*'`; do \
 		echo "⇒ Processing $$f "; \

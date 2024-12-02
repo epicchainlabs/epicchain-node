@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

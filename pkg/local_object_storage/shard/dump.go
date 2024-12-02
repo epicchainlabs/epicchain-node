@@ -5,9 +5,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/util/logicerr"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/writecache"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
 )
 
 var dumpMagic = []byte("NEOF")

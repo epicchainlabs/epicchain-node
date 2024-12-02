@@ -6,13 +6,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/services/audit"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object_manager/placement"
-	"github.com/nspcc-dev/neofs-node/pkg/util"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/services/audit"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/placement"
+	"github.com/epicchainlabs/neofs-node/pkg/util"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

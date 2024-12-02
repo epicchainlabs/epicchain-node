@@ -4,11 +4,11 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/innerring/processors/settlement/common"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client/container"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement/common"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 	"go.uber.org/zap"
 )
 

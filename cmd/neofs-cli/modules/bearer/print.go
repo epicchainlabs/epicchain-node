@@ -4,8 +4,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-sdk-go/bearer"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-sdk-go/bearer"
 	"github.com/spf13/cobra"
 )
 

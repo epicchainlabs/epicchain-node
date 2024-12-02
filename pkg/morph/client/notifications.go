@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/block"
-	"github.com/nspcc-dev/neo-go/pkg/core/mempoolevent"
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/neorpc"
-	"github.com/nspcc-dev/neo-go/pkg/neorpc/result"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/block"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/mempoolevent"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
+	"github.com/epicchainlabs/epicchain-go/pkg/neorpc"
+	"github.com/epicchainlabs/epicchain-go/pkg/neorpc/result"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
 	"go.uber.org/zap"
 )
 

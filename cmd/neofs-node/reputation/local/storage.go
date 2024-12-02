@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"errors"
 
-	netmapcore "github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation"
-	reputationcommon "github.com/nspcc-dev/neofs-node/pkg/services/reputation/common"
-	trustcontroller "github.com/nspcc-dev/neofs-node/pkg/services/reputation/local/controller"
-	truststorage "github.com/nspcc-dev/neofs-node/pkg/services/reputation/local/storage"
-	apireputation "github.com/nspcc-dev/neofs-sdk-go/reputation"
+	netmapcore "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
+	reputationcommon "github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
+	trustcontroller "github.com/epicchainlabs/neofs-node/pkg/services/reputation/local/controller"
+	truststorage "github.com/epicchainlabs/neofs-node/pkg/services/reputation/local/storage"
+	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
 	"go.uber.org/zap"
 )
 

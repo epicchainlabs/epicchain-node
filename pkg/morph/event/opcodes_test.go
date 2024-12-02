@@ -3,9 +3,9 @@ package event
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
+	"github.com/epicchainlabs/epicchain-go/pkg/io"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/emit"
 	"github.com/stretchr/testify/require"
 )
 

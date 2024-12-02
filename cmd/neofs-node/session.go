@@ -5,17 +5,17 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
-	sessionGRPC "github.com/nspcc-dev/neofs-api-go/v2/session/grpc"
-	nodeconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/node"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event/netmap"
-	sessionTransportGRPC "github.com/nspcc-dev/neofs-node/pkg/network/transport/session/grpc"
-	sessionSvc "github.com/nspcc-dev/neofs-node/pkg/services/session"
-	"github.com/nspcc-dev/neofs-node/pkg/services/session/storage"
-	"github.com/nspcc-dev/neofs-node/pkg/services/session/storage/persistent"
-	"github.com/nspcc-dev/neofs-node/pkg/services/session/storage/temporary"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
+	sessionGRPC "github.com/epicchainlabs/neofs-api-go/v2/session/grpc"
+	nodeconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/node"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event/netmap"
+	sessionTransportGRPC "github.com/epicchainlabs/neofs-node/pkg/network/transport/session/grpc"
+	sessionSvc "github.com/epicchainlabs/neofs-node/pkg/services/session"
+	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage"
+	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage/persistent"
+	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage/temporary"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 type sessionStorage interface {

@@ -3,8 +3,8 @@ package attributes_test
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/util/attributes"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/util/attributes"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

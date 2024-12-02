@@ -1,9 +1,9 @@
 package neofscontract
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
 )
 
 // ChequePrm groups parameters of Cheque operation.

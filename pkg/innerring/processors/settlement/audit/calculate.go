@@ -7,12 +7,12 @@ import (
 	"encoding/hex"
 	"math/big"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-node/pkg/innerring/processors/settlement/common"
-	"github.com/nspcc-dev/neofs-sdk-go/audit"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement/common"
+	"github.com/epicchainlabs/neofs-sdk-go/audit"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 	"go.uber.org/zap"
 )
 

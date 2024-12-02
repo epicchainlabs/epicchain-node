@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/pkg/network"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"google.golang.org/grpc/codes"
@@ -73,7 +73,7 @@ func GetSDKClient(ctx context.Context, addr network.Address) (*client.Client, er
 		//    subsequent EndpointInfo method will return Unimplemented error anyway
 		// This behavior is going to be fixed on SDK side.
 		//
-		// Track https://github.com/nspcc-dev/neofs-node/issues/2477
+		// Track https://github.com/epicchainlabs/neofs-node/issues/2477
 		if status.Code(err) == codes.Unimplemented {
 			return c, nil
 		}

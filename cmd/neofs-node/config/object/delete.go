@@ -1,6 +1,6 @@
 package objectconfig
 
-import "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
+import "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
 
 const (
 	deleteSubsection = "delete"

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"io"
 
-	common "github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/engine"
+	common "github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
 	"github.com/spf13/cobra"
 )
 

@@ -1,8 +1,8 @@
 package reputation
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/network/payload"
-	"github.com/nspcc-dev/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
+	"github.com/epicchainlabs/neofs-sdk-go/reputation"
 )
 
 // Put structure of reputation.reputationPut notification from

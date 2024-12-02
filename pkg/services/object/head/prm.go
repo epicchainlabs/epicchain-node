@@ -1,7 +1,7 @@
 package headsvc
 
 import (
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 type Prm struct {

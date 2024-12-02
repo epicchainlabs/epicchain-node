@@ -4,12 +4,12 @@ import (
 	"strconv"
 	"testing"
 
-	netmapcore "github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/network"
-	"github.com/nspcc-dev/neofs-sdk-go/container"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	netmapcore "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
+	"github.com/epicchainlabs/neofs-sdk-go/container"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"github.com/stretchr/testify/require"
 )
 

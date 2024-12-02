@@ -3,10 +3,10 @@ package blobstor
 import (
 	"sync"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/compression"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard/mode"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/compression"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
 	"go.uber.org/zap"
 )
 

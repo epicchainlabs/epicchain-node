@@ -9,7 +9,7 @@ These should run successfully:
 * `make lint` (should not change any files);
 * `make fmts` (should not change any files);
 * `go mod tidy` (should not change any files);
-* integration tests in [neofs-devenv](https://github.com/nspcc-dev/neofs-dev-env).
+* integration tests in [neofs-devenv](https://github.com/epicchainlabs/neofs-dev-env).
 
 ## Make release commit
 
@@ -108,11 +108,11 @@ or upload manualy if that's not the case.
 
 ### Close GitHub milestone
 
-Look up GitHub [milestones](https://github.com/nspcc-dev/neofs-node/milestones) and close the release one if exists.
+Look up GitHub [milestones](https://github.com/epicchainlabs/neofs-node/milestones) and close the release one if exists.
 
 ### Update NeoFS Developer Environment
 
-Prepare pull-request in [neofs-devenv](https://github.com/nspcc-dev/neofs-dev-env)
+Prepare pull-request in [neofs-devenv](https://github.com/epicchainlabs/neofs-dev-env)
 with new versions.
 
 ### Announcements

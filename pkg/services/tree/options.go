@@ -4,11 +4,11 @@ import (
 	"crypto/ecdsa"
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/pilorama"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 	"go.uber.org/zap"
 )
 

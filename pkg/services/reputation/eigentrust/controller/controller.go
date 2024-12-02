@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/nspcc-dev/neofs-node/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/util"
 )
 
 // Prm groups the required parameters of the Controller's constructor.

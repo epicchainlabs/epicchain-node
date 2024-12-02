@@ -3,9 +3,9 @@ package reputationrpc
 import (
 	"context"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/reputation"
-	"github.com/nspcc-dev/neofs-node/pkg/services/util"
-	"github.com/nspcc-dev/neofs-node/pkg/services/util/response"
+	"github.com/epicchainlabs/neofs-api-go/v2/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/services/util"
+	"github.com/epicchainlabs/neofs-node/pkg/services/util/response"
 )
 
 type responseService struct {

@@ -5,8 +5,8 @@ import (
 	"errors"
 	"time"
 
-	objectcore "github.com/nspcc-dev/neofs-node/pkg/core/object"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/engine"
+	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
 	"go.uber.org/zap"
 )
 

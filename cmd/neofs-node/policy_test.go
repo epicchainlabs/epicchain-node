@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"testing"
 
-	containercore "github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-sdk-go/container"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	containercore "github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-sdk-go/container"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

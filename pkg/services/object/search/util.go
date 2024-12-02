@@ -3,11 +3,11 @@ package searchsvc
 import (
 	"sync"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/engine"
-	internalclient "github.com/nspcc-dev/neofs-node/pkg/services/object/internal/client"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object/util"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
+	internalclient "github.com/epicchainlabs/neofs-node/pkg/services/object/internal/client"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 type uniqueIDWriter struct {

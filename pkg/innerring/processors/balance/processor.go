@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	neofscontract "github.com/nspcc-dev/neofs-node/pkg/morph/client/neofs"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	balanceEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/balance"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	neofscontract "github.com/epicchainlabs/neofs-node/pkg/morph/client/neofs"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	balanceEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/balance"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

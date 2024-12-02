@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 	"go.uber.org/zap"
 )
 

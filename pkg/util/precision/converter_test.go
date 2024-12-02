@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/util/precision"
+	"github.com/epicchainlabs/neofs-node/pkg/util/precision"
 	"github.com/stretchr/testify/require"
 )
 

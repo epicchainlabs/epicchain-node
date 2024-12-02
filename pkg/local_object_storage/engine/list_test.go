@@ -6,9 +6,9 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
 	"github.com/stretchr/testify/require"
 )
 

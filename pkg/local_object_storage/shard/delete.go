@@ -3,10 +3,10 @@ package shard
 import (
 	"errors"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/writecache"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

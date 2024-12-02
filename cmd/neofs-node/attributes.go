@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/locode-db/pkg/locodedb"
-	nodeconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/node"
-	"github.com/nspcc-dev/neofs-node/pkg/util/attributes"
+	"github.com/epicchainlabs/locode-db/pkg/locodedb"
+	nodeconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/node"
+	"github.com/epicchainlabs/neofs-node/pkg/util/attributes"
 	"go.uber.org/zap"
 )
 

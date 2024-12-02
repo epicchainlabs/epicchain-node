@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/nspcc-dev/neofs-node/pkg/services/object/internal"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	"github.com/nspcc-dev/neofs-sdk-go/object/slicer"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-sdk-go/object/slicer"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 type slicingTarget struct {
@@ -62,7 +62,7 @@ func (x *slicingTarget) WriteHeader(hdr *object.Object) error {
 	}
 
 	if payloadSize := hdr.PayloadSize(); payloadSize != 0 && payloadSize != math.MaxUint64 {
-		// https://github.com/nspcc-dev/neofs-api/blob/d95228c40283cf6e188073a87a802af7e5dc0a7d/object/types.proto#L93-L95
+		// https://github.com/epicchainlabs/neofs-api/blob/d95228c40283cf6e188073a87a802af7e5dc0a7d/object/types.proto#L93-L95
 		// zero may be explicitly set and be true, but node previously considered zero
 		// value as unknown payload, so we keep this behavior for now
 		opts.SetPayloadSize(payloadSize)

@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"math/big"
 
-	"github.com/nspcc-dev/neofs-node/pkg/innerring/processors/settlement/common"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/settlement/common"
 	"go.uber.org/zap"
 )
 

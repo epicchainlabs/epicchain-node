@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	oidtest "github.com/nspcc-dev/neofs-sdk-go/object/id/test"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
 	"github.com/stretchr/testify/require"
 )
 

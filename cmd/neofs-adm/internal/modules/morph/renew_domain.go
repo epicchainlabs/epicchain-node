@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract"
+	"github.com/epicchainlabs/neofs-contract/rpc/nns"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

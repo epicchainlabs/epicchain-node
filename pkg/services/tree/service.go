@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/pilorama"
-	"github.com/nspcc-dev/neofs-sdk-go/container/acl"
-	cidSDK "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	netmapSDK "github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
+	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
+	cidSDK "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	netmapSDK "github.com/epicchainlabs/neofs-sdk-go/netmap"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/storagegroup"
-	cntClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/container"
-	nmClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	"github.com/nspcc-dev/neofs-node/pkg/services/audit"
+	"github.com/epicchainlabs/neofs-node/pkg/core/storagegroup"
+	cntClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	nmClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/neofs-node/pkg/services/audit"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

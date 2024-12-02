@@ -3,8 +3,8 @@ package container
 import (
 	"fmt"
 
-	containercore "github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
+	containercore "github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
 )
 
 // PutEACL marshals table, and passes it to Wrapper's PutEACLBinary method

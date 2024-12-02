@@ -1,8 +1,8 @@
 package storagegroup
 
 import (
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	objectCli "github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/object"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	objectCli "github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/object"
 	"github.com/spf13/cobra"
 )
 

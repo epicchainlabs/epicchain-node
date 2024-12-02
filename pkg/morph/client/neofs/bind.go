@@ -3,7 +3,7 @@ package neofscontract
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
 )
 
 type commonBindArgs struct {

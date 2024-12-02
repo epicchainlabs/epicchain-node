@@ -4,9 +4,9 @@ import (
 	"crypto/elliptic"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
 )
 
 // UpdateIRPrm groups parameters of UpdateInnerRing

@@ -1,12 +1,12 @@
 package searchsvc
 
 import (
-	"github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/engine"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object/util"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	netmapsdk "github.com/nspcc-dev/neofs-sdk-go/netmap"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	netmapsdk "github.com/epicchainlabs/neofs-sdk-go/netmap"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

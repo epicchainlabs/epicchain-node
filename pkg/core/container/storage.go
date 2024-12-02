@@ -3,12 +3,12 @@ package container
 import (
 	"errors"
 
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	"github.com/nspcc-dev/neofs-sdk-go/container"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	neofscrypto "github.com/nspcc-dev/neofs-sdk-go/crypto"
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	"github.com/epicchainlabs/neofs-sdk-go/container"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
 )
 
 // Container groups information about the NeoFS container stored in the NeoFS network.

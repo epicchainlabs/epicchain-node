@@ -1,9 +1,9 @@
 package replicator
 
 import (
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 // Task represents group of Replicator task parameters.

@@ -5,13 +5,13 @@ import (
 	"crypto/ecdsa"
 	"errors"
 
-	internalclient "github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/client"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	controlSvc "github.com/nspcc-dev/neofs-node/pkg/services/control/server"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
-	neofscrypto "github.com/nspcc-dev/neofs-sdk-go/crypto"
-	neofsecdsa "github.com/nspcc-dev/neofs-sdk-go/crypto/ecdsa"
+	internalclient "github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	controlSvc "github.com/epicchainlabs/neofs-node/pkg/services/control/server"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
+	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
+	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
 	"github.com/spf13/cobra"
 )
 

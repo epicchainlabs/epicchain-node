@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
-	netmapcontract "github.com/nspcc-dev/neofs-contract/contracts/netmap"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
+	netmapcontract "github.com/epicchainlabs/neofs-contract/contracts/netmap"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

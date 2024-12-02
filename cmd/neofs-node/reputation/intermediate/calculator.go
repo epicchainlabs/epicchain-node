@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust"
-	eigencalc "github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust/calculator"
-	eigentrustctrl "github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust/controller"
-	apireputation "github.com/nspcc-dev/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust"
+	eigencalc "github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/calculator"
+	eigentrustctrl "github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/controller"
+	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
 )
 
 // InitialTrustSource is an implementation of the

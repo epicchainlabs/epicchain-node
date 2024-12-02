@@ -1,11 +1,11 @@
 package morph
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/core/native/noderoles"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/rolemgmt"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/callflag"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/native/noderoles"
+	"github.com/epicchainlabs/epicchain-go/pkg/io"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/rolemgmt"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/callflag"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/emit"
 )
 
 func (c *initializeContext) setNotaryAndAlphabetNodes() error {

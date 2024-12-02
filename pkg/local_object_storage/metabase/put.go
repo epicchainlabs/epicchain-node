@@ -6,12 +6,12 @@ import (
 	"fmt"
 	gio "io"
 
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	objectCore "github.com/nspcc-dev/neofs-node/pkg/core/object"
-	storagelog "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/internal/log"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/util"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/epicchain-go/pkg/io"
+	objectCore "github.com/epicchainlabs/neofs-node/pkg/core/object"
+	storagelog "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/log"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 )
 

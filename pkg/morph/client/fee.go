@@ -1,6 +1,6 @@
 package client
 
-import "github.com/nspcc-dev/neo-go/pkg/encoding/fixedn"
+import "github.com/epicchainlabs/epicchain-go/pkg/encoding/fixedn"
 
 // setFeeForMethod sets fee for the operation executed using specified contract method.
 func (x *fees) setFeeForMethod(method string, fee fixedn.Fixed8) {

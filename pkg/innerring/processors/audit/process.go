@@ -3,16 +3,16 @@ package audit
 import (
 	"context"
 
-	clientcore "github.com/nspcc-dev/neofs-node/pkg/core/client"
-	netmapcore "github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/core/storagegroup"
-	cntClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/container"
-	"github.com/nspcc-dev/neofs-node/pkg/services/audit"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object_manager/placement"
-	"github.com/nspcc-dev/neofs-node/pkg/util/rand"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	clientcore "github.com/epicchainlabs/neofs-node/pkg/core/client"
+	netmapcore "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/core/storagegroup"
+	cntClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/neofs-node/pkg/services/audit"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/placement"
+	"github.com/epicchainlabs/neofs-node/pkg/util/rand"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

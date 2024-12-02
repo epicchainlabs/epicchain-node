@@ -3,9 +3,9 @@ package container
 import (
 	"fmt"
 
-	containercore "github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	containercore "github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 )
 
 // Put marshals container, and passes it to Wrapper's Put method

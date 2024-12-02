@@ -4,9 +4,9 @@ import (
 	"errors"
 	"os"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/version"
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
-	versionSDK "github.com/nspcc-dev/neofs-sdk-go/version"
+	"github.com/epicchainlabs/neofs-node/pkg/core/version"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
+	versionSDK "github.com/epicchainlabs/neofs-sdk-go/version"
 	"github.com/spf13/cobra"
 )
 

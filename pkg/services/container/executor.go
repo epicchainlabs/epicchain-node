@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/container"
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-api-go/v2/container"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
 )
 
 type ServiceExecutor interface {

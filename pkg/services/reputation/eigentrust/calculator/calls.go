@@ -3,9 +3,9 @@ package eigentrustcalc
 import (
 	"context"
 
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust"
-	apireputation "github.com/nspcc-dev/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust"
+	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
 	"go.uber.org/zap"
 )
 

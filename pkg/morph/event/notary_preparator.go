@@ -8,17 +8,17 @@ import (
 	"sync"
 
 	lru "github.com/hashicorp/golang-lru/v2"
-	"github.com/nspcc-dev/neo-go/pkg/core/interop/interopnames"
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/network/payload"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/callflag"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/interop/interopnames"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/transaction"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/hash"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/callflag"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/opcode"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
 )
 
 var (
@@ -390,7 +390,7 @@ func (p preparator) validateWitnesses(w []transaction.Witness, alphaKeys keys.Pu
 
 	// the last one must be a placeholder for notary contract witness
 	last := len(w) - 1
-	if !(len(w[last].InvocationScript) == 0 || // https://github.com/nspcc-dev/neo-go/pull/2981
+	if !(len(w[last].InvocationScript) == 0 || // https://github.com/epicchainlabs/epicchain-go/pull/2981
 		bytes.Equal(w[last].InvocationScript, p.dummyInvocationScript)) || // compatibility with old version
 		len(w[last].VerificationScript) != 0 {
 		return errIncorrectNotaryPlaceholder

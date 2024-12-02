@@ -1,8 +1,8 @@
 package fstree
 
 import (
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/fstree"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
 )
 
 // Config is a wrapper over the config section

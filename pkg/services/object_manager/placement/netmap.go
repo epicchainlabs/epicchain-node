@@ -6,10 +6,10 @@ import (
 	"sync"
 
 	"github.com/hashicorp/golang-lru/v2/simplelru"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	netmapSDK "github.com/nspcc-dev/neofs-sdk-go/netmap"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	netmapSDK "github.com/epicchainlabs/neofs-sdk-go/netmap"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 type netMapBuilder struct {

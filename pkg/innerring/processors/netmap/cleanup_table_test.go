@@ -3,8 +3,8 @@ package netmap
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

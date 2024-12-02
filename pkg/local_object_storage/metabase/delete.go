@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	storagelog "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/internal/log"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	storagelog "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/internal/log"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 )
 

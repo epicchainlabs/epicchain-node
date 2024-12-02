@@ -3,9 +3,9 @@ package rolemanagement
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/native/noderoles"
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/native/noderoles"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
 	"github.com/stretchr/testify/require"
 )
 

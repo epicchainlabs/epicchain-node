@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	configtest "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/test"
-	treeconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/tree"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	configtest "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/test"
+	treeconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/tree"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,8 +1,8 @@
 package neofs
 
 import (
-	nmClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/netmap"
-	neofsEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/neofs"
+	nmClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/netmap"
+	neofsEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/neofs"
 	"go.uber.org/zap"
 )
 

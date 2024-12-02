@@ -9,9 +9,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/nspcc-dev/neofs-node/misc"
-	"github.com/nspcc-dev/neofs-node/pkg/innerring"
-	httputil "github.com/nspcc-dev/neofs-node/pkg/util/http"
+	"github.com/epicchainlabs/neofs-node/misc"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring"
+	httputil "github.com/epicchainlabs/neofs-node/pkg/util/http"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"

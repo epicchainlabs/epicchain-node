@@ -3,8 +3,8 @@ package netmap
 import (
 	"encoding/hex"
 
-	netmapEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/netmap"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	netmapEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/netmap"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 	"go.uber.org/zap"
 )
 

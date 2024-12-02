@@ -1,7 +1,7 @@
 package locode
 
 import (
-	"github.com/nspcc-dev/locode-db/pkg/locodedb"
+	"github.com/epicchainlabs/locode-db/pkg/locodedb"
 )
 
 // Validator is a utility that verifies and updates

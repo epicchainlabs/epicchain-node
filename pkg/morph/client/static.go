@@ -3,9 +3,9 @@ package client
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/encoding/fixedn"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/fixedn"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
 )
 
 // StaticClient is a wrapper over Neo:Morph client

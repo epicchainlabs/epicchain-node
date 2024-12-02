@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
 	"go.uber.org/zap"
 )
 

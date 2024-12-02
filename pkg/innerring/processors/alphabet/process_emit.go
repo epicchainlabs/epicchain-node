@@ -3,8 +3,8 @@ package alphabet
 import (
 	"crypto/elliptic"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/fixedn"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/fixedn"
 	"go.uber.org/zap"
 )
 

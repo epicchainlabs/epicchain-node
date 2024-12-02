@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"io"
 
-	clientcore "github.com/nspcc-dev/neofs-node/pkg/core/client"
-	netmapCore "github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	objectcore "github.com/nspcc-dev/neofs-node/pkg/core/object"
-	internalclient "github.com/nspcc-dev/neofs-node/pkg/services/object/internal/client"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object/util"
-	neofsecdsa "github.com/nspcc-dev/neofs-sdk-go/crypto/ecdsa"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	clientcore "github.com/epicchainlabs/neofs-node/pkg/core/client"
+	netmapCore "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
+	internalclient "github.com/epicchainlabs/neofs-node/pkg/services/object/internal/client"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
+	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 type remoteTarget struct {

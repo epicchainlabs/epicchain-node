@@ -1,4 +1,4 @@
-module github.com/nspcc-dev/neofs-node
+module github.com/epicchainlabs/neofs-node
 
 go 1.20
 
@@ -13,13 +13,13 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mr-tron/base58 v1.2.0
 	github.com/multiformats/go-multiaddr v0.12.2
-	github.com/nspcc-dev/hrw/v2 v2.0.1
-	github.com/nspcc-dev/locode-db v0.6.0
-	github.com/nspcc-dev/neo-go v0.106.0
-	github.com/nspcc-dev/neofs-api-go/v2 v2.14.1-0.20240305074711-35bc78d84dc4
-	github.com/nspcc-dev/neofs-contract v0.19.2-0.20240506202632-e78d64ecdfc2
-	github.com/nspcc-dev/neofs-sdk-go v1.0.0-rc.11.0.20240412100141-cf16796f1ac3
-	github.com/nspcc-dev/tzhash v1.8.0
+	github.com/epicchainlabs/hrw/v2 v2.0.1
+	github.com/epicchainlabs/locode-db v0.6.0
+	github.com/epicchainlabs/epicchain-go v0.106.0
+	github.com/epicchainlabs/neofs-api-go/v2 v2.14.1-0.20240305074711-35bc78d84dc4
+	github.com/epicchainlabs/neofs-contract v0.19.2-0.20240506202632-e78d64ecdfc2
+	github.com/epicchainlabs/neofs-sdk-go v1.0.0-rc.11.0.20240412100141-cf16796f1ac3
+	github.com/epicchainlabs/tzhash v1.8.0
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/panjf2000/ants/v2 v2.9.0
 	github.com/prometheus/client_golang v1.19.0
@@ -70,10 +70,10 @@ require (
 	github.com/multiformats/go-multibase v0.2.0 // indirect
 	github.com/multiformats/go-multihash v0.2.3 // indirect
 	github.com/multiformats/go-varint v0.0.7 // indirect
-	github.com/nspcc-dev/dbft v0.2.0 // indirect
-	github.com/nspcc-dev/go-ordered-json v0.0.0-20240301084351-0246b013f8b2 // indirect
-	github.com/nspcc-dev/neo-go/pkg/interop v0.0.0-20240521091047-78685785716d // indirect
-	github.com/nspcc-dev/rfc6979 v0.2.1 // indirect
+	github.com/epicchainlabs/dbft v0.2.0 // indirect
+	github.com/epicchainlabs/go-ordered-json v0.0.0-20240301084351-0246b013f8b2 // indirect
+	github.com/epicchainlabs/epicchain-go/pkg/interop v0.0.0-20240521091047-78685785716d // indirect
+	github.com/epicchainlabs/rfc6979 v0.2.1 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.1 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect

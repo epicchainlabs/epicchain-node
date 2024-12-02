@@ -6,11 +6,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/util"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/util"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
 	"github.com/spf13/cobra"
 )
 
@@ -30,7 +30,7 @@ Filter consists of <typ>:<key><match><value>
   Key is a valid unicode string corresponding to object or request header key. 
     Well-known system object headers start with '$Object:' prefix.
     User defined headers start without prefix.
-    Read more about filter keys at github.com/nspcc-dev/neofs-api/blob/master/proto-docs/acl.md#message-eaclrecordfilter
+    Read more about filter keys at github.com/epicchainlabs/neofs-api/blob/master/proto-docs/acl.md#message-eaclrecordfilter
   Match is:
     '=' for string equality or, if no value, attribute absence;
     '!=' for string inequality;

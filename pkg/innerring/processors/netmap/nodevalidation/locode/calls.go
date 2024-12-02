@@ -3,8 +3,8 @@ package locode
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/locode-db/pkg/locodedb"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/locode-db/pkg/locodedb"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 )
 
 // Verify validates UN-LOCODE attribute of n

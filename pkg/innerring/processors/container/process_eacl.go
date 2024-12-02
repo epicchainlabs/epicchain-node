@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"math/big"
 
-	cntClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/container"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event/container"
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
+	cntClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event/container"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
 	"go.uber.org/zap"
 )
 

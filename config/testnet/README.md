@@ -67,7 +67,7 @@ NEOFS_NODE_ATTRIBUTE_2=UN-LOCODE:RU LED
 ```
 
 You can validate UN/LOCODE attribute in 
-[NeoFS LOCODE database](https://github.com/nspcc-dev/neofs-locode-db/releases/tag/v0.1.0)
+[NeoFS LOCODE database](https://github.com/epicchainlabs/neofs-locode-db/releases/tag/v0.1.0)
 with neofs-cli.
 
 ```

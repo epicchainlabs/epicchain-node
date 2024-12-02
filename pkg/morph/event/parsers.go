@@ -3,7 +3,7 @@ package event
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
 )
 
 // NotificationParser is a function that constructs Event

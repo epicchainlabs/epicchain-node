@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/invoker"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/transaction"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/invoker"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-contract/rpc/nns"
 )
 
 const (

@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object/internal"
-	"github.com/nspcc-dev/neofs-sdk-go/checksum"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	"github.com/nspcc-dev/tzhash/tz"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
+	"github.com/epicchainlabs/neofs-sdk-go/checksum"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/tzhash/tz"
 )
 
 // validatingTarget validates object format and content.

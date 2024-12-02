@@ -5,13 +5,13 @@ import (
 	"errors"
 	"io"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/object"
-	objectGRPC "github.com/nspcc-dev/neofs-api-go/v2/object/grpc"
-	status "github.com/nspcc-dev/neofs-api-go/v2/status/grpc"
-	objectSvc "github.com/nspcc-dev/neofs-node/pkg/services/object"
-	"github.com/nspcc-dev/neofs-node/pkg/services/util"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	objectsdk "github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-api-go/v2/object"
+	objectGRPC "github.com/epicchainlabs/neofs-api-go/v2/object/grpc"
+	status "github.com/epicchainlabs/neofs-api-go/v2/status/grpc"
+	objectSvc "github.com/epicchainlabs/neofs-node/pkg/services/object"
+	"github.com/epicchainlabs/neofs-node/pkg/services/util"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	objectsdk "github.com/epicchainlabs/neofs-sdk-go/object"
 )
 
 // Various NeoFS protocol status codes.

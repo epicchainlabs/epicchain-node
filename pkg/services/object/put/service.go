@@ -3,12 +3,12 @@ package putsvc
 import (
 	"context"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	objutil "github.com/nspcc-dev/neofs-node/pkg/services/object/util"
-	"github.com/nspcc-dev/neofs-node/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	objutil "github.com/epicchainlabs/neofs-node/pkg/services/object/util"
+	"github.com/epicchainlabs/neofs-node/pkg/util"
 	"go.uber.org/zap"
 )
 

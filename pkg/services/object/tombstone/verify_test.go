@@ -4,13 +4,13 @@ import (
 	"context"
 	"testing"
 
-	objectcore "github.com/nspcc-dev/neofs-node/pkg/core/object"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	oidtest "github.com/nspcc-dev/neofs-sdk-go/object/id/test"
-	objecttest "github.com/nspcc-dev/neofs-sdk-go/object/test"
+	objectcore "github.com/epicchainlabs/neofs-node/pkg/core/object"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
+	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 )
 

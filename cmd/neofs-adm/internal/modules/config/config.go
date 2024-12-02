@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/nspcc-dev/neo-go/cli/input"
-	"github.com/nspcc-dev/neofs-node/pkg/util/glagolitsa"
+	"github.com/epicchainlabs/epicchain-go/cli/input"
+	"github.com/epicchainlabs/neofs-node/pkg/util/glagolitsa"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

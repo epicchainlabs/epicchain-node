@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	nmClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	netmapEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/netmap"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	nmClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	netmapEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/netmap"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

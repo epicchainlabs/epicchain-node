@@ -3,8 +3,8 @@ package object
 import (
 	"errors"
 
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 // ErrInvalidSearchQuery is returned when some object search query is invalid.

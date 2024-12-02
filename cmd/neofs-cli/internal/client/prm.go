@@ -4,12 +4,12 @@ import (
 	"crypto/ecdsa"
 	"io"
 
-	"github.com/nspcc-dev/neofs-sdk-go/bearer"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-sdk-go/bearer"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 // here are small structures with public setters to share between parameter structures

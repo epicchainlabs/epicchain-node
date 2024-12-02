@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/network"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 )
 
 // Validator is a utility that verifies node's

@@ -3,9 +3,9 @@ package balance
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 // TransferPrm groups parameters of TransferX method.

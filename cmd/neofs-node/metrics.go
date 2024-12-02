@@ -1,8 +1,8 @@
 package main
 
 import (
-	metricsconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/metrics"
-	httputil "github.com/nspcc-dev/neofs-node/pkg/util/http"
+	metricsconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/metrics"
+	httputil "github.com/epicchainlabs/neofs-node/pkg/util/http"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 

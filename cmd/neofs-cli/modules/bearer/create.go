@@ -7,12 +7,12 @@ import (
 	"os"
 	"time"
 
-	internalclient "github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/client"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-sdk-go/bearer"
-	eaclSDK "github.com/nspcc-dev/neofs-sdk-go/eacl"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	internalclient "github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-sdk-go/bearer"
+	eaclSDK "github.com/epicchainlabs/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 	"github.com/spf13/cobra"
 )
 

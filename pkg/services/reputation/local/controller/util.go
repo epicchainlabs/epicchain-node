@@ -1,6 +1,6 @@
 package trustcontroller
 
-import "github.com/nspcc-dev/neofs-node/pkg/services/reputation/common"
+import "github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
 
 type storageWrapper struct {
 	w common.Writer

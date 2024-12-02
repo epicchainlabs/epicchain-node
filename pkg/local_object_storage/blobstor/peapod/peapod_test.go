@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/internal/blobstortest"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/peapod"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	oidtest "github.com/nspcc-dev/neofs-sdk-go/object/id/test"
-	objecttest "github.com/nspcc-dev/neofs-sdk-go/object/test"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/internal/blobstortest"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/peapod"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
+	objecttest "github.com/epicchainlabs/neofs-sdk-go/object/test"
 	"github.com/stretchr/testify/require"
 )
 

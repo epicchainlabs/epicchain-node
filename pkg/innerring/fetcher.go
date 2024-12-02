@@ -1,9 +1,9 @@
 package innerring
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	nmClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/netmap"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	nmClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/netmap"
 )
 
 // NewIRFetcherWithNotary creates IrFetcherWithNotary.

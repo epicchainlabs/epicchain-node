@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
-	"github.com/nspcc-dev/neofs-node/pkg/services/session/storage"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 	"go.etcd.io/bbolt"
 )
 

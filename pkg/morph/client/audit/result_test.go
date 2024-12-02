@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	auditAPI "github.com/nspcc-dev/neofs-sdk-go/audit"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	auditAPI "github.com/epicchainlabs/neofs-sdk-go/audit"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
 	"github.com/stretchr/testify/require"
 )
 

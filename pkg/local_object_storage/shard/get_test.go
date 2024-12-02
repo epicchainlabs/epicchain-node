@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	oidtest "github.com/nspcc-dev/neofs-sdk-go/object/id/test"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
 	"github.com/stretchr/testify/require"
 )
 

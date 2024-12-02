@@ -3,10 +3,10 @@ package blobstorconfig
 import (
 	"strconv"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/engine/shard/blobstor/storage"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/peapod"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/engine/shard/blobstor/storage"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/peapod"
 )
 
 // Config is a wrapper over the config section

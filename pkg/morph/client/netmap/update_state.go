@@ -3,8 +3,8 @@ package netmap
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-contract/contracts/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/neofs-contract/contracts/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
 )
 
 // UpdatePeerPrm groups parameters of UpdatePeerState operation.

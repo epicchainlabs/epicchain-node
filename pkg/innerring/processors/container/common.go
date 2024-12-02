@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client/neofsid"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	neofsecdsa "github.com/nspcc-dev/neofs-sdk-go/crypto/ecdsa"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client/neofsid"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 var (

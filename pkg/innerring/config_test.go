@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-node/pkg/innerring/internal/blockchain"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring/internal/blockchain"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"

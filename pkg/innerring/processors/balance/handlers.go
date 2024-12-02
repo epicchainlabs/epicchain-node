@@ -3,8 +3,8 @@ package balance
 import (
 	"encoding/hex"
 
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	balanceEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/balance"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	balanceEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/balance"
 	"go.uber.org/zap"
 )
 

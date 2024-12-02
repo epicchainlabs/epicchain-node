@@ -4,9 +4,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/pilorama"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
 )
 
 func BenchmarkTreeVsSearch(b *testing.B) {

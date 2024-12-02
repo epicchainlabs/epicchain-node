@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-api-go/v2/refs"
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
-	usertest "github.com/nspcc-dev/neofs-sdk-go/user/test"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-api-go/v2/refs"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
+	usertest "github.com/epicchainlabs/neofs-sdk-go/user/test"
 	"github.com/stretchr/testify/require"
 	"go.etcd.io/bbolt"
 )

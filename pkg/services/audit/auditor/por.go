@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"sync"
 
-	"github.com/nspcc-dev/neofs-node/pkg/services/object_manager/placement"
-	"github.com/nspcc-dev/neofs-node/pkg/util/rand"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	storagegroupSDK "github.com/nspcc-dev/neofs-sdk-go/storagegroup"
-	"github.com/nspcc-dev/tzhash/tz"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/placement"
+	"github.com/epicchainlabs/neofs-node/pkg/util/rand"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	storagegroupSDK "github.com/epicchainlabs/neofs-sdk-go/storagegroup"
+	"github.com/epicchainlabs/tzhash/tz"
 	"go.uber.org/zap"
 )
 

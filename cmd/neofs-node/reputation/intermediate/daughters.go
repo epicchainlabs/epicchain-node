@@ -1,9 +1,9 @@
 package intermediate
 
 import (
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation"
-	reputationcommon "github.com/nspcc-dev/neofs-node/pkg/services/reputation/common"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust/storage/daughters"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
+	reputationcommon "github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/storage/daughters"
 	"go.uber.org/zap"
 )
 

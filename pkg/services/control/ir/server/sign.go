@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	control "github.com/nspcc-dev/neofs-node/pkg/services/control/ir"
-	neofscrypto "github.com/nspcc-dev/neofs-sdk-go/crypto"
-	neofsecdsa "github.com/nspcc-dev/neofs-sdk-go/crypto/ecdsa"
+	control "github.com/epicchainlabs/neofs-node/pkg/services/control/ir"
+	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
+	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
 )
 
 // SignedMessage is an interface of Control service message.

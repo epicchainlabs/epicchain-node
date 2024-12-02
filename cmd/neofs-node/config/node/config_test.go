@@ -3,10 +3,10 @@ package nodeconfig
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	configtest "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/test"
-	"github.com/nspcc-dev/neofs-node/pkg/network"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	configtest "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/test"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
 	"github.com/stretchr/testify/require"
 )
 

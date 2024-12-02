@@ -3,10 +3,10 @@ package common
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/hrw/v2"
-	netmapcore "github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	apiNetmap "github.com/nspcc-dev/neofs-sdk-go/netmap"
-	apireputation "github.com/nspcc-dev/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/hrw/v2"
+	netmapcore "github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	apiNetmap "github.com/epicchainlabs/neofs-sdk-go/netmap"
+	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
 	"go.uber.org/zap"
 )
 

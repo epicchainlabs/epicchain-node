@@ -8,11 +8,11 @@ import (
 	"text/tabwriter"
 
 	"github.com/mr-tron/base58"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/hash"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
 )
 
 type (

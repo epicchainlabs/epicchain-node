@@ -5,17 +5,17 @@ import (
 	"errors"
 	"fmt"
 
-	objectV2 "github.com/nspcc-dev/neofs-api-go/v2/object"
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	"github.com/nspcc-dev/neofs-sdk-go/container/acl"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	objectsdk "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	sessionSDK "github.com/nspcc-dev/neofs-sdk-go/session"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	objectsdk "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	sessionSDK "github.com/epicchainlabs/neofs-sdk-go/session"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 	"go.uber.org/zap"
 )
 
@@ -540,7 +540,7 @@ func (p putStreamBasicChecker) Send(request *objectV2.PutRequest) error {
 		if !replication {
 			// header length is unchecked for replication because introducing a restriction
 			// should not prevent the replication of objects created before.
-			// See also https://github.com/nspcc-dev/neofs-api/issues/293
+			// See also https://github.com/epicchainlabs/neofs-api/issues/293
 			hdrLen := part.GetHeader().StableSize()
 			if hdrLen > objectsdk.MaxHeaderLen {
 				return fmt.Errorf("object header length exceeds the limit: %d>%d", hdrLen, objectsdk.MaxHeaderLen)

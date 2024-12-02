@@ -2,7 +2,7 @@
 
 package control
 
-import "github.com/nspcc-dev/neofs-api-go/v2/util/proto"
+import "github.com/epicchainlabs/neofs-api-go/v2/util/proto"
 
 // StableSize returns the size of x in protobuf format.
 //

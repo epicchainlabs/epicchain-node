@@ -7,8 +7,8 @@ import (
 	"io/fs"
 	"os"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/pkg/util/keyer"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/pkg/util/keyer"
 	"github.com/spf13/cobra"
 )
 

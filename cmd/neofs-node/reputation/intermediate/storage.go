@@ -3,10 +3,10 @@ package intermediate
 import (
 	"fmt"
 
-	eigentrustcalc "github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust/calculator"
-	consumerstorage "github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust/storage/consumers"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust/storage/daughters"
-	apireputation "github.com/nspcc-dev/neofs-sdk-go/reputation"
+	eigentrustcalc "github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/calculator"
+	consumerstorage "github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/storage/consumers"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/storage/daughters"
+	apireputation "github.com/epicchainlabs/neofs-sdk-go/reputation"
 )
 
 // DaughterTrustIteratorProvider is an implementation of the

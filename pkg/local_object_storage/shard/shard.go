@@ -5,13 +5,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/pilorama"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard/mode"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/writecache"
-	"github.com/nspcc-dev/neofs-node/pkg/util"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
+	"github.com/epicchainlabs/neofs-node/pkg/util"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.uber.org/zap"
 )
 

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/pilorama"
-	cidtest "github.com/nspcc-dev/neofs-sdk-go/container/id/test"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
+	cidtest "github.com/epicchainlabs/neofs-sdk-go/container/id/test"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 )

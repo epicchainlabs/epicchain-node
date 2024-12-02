@@ -4,11 +4,11 @@ import (
 	"context"
 	"net"
 
-	controlconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/control"
-	"github.com/nspcc-dev/neofs-node/pkg/services/control"
-	controlSvc "github.com/nspcc-dev/neofs-node/pkg/services/control/server"
-	"github.com/nspcc-dev/neofs-node/pkg/services/tree"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	controlconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/control"
+	"github.com/epicchainlabs/neofs-node/pkg/services/control"
+	controlSvc "github.com/epicchainlabs/neofs-node/pkg/services/control/server"
+	"github.com/epicchainlabs/neofs-node/pkg/services/tree"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )

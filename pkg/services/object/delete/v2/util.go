@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
-	objectV2 "github.com/nspcc-dev/neofs-api-go/v2/object"
-	"github.com/nspcc-dev/neofs-api-go/v2/refs"
-	deletesvc "github.com/nspcc-dev/neofs-node/pkg/services/object/delete"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object/util"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	objectV2 "github.com/epicchainlabs/neofs-api-go/v2/object"
+	"github.com/epicchainlabs/neofs-api-go/v2/refs"
+	deletesvc "github.com/epicchainlabs/neofs-node/pkg/services/object/delete"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object/util"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 type tombstoneBodyWriter struct {

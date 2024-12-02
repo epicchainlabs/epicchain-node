@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	sdkstatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
+	sdkstatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
 	"github.com/spf13/cobra"
 )
 

@@ -3,7 +3,7 @@ package main
 import (
 	"sync"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/reputation/ticker"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/reputation/ticker"
 )
 
 type eigenTrustTickers struct {

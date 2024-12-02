@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	reputationcommon "github.com/nspcc-dev/neofs-node/pkg/services/reputation/common"
+	reputationcommon "github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
 )
 
 // Prm groups the required parameters of the Controller's constructor.

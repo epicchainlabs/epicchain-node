@@ -8,9 +8,9 @@ related configuration details.
 ## Prerequisites
 
 To follow this guide you need:
-- latest released version of [neo-go](https://github.com/nspcc-dev/neo-go/releases) (v0.97.2 at the moment),
-- latest released version of [neofs-adm](https://github.com/nspcc-dev/neofs-node/releases) utility (v0.25.1 at the moment),
-- latest released version of compiled [neofs-contract](https://github.com/nspcc-dev/neofs-contract/releases) (v0.11.0 at the moment).
+- latest released version of [neo-go](https://github.com/epicchainlabs/epicchain-go/releases) (v0.97.2 at the moment),
+- latest released version of [neofs-adm](https://github.com/epicchainlabs/neofs-node/releases) utility (v0.25.1 at the moment),
+- latest released version of compiled [neofs-contract](https://github.com/epicchainlabs/neofs-contract/releases) (v0.11.0 at the moment).
 
 ## Step 1: Prepare network configuration 
 
@@ -70,7 +70,7 @@ storage.
 
 Configure blockchain nodes with the generated wallets from the previous step.
 Config examples can be found in 
-[neo-go repository](https://github.com/nspcc-dev/neo-go/tree/master/config).
+[neo-go repository](https://github.com/epicchainlabs/epicchain-go/tree/master/config).
 
 Gather public keys from **all** generated wallets. We are interested in the first
 `simple signature contract` public key.

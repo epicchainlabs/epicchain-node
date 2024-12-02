@@ -4,12 +4,12 @@ import (
 	"crypto/ecdsa"
 	"errors"
 
-	"github.com/nspcc-dev/neo-go/cli/flags"
-	"github.com/nspcc-dev/neo-go/cli/input"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/wallet"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/epicchain-go/cli/flags"
+	"github.com/epicchainlabs/epicchain-go/cli/input"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/wallet"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

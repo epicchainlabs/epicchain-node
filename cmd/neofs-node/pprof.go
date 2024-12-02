@@ -1,8 +1,8 @@
 package main
 
 import (
-	profilerconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/profiler"
-	httputil "github.com/nspcc-dev/neofs-node/pkg/util/http"
+	profilerconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/profiler"
+	httputil "github.com/epicchainlabs/neofs-node/pkg/util/http"
 )
 
 func initProfiler(c *cfg) *httputil.Server {

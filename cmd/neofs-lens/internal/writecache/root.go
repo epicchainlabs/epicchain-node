@@ -1,8 +1,8 @@
 package writecache
 
 import (
-	common "github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/writecache"
+	common "github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/writecache"
 	"github.com/spf13/cobra"
 	"go.etcd.io/bbolt"
 )

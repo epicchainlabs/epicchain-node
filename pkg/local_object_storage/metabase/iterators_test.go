@@ -4,11 +4,11 @@ import (
 	"strconv"
 	"testing"
 
-	object2 "github.com/nspcc-dev/neofs-node/pkg/core/object"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	oidtest "github.com/nspcc-dev/neofs-sdk-go/object/id/test"
+	object2 "github.com/epicchainlabs/neofs-node/pkg/core/object"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	oidtest "github.com/epicchainlabs/neofs-sdk-go/object/id/test"
 	"github.com/stretchr/testify/require"
 )
 

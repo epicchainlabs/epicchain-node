@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/neorpc/result"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/transaction"
+	"github.com/epicchainlabs/epicchain-go/pkg/neorpc/result"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
 )
 
 /*

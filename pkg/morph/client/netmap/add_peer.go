@@ -3,8 +3,8 @@ package netmap
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 )
 
 // AddPeerPrm groups parameters of AddPeer operation.

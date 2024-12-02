@@ -8,17 +8,17 @@ import (
 	"fmt"
 
 	"github.com/mr-tron/base58"
-	"github.com/nspcc-dev/neofs-api-go/v2/container"
-	"github.com/nspcc-dev/neofs-api-go/v2/refs"
-	sessionV2 "github.com/nspcc-dev/neofs-api-go/v2/session"
-	"github.com/nspcc-dev/neofs-api-go/v2/util/signature"
-	containercore "github.com/nspcc-dev/neofs-node/pkg/core/container"
-	containerSvc "github.com/nspcc-dev/neofs-node/pkg/services/container"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	neofsecdsa "github.com/nspcc-dev/neofs-sdk-go/crypto/ecdsa"
-	eaclSDK "github.com/nspcc-dev/neofs-sdk-go/eacl"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-api-go/v2/container"
+	"github.com/epicchainlabs/neofs-api-go/v2/refs"
+	sessionV2 "github.com/epicchainlabs/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-api-go/v2/util/signature"
+	containercore "github.com/epicchainlabs/neofs-node/pkg/core/container"
+	containerSvc "github.com/epicchainlabs/neofs-node/pkg/services/container"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
+	eaclSDK "github.com/epicchainlabs/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 type morphExecutor struct {

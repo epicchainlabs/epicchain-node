@@ -1,7 +1,7 @@
 package innerring
 
 import (
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
 )
 
 type (

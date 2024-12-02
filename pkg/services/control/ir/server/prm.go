@@ -1,7 +1,7 @@
 package control
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
 )
 
 // Prm groups required parameters of

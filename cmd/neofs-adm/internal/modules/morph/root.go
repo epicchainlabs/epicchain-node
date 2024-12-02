@@ -3,9 +3,9 @@ package morph
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/wallet"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/wallet"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

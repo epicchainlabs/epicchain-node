@@ -6,16 +6,16 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/nspcc-dev/neofs-sdk-go/accounting"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
-	containerSDK "github.com/nspcc-dev/neofs-sdk-go/container"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
-	"github.com/nspcc-dev/neofs-sdk-go/version"
+	"github.com/epicchainlabs/neofs-sdk-go/accounting"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
+	containerSDK "github.com/epicchainlabs/neofs-sdk-go/container"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-sdk-go/version"
 )
 
 // BalanceOfPrm groups parameters of BalanceOf operation.

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/nspcc-dev/neofs-sdk-go/bearer"
+	"github.com/epicchainlabs/neofs-sdk-go/bearer"
 	"github.com/spf13/cobra"
 )
 

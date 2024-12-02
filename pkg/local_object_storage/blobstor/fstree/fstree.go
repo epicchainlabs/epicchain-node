@@ -11,14 +11,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/compression"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/util/logicerr"
-	"github.com/nspcc-dev/neofs-node/pkg/util"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/compression"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/util/logicerr"
+	"github.com/epicchainlabs/neofs-node/pkg/util"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 // FSTree represents an object storage as a filesystem tree.

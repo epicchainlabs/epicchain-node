@@ -3,12 +3,12 @@ package modules
 import (
 	"os"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-adm/internal/modules/config"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-adm/internal/modules/morph"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-adm/internal/modules/storagecfg"
-	"github.com/nspcc-dev/neofs-node/misc"
-	"github.com/nspcc-dev/neofs-node/pkg/util/autocomplete"
-	"github.com/nspcc-dev/neofs-node/pkg/util/gendoc"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-adm/internal/modules/config"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-adm/internal/modules/morph"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-adm/internal/modules/storagecfg"
+	"github.com/epicchainlabs/neofs-node/misc"
+	"github.com/epicchainlabs/neofs-node/pkg/util/autocomplete"
+	"github.com/epicchainlabs/neofs-node/pkg/util/gendoc"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

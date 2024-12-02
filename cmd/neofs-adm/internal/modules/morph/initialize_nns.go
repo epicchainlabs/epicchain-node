@@ -5,16 +5,16 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/unwrap"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/callflag"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
-	"github.com/nspcc-dev/neo-go/pkg/vm/vmstate"
-	"github.com/nspcc-dev/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/address"
+	"github.com/epicchainlabs/epicchain-go/pkg/io"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/unwrap"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/callflag"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/emit"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/opcode"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/vmstate"
+	"github.com/epicchainlabs/neofs-contract/rpc/nns"
 )
 
 const defaultExpirationTime = 10 * 365 * 24 * time.Hour / time.Second

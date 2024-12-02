@@ -1,8 +1,8 @@
 package object
 
 import (
-	"github.com/nspcc-dev/neofs-api-go/v2/object"
-	objectGRPC "github.com/nspcc-dev/neofs-api-go/v2/object/grpc"
+	"github.com/epicchainlabs/neofs-api-go/v2/object"
+	objectGRPC "github.com/epicchainlabs/neofs-api-go/v2/object/grpc"
 )
 
 type getStreamerV2 struct {

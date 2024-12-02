@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/mempoolevent"
-	repClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/reputation"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	reputationEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/reputation"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation/common"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/mempoolevent"
+	repClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	reputationEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/reputation"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
 	"github.com/panjf2000/ants/v2"
 	"go.uber.org/zap"
 )

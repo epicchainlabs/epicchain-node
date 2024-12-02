@@ -1,13 +1,13 @@
 package storagegroup
 
 import (
-	internalclient "github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/client"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/key"
-	objectCli "github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/object"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object_manager/storagegroup"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	internalclient "github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/key"
+	objectCli "github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/object"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object_manager/storagegroup"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 	"github.com/spf13/cobra"
 )
 

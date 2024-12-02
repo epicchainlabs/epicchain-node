@@ -4,16 +4,16 @@ import (
 	"crypto/ecdsa"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/object"
-	"github.com/nspcc-dev/neofs-api-go/v2/rpc"
-	rawclient "github.com/nspcc-dev/neofs-api-go/v2/rpc/client"
-	sessionV2 "github.com/nspcc-dev/neofs-api-go/v2/session"
-	"github.com/nspcc-dev/neofs-api-go/v2/signature"
-	"github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-node/pkg/network"
-	"github.com/nspcc-dev/neofs-node/pkg/services/object/internal"
-	internalclient "github.com/nspcc-dev/neofs-node/pkg/services/object/internal/client"
-	putsvc "github.com/nspcc-dev/neofs-node/pkg/services/object/put"
+	"github.com/epicchainlabs/neofs-api-go/v2/object"
+	"github.com/epicchainlabs/neofs-api-go/v2/rpc"
+	rawclient "github.com/epicchainlabs/neofs-api-go/v2/rpc/client"
+	sessionV2 "github.com/epicchainlabs/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-api-go/v2/signature"
+	"github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
+	"github.com/epicchainlabs/neofs-node/pkg/services/object/internal"
+	internalclient "github.com/epicchainlabs/neofs-node/pkg/services/object/internal/client"
+	putsvc "github.com/epicchainlabs/neofs-node/pkg/services/object/put"
 )
 
 type streamer struct {

@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"go.etcd.io/bbolt"
 )
 

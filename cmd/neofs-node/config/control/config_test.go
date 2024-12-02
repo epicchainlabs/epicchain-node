@@ -3,10 +3,10 @@ package controlconfig_test
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	controlconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/control"
-	configtest "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/test"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	controlconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/control"
+	configtest "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/test"
 	"github.com/stretchr/testify/require"
 )
 

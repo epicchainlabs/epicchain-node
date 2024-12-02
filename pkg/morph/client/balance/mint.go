@@ -1,8 +1,8 @@
 package balance
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
 )
 
 // MintPrm groups parameters of Mint operation.

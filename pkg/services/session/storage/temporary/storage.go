@@ -4,8 +4,8 @@ import (
 	"sync"
 
 	"github.com/mr-tron/base58"
-	"github.com/nspcc-dev/neofs-node/pkg/services/session/storage"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 type key struct {

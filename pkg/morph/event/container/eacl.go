@@ -1,7 +1,7 @@
 package container
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/network/payload"
+	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
 )
 
 // SetEACL represents structure of notification about

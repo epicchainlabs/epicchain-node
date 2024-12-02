@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/netmap"
-	"github.com/nspcc-dev/neofs-api-go/v2/refs"
-	"github.com/nspcc-dev/neofs-node/pkg/core/version"
-	netmapSDK "github.com/nspcc-dev/neofs-sdk-go/netmap"
-	versionsdk "github.com/nspcc-dev/neofs-sdk-go/version"
+	"github.com/epicchainlabs/neofs-api-go/v2/netmap"
+	"github.com/epicchainlabs/neofs-api-go/v2/refs"
+	"github.com/epicchainlabs/neofs-node/pkg/core/version"
+	netmapSDK "github.com/epicchainlabs/neofs-sdk-go/netmap"
+	versionsdk "github.com/epicchainlabs/neofs-sdk-go/version"
 )
 
 type executorSvc struct {

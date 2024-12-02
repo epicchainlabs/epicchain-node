@@ -6,8 +6,8 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/services/session/storage"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 	"go.etcd.io/bbolt"
 	"go.uber.org/zap"
 )

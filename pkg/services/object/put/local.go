@@ -6,11 +6,11 @@ import (
 	"errors"
 	"fmt"
 
-	objectCore "github.com/nspcc-dev/neofs-node/pkg/core/object"
-	"github.com/nspcc-dev/neofs-sdk-go/checksum"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	"github.com/nspcc-dev/tzhash/tz"
+	objectCore "github.com/epicchainlabs/neofs-node/pkg/core/object"
+	"github.com/epicchainlabs/neofs-sdk-go/checksum"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/tzhash/tz"
 )
 
 // ObjectStorage is an object storage interface.

@@ -1,6 +1,6 @@
 package pilorama
 
-import "github.com/nspcc-dev/neo-go/pkg/io"
+import "github.com/epicchainlabs/epicchain-go/pkg/io"
 
 func (x *Meta) FromBytes(data []byte) error {
 	if len(data) == 0 {

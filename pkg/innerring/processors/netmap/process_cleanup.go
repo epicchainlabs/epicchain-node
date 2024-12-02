@@ -1,8 +1,8 @@
 package netmap
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	v2netmap "github.com/nspcc-dev/neofs-api-go/v2/netmap"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	v2netmap "github.com/epicchainlabs/neofs-api-go/v2/netmap"
 	"go.uber.org/zap"
 )
 
@@ -26,7 +26,7 @@ func (np *Processor) processNetmapCleanupTick(ev netmapCleanupTick) {
 
 		// In notary environments we call UpdateStateIR method instead of UpdateState.
 		// It differs from UpdateState only by name, so we can do this in the same form.
-		// See https://github.com/nspcc-dev/neofs-contract/issues/225
+		// See https://github.com/epicchainlabs/neofs-contract/issues/225
 		const methodUpdateStateNotary = "updateStateIR"
 
 		err = np.netmapClient.Morph().NotaryInvoke(

@@ -3,9 +3,9 @@ package loggerconfig_test
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	loggerconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/logger"
-	configtest "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/test"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	loggerconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/logger"
+	configtest "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/test"
 	"github.com/stretchr/testify/require"
 )
 

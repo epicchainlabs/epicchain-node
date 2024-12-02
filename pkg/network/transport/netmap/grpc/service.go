@@ -3,9 +3,9 @@ package grpc
 import (
 	"context"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/netmap"
-	netmapGRPC "github.com/nspcc-dev/neofs-api-go/v2/netmap/grpc"
-	netmapsvc "github.com/nspcc-dev/neofs-node/pkg/services/netmap"
+	"github.com/epicchainlabs/neofs-api-go/v2/netmap"
+	netmapGRPC "github.com/epicchainlabs/neofs-api-go/v2/netmap/grpc"
+	netmapsvc "github.com/epicchainlabs/neofs-node/pkg/services/netmap"
 )
 
 // Server wraps NeoFS API Netmap service and

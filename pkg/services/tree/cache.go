@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/golang-lru/v2/simplelru"
-	"github.com/nspcc-dev/neofs-node/pkg/network"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials/insecure"

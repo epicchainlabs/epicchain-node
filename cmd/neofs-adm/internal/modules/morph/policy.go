@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/policy"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/policy"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

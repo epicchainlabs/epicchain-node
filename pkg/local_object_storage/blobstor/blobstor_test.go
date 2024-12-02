@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/peapod"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/peapod"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
 	"github.com/stretchr/testify/require"
 )
 

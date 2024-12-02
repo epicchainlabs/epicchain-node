@@ -3,8 +3,8 @@ package event
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/encoding/bigint"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
+	"github.com/epicchainlabs/epicchain-go/pkg/encoding/bigint"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/opcode"
 )
 
 // Op is wrapper over Neo VM's opcode
@@ -25,7 +25,7 @@ func (o Op) Param() []byte {
 	return o.param
 }
 
-// Below are the functions which reverse the results of github.com/nspcc-dev/neo-go/pkg/vm/emit.Array function.
+// Below are the functions which reverse the results of github.com/epicchainlabs/epicchain-go/pkg/vm/emit.Array function.
 
 // BytesFromOpcode tries to retrieve bytes from Op.
 func BytesFromOpcode(op Op) ([]byte, error) {

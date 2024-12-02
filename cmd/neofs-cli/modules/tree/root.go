@@ -1,7 +1,7 @@
 package tree
 
 import (
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
 	"github.com/spf13/cobra"
 )
 

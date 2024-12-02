@@ -3,7 +3,7 @@ package internal_test
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/internal"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/internal"
 	"github.com/stretchr/testify/require"
 )
 

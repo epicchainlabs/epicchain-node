@@ -1,8 +1,8 @@
 package innerring
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/util/glagolitsa"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/util/glagolitsa"
 )
 
 type alphabetContracts map[int]util.Uint160

@@ -3,11 +3,11 @@ package common
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	reputationcommon "github.com/nspcc-dev/neofs-node/pkg/services/reputation/common"
-	reputationrouter "github.com/nspcc-dev/neofs-node/pkg/services/reputation/common/router"
-	trustcontroller "github.com/nspcc-dev/neofs-node/pkg/services/reputation/local/controller"
+	"github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	reputationcommon "github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
+	reputationrouter "github.com/epicchainlabs/neofs-node/pkg/services/reputation/common/router"
+	trustcontroller "github.com/epicchainlabs/neofs-node/pkg/services/reputation/local/controller"
 	"go.uber.org/zap"
 )
 

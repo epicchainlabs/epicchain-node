@@ -3,13 +3,13 @@ package intermediate
 import (
 	"crypto/ecdsa"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/reputation/common"
-	internalclient "github.com/nspcc-dev/neofs-node/cmd/neofs-node/reputation/internal/client"
-	coreclient "github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-node/pkg/services/reputation"
-	reputationcommon "github.com/nspcc-dev/neofs-node/pkg/services/reputation/common"
-	eigentrustcalc "github.com/nspcc-dev/neofs-node/pkg/services/reputation/eigentrust/calculator"
-	reputationapi "github.com/nspcc-dev/neofs-sdk-go/reputation"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/reputation/common"
+	internalclient "github.com/epicchainlabs/neofs-node/cmd/neofs-node/reputation/internal/client"
+	coreclient "github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-node/pkg/services/reputation"
+	reputationcommon "github.com/epicchainlabs/neofs-node/pkg/services/reputation/common"
+	eigentrustcalc "github.com/epicchainlabs/neofs-node/pkg/services/reputation/eigentrust/calculator"
+	reputationapi "github.com/epicchainlabs/neofs-sdk-go/reputation"
 	"go.uber.org/zap"
 )
 

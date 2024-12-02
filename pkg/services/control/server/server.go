@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/engine"
-	"github.com/nspcc-dev/neofs-node/pkg/services/control"
-	"github.com/nspcc-dev/neofs-node/pkg/services/replicator"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/engine"
+	"github.com/epicchainlabs/neofs-node/pkg/services/control"
+	"github.com/epicchainlabs/neofs-node/pkg/services/replicator"
 )
 
 // Server is an entity that serves

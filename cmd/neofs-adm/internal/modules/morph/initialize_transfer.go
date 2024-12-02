@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/native"
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/actor"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/gas"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/invoker"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/neo"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/nep17"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	scContext "github.com/nspcc-dev/neo-go/pkg/smartcontract/context"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/native"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/transaction"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/actor"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/gas"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/invoker"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/neo"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/nep17"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract"
+	scContext "github.com/epicchainlabs/epicchain-go/pkg/smartcontract/context"
 )
 
 const (

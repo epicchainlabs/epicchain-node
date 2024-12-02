@@ -8,15 +8,15 @@ import (
 	"fmt"
 	"io"
 
-	coreclient "github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-sdk-go/bearer"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	coreclient "github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-sdk-go/bearer"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 type commonPrm struct {

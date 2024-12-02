@@ -7,11 +7,11 @@ import (
 	"strings"
 
 	"github.com/mr-tron/base58"
-	rawclient "github.com/nspcc-dev/neofs-api-go/v2/rpc/client"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/key"
-	"github.com/nspcc-dev/neofs-node/pkg/services/control"
+	rawclient "github.com/epicchainlabs/neofs-api-go/v2/rpc/client"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/key"
+	"github.com/epicchainlabs/neofs-node/pkg/services/control"
 	"github.com/spf13/cobra"
 )
 

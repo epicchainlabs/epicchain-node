@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	engineconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/engine"
-	shardconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/engine/shard"
-	loggerconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/logger"
-	treeconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/tree"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/peapod"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	engineconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/engine"
+	shardconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/engine/shard"
+	loggerconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/logger"
+	treeconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/tree"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/peapod"
 	"go.uber.org/zap/zapcore"
 )
 

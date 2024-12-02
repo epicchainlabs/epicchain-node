@@ -3,9 +3,9 @@ package audittask
 import (
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/services/audit"
-	"github.com/nspcc-dev/neofs-node/pkg/services/audit/auditor"
-	"github.com/nspcc-dev/neofs-node/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/services/audit"
+	"github.com/epicchainlabs/neofs-node/pkg/services/audit/auditor"
+	"github.com/epicchainlabs/neofs-node/pkg/util"
 	"go.uber.org/zap"
 )
 

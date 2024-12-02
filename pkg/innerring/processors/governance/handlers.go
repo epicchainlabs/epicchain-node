@@ -1,11 +1,11 @@
 package governance
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/core/native"
-	"github.com/nspcc-dev/neo-go/pkg/core/native/noderoles"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event/rolemanagement"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/native"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/native/noderoles"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event/rolemanagement"
 	"go.uber.org/zap"
 )
 

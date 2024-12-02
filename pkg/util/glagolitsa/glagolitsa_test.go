@@ -3,7 +3,7 @@ package glagolitsa_test
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/util/glagolitsa"
+	"github.com/epicchainlabs/neofs-node/pkg/util/glagolitsa"
 	"github.com/stretchr/testify/require"
 )
 

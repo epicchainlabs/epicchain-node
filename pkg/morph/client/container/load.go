@@ -4,10 +4,10 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	"github.com/nspcc-dev/neofs-sdk-go/container"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/neofs-sdk-go/container"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 )
 
 // AnnounceLoadPrm groups parameters of AnnounceLoad operation.

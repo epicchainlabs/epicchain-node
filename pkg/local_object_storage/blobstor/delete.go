@@ -3,8 +3,8 @@ package blobstor
 import (
 	"errors"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
 )
 
 func (b *BlobStor) Delete(prm common.DeletePrm) (common.DeleteRes, error) {

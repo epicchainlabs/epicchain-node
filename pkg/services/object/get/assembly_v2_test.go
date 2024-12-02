@@ -3,7 +3,7 @@ package getsvc
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
 	"github.com/stretchr/testify/require"
 )
 

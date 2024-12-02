@@ -1,7 +1,7 @@
 package event
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/core/block"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/block"
 )
 
 // Handler is an Event processing function.

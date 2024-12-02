@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/fstree"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/peapod"
-	"github.com/nspcc-dev/neofs-node/pkg/services/control"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/fstree"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/peapod"
+	"github.com/epicchainlabs/neofs-node/pkg/services/control"
 )
 
 func TestNetmap_StableMarshal(t *testing.T) {

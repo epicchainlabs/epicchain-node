@@ -6,8 +6,8 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/manifest"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/nef"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/manifest"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/nef"
 	"github.com/stretchr/testify/require"
 )
 

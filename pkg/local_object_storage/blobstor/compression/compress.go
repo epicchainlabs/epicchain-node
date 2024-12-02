@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/klauspost/compress/zstd"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
 )
 
 // Config represents common compression-related configuration.

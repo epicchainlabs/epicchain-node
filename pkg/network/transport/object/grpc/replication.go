@@ -6,16 +6,16 @@ import (
 	"errors"
 	"fmt"
 
-	objectv2 "github.com/nspcc-dev/neofs-api-go/v2/object"
-	objectGRPC "github.com/nspcc-dev/neofs-api-go/v2/object/grpc"
-	refsv2 "github.com/nspcc-dev/neofs-api-go/v2/refs"
-	refs "github.com/nspcc-dev/neofs-api-go/v2/refs/grpc"
-	status "github.com/nspcc-dev/neofs-api-go/v2/status/grpc"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	neofscrypto "github.com/nspcc-dev/neofs-sdk-go/crypto"
-	neofsecdsa "github.com/nspcc-dev/neofs-sdk-go/crypto/ecdsa"
-	"github.com/nspcc-dev/neofs-sdk-go/object"
+	objectv2 "github.com/epicchainlabs/neofs-api-go/v2/object"
+	objectGRPC "github.com/epicchainlabs/neofs-api-go/v2/object/grpc"
+	refsv2 "github.com/epicchainlabs/neofs-api-go/v2/refs"
+	refs "github.com/epicchainlabs/neofs-api-go/v2/refs/grpc"
+	status "github.com/epicchainlabs/neofs-api-go/v2/status/grpc"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	neofscrypto "github.com/epicchainlabs/neofs-sdk-go/crypto"
+	neofsecdsa "github.com/epicchainlabs/neofs-sdk-go/crypto/ecdsa"
+	"github.com/epicchainlabs/neofs-sdk-go/object"
 )
 
 // Replicate serves neo.fs.v2.object.ObjectService/Replicate RPC.

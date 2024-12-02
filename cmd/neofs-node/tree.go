@@ -5,14 +5,14 @@ import (
 	"errors"
 	"time"
 
-	treeconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/tree"
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/pilorama"
-	containerClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/container"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	containerEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/container"
-	"github.com/nspcc-dev/neofs-node/pkg/services/tree"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	treeconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/tree"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/pilorama"
+	containerClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	containerEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/container"
+	"github.com/epicchainlabs/neofs-node/pkg/services/tree"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 	"go.uber.org/zap"
 )
 

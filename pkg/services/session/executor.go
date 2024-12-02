@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
 	"go.uber.org/zap"
 )
 

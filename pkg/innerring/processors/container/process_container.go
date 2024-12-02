@@ -3,13 +3,13 @@ package container
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/network/payload"
-	cntClient "github.com/nspcc-dev/neofs-node/pkg/morph/client/container"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
-	containerEvent "github.com/nspcc-dev/neofs-node/pkg/morph/event/container"
-	containerSDK "github.com/nspcc-dev/neofs-sdk-go/container"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	"github.com/nspcc-dev/neofs-sdk-go/session"
+	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
+	cntClient "github.com/epicchainlabs/neofs-node/pkg/morph/client/container"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
+	containerEvent "github.com/epicchainlabs/neofs-node/pkg/morph/event/container"
+	containerSDK "github.com/epicchainlabs/neofs-sdk-go/container"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-sdk-go/session"
 	"go.uber.org/zap"
 )
 

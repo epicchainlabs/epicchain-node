@@ -8,12 +8,12 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/nspcc-dev/neo-go/pkg/neorpc/result"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
-	"github.com/nspcc-dev/neo-go/pkg/vm/vmstate"
-	nnsrpc "github.com/nspcc-dev/neofs-contract/rpc/nns"
-	"github.com/nspcc-dev/neofs-node/pkg/innerring/processors/netmap/nodevalidation/privatedomains"
+	"github.com/epicchainlabs/epicchain-go/pkg/neorpc/result"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/vmstate"
+	nnsrpc "github.com/epicchainlabs/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/privatedomains"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,13 +3,13 @@ package main
 import (
 	"os"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal/meta"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal/object"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal/peapod"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal/storage"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-lens/internal/writecache"
-	"github.com/nspcc-dev/neofs-node/misc"
-	"github.com/nspcc-dev/neofs-node/pkg/util/gendoc"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal/meta"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal/object"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal/peapod"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal/storage"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-lens/internal/writecache"
+	"github.com/epicchainlabs/neofs-node/misc"
+	"github.com/epicchainlabs/neofs-node/pkg/util/gendoc"
 	"github.com/spf13/cobra"
 )
 

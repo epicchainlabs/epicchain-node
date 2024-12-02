@@ -3,9 +3,9 @@ package internal
 import (
 	"context"
 
-	coreclient "github.com/nspcc-dev/neofs-node/pkg/core/client"
-	"github.com/nspcc-dev/neofs-sdk-go/client"
-	"github.com/nspcc-dev/neofs-sdk-go/reputation"
+	coreclient "github.com/epicchainlabs/neofs-node/pkg/core/client"
+	"github.com/epicchainlabs/neofs-sdk-go/client"
+	"github.com/epicchainlabs/neofs-sdk-go/reputation"
 )
 
 type commonPrm struct {

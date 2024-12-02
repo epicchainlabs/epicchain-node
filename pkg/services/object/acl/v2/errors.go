@@ -3,7 +3,7 @@ package v2
 import (
 	"fmt"
 
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
 )
 
 const invalidRequestMessage = "malformed request"

@@ -6,10 +6,10 @@ import (
 	"fmt"
 
 	"github.com/mr-tron/base58"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
-	"github.com/nspcc-dev/neofs-node/pkg/services/session/storage"
-	"github.com/nspcc-dev/neofs-sdk-go/user"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-node/pkg/services/session/storage"
+	"github.com/epicchainlabs/neofs-sdk-go/user"
 )
 
 func (s *TokenStore) Create(_ context.Context, body *session.CreateRequestBody) (*session.CreateResponseBody, error) {

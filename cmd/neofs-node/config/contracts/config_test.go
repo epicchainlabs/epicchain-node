@@ -3,10 +3,10 @@ package contractsconfig_test
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	contractsconfig "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/contracts"
-	configtest "github.com/nspcc-dev/neofs-node/cmd/neofs-node/config/test"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	contractsconfig "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/contracts"
+	configtest "github.com/epicchainlabs/neofs-node/cmd/neofs-node/config/test"
 	"github.com/stretchr/testify/require"
 )
 

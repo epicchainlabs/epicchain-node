@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/nep11"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/unwrap"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	nnsrpc "github.com/nspcc-dev/neofs-contract/rpc/nns"
-	"github.com/nspcc-dev/neofs-node/pkg/innerring/processors/netmap/nodevalidation/privatedomains"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/nep11"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/unwrap"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	nnsrpc "github.com/epicchainlabs/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/privatedomains"
 )
 
 // provides services of the NeoFS Name Service consumed by the Inner Ring node.

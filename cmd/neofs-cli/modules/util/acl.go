@@ -11,9 +11,9 @@ import (
 	"text/tabwriter"
 
 	"github.com/flynn-archive/go-shlex"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-sdk-go/container/acl"
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-sdk-go/container/acl"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
 )

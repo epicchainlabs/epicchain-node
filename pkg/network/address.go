@@ -8,7 +8,7 @@ import (
 
 	"github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
-	"github.com/nspcc-dev/neofs-api-go/v2/rpc/client"
+	"github.com/epicchainlabs/neofs-api-go/v2/rpc/client"
 )
 
 /*

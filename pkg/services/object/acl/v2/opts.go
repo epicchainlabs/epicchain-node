@@ -1,9 +1,9 @@
 package v2
 
 import (
-	"github.com/nspcc-dev/neofs-node/pkg/core/container"
-	"github.com/nspcc-dev/neofs-node/pkg/core/netmap"
-	objectSvc "github.com/nspcc-dev/neofs-node/pkg/services/object"
+	"github.com/epicchainlabs/neofs-node/pkg/core/container"
+	"github.com/epicchainlabs/neofs-node/pkg/core/netmap"
+	objectSvc "github.com/epicchainlabs/neofs-node/pkg/services/object"
 	"go.uber.org/zap"
 )
 

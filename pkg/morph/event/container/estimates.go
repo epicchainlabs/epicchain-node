@@ -3,10 +3,10 @@ package container
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/client"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/epicchain-go/pkg/core/state"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/client"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
 )
 
 // StartEstimation structure of container.StartEstimation notification from

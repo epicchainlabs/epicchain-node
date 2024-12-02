@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/callflag"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
-	netmapcontract "github.com/nspcc-dev/neofs-contract/contracts/netmap"
-	"github.com/nspcc-dev/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/io"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/callflag"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/emit"
+	netmapcontract "github.com/epicchainlabs/neofs-contract/contracts/netmap"
+	"github.com/epicchainlabs/neofs-contract/rpc/nns"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

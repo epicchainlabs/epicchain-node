@@ -8,8 +8,8 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/invoker"
-	"github.com/nspcc-dev/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/invoker"
+	"github.com/epicchainlabs/neofs-contract/rpc/nns"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

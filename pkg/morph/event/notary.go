@@ -3,9 +3,9 @@ package event
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/network/payload"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
+	"github.com/epicchainlabs/epicchain-go/pkg/network/payload"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/opcode"
 )
 
 // NotaryType is a notary event enumeration type.

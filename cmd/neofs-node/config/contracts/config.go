@@ -3,8 +3,8 @@ package contractsconfig
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
+	"github.com/epicchainlabs/epicchain-go/pkg/util"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
 )
 
 const (

@@ -50,12 +50,12 @@ const Size = 41
 // LetterByIndex returns string representation of Glagolitic letter compatible
 // with NeoFS Alphabet contract by index. Index must be in range [0, Size).
 //
-// Track https://github.com/nspcc-dev/neofs-node/issues/2431
+// Track https://github.com/epicchainlabs/neofs-node/issues/2431
 func LetterByIndex(ind int) string {
 	return script[ind]
 }
 
-// Glagolitsa implement [github.com/nspcc-dev/neofs-contract/deploy.Glagolitsa].
+// Glagolitsa implement [github.com/epicchainlabs/neofs-contract/deploy.Glagolitsa].
 type Glagolitsa struct{}
 
 func (g *Glagolitsa) Size() int {

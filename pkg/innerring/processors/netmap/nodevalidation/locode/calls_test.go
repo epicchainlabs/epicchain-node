@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/nspcc-dev/locode-db/pkg/locodedb"
-	"github.com/nspcc-dev/neofs-node/pkg/innerring/processors/netmap/nodevalidation/locode"
-	"github.com/nspcc-dev/neofs-sdk-go/netmap"
+	"github.com/epicchainlabs/locode-db/pkg/locodedb"
+	"github.com/epicchainlabs/neofs-node/pkg/innerring/processors/netmap/nodevalidation/locode"
+	"github.com/epicchainlabs/neofs-sdk-go/netmap"
 	"github.com/stretchr/testify/require"
 )
 

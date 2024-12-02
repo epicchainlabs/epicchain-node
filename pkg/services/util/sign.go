@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-api-go/v2/session"
-	"github.com/nspcc-dev/neofs-api-go/v2/signature"
-	apistatus "github.com/nspcc-dev/neofs-sdk-go/client/status"
+	"github.com/epicchainlabs/neofs-api-go/v2/session"
+	"github.com/epicchainlabs/neofs-api-go/v2/signature"
+	apistatus "github.com/epicchainlabs/neofs-sdk-go/client/status"
 )
 
 type RequestMessage interface {

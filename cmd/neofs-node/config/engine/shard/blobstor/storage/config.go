@@ -3,7 +3,7 @@ package storage
 import (
 	"io/fs"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
 )
 
 type Config config.Config

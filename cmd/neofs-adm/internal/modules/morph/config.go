@@ -10,11 +10,11 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/invoker"
-	"github.com/nspcc-dev/neo-go/pkg/rpcclient/unwrap"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/vm/stackitem"
-	"github.com/nspcc-dev/neofs-contract/rpc/nns"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/invoker"
+	"github.com/epicchainlabs/epicchain-go/pkg/rpcclient/unwrap"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/stackitem"
+	"github.com/epicchainlabs/neofs-contract/rpc/nns"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

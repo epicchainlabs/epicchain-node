@@ -3,9 +3,9 @@ package meta_test
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neofs-node/pkg/core/object"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/pkg/core/object"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"github.com/stretchr/testify/require"
 )
 

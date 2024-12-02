@@ -1,7 +1,7 @@
 package objectconfig
 
 import (
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
 )
 
 // PutConfig is a wrapper over "put" config section which provides access

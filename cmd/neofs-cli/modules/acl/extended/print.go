@@ -4,9 +4,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/modules/util"
-	"github.com/nspcc-dev/neofs-sdk-go/eacl"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/modules/util"
+	"github.com/epicchainlabs/neofs-sdk-go/eacl"
 	"github.com/spf13/cobra"
 )
 

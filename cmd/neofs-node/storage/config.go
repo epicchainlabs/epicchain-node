@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	shardmode "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/shard/mode"
+	shardmode "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/shard/mode"
 )
 
 type ShardCfg struct {

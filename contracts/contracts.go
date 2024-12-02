@@ -13,9 +13,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/manifest"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/nef"
+	"github.com/epicchainlabs/epicchain-go/pkg/io"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/manifest"
+	"github.com/epicchainlabs/epicchain-go/pkg/smartcontract/nef"
 )
 
 // Contract groups information about Neo contract stored in the current package.

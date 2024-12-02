@@ -3,8 +3,8 @@ package controlconfig
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
 )
 
 // GRPCConfig is a wrapper over "grpc" config section which provides access

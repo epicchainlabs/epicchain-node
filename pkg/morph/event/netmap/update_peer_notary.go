@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
-	"github.com/nspcc-dev/neofs-node/pkg/morph/event"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/epicchain-go/pkg/vm/opcode"
+	"github.com/epicchainlabs/neofs-node/pkg/morph/event"
 )
 
 var errNilPubKey = errors.New("could not parse public key: public key is nil")

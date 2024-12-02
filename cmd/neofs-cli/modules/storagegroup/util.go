@@ -3,10 +3,10 @@ package storagegroup
 import (
 	"fmt"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 	"github.com/spf13/cobra"
 )
 

@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/common"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/commonflags"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-cli/internal/key"
-	"github.com/nspcc-dev/neofs-node/pkg/services/tree"
-	cid "github.com/nspcc-dev/neofs-sdk-go/container/id"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/common"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/commonflags"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-cli/internal/key"
+	"github.com/epicchainlabs/neofs-node/pkg/services/tree"
+	cid "github.com/epicchainlabs/neofs-sdk-go/container/id"
 	"github.com/spf13/cobra"
 )
 

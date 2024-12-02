@@ -3,10 +3,10 @@ package writecache
 import (
 	"time"
 
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor"
-	"github.com/nspcc-dev/neofs-node/pkg/local_object_storage/blobstor/common"
-	meta "github.com/nspcc-dev/neofs-node/pkg/local_object_storage/metabase"
-	objectSDK "github.com/nspcc-dev/neofs-sdk-go/object"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor"
+	"github.com/epicchainlabs/neofs-node/pkg/local_object_storage/blobstor/common"
+	meta "github.com/epicchainlabs/neofs-node/pkg/local_object_storage/metabase"
+	objectSDK "github.com/epicchainlabs/neofs-sdk-go/object"
 	"go.uber.org/zap"
 )
 

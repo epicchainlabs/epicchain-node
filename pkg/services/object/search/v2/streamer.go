@@ -1,10 +1,10 @@
 package searchsvc
 
 import (
-	"github.com/nspcc-dev/neofs-api-go/v2/object"
-	"github.com/nspcc-dev/neofs-api-go/v2/refs"
-	objectSvc "github.com/nspcc-dev/neofs-node/pkg/services/object"
-	oid "github.com/nspcc-dev/neofs-sdk-go/object/id"
+	"github.com/epicchainlabs/neofs-api-go/v2/object"
+	"github.com/epicchainlabs/neofs-api-go/v2/refs"
+	objectSvc "github.com/epicchainlabs/neofs-node/pkg/services/object"
+	oid "github.com/epicchainlabs/neofs-sdk-go/object/id"
 )
 
 type streamWriter struct {

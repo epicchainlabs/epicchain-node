@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neofs-node/cmd/neofs-node/config"
-	"github.com/nspcc-dev/neofs-node/pkg/network"
-	utilConfig "github.com/nspcc-dev/neofs-node/pkg/util/config"
+	"github.com/epicchainlabs/epicchain-go/pkg/crypto/keys"
+	"github.com/epicchainlabs/neofs-node/cmd/neofs-node/config"
+	"github.com/epicchainlabs/neofs-node/pkg/network"
+	utilConfig "github.com/epicchainlabs/neofs-node/pkg/util/config"
 )
 
 // PersistentSessionsConfig is a wrapper over "persistent_sessions" config section
